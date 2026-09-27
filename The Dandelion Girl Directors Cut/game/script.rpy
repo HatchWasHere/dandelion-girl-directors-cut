@@ -1,0 +1,5 @@
+
+
+label start:
+
+    jump opening

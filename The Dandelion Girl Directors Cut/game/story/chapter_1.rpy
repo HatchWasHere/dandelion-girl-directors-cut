@@ -2,7 +2,7 @@
 
 label chapter_1:
 
-    play music passing_time
+    play music seasons
 
     scene black
 
@@ -12,35 +12,39 @@ label chapter_1:
 
     pause 1.0
 
-    narrator "I'd been planning out my vacation for months."
+    narrator "I'd planned out my vacation months in advance."
 
-    narrator "God knows I spend too much time in my office shuffling through papers and handling cases, so I deserve to have some time for just myself and my wife now and then."
+    narrator "I spend so much time in my office shuffling through papers and handling cases, I think I deserve a little time for just myself and my wife."
 
     narrator "Every year I schedule four weeks of time away from my desk--two with Anne and our friend Jeff--and two with just Anne and me."
 
-    narrator "I always schedule them so that they'll arrive before I can burn myself out."
+    narrator "I make sure to schedule them right before I burn out."
 
     narrator "They're nothing expensive or elaborate, just a comfortable get-away."
 
-    narrator "I'd planned out a schedule for Anne and I, what we planned to do, how, and when."
-
-    narrator "My time off was set, as was Anne's."
-
-    narrator "Oh, And Jeff's."
-
     narrator "Then it was only a matter of time until the day crept up on us, and we'd pack up the car and set off."
 
-    narrator "I really looked forward to it, and I'd arranged a lot of small details ahead of time."
+    anne "\"You put way too much thought into this kind of thing. It's OK to be a little spontaneous now and then.\""
 
-    anne "\"You put way too much thought into this kind of thing, you know that?\""
+    mark "\"I don't like surprises.\""
 
-    mark "\"Never hurts to be prepared and have a plan, right? My captain always said so, anyway.\""
+    narrator "I could see the creases forming in Anne's frowning face."
 
-    narrator "My wife had giggled and went along with it, and we'd come to a mutual understanding."
+    mark "\"It never hurts to be prepared and have a plan, right? My captain always said so, anyway.\""
 
-    narrator "We had a lot of things we wanted to do."
+    anne "\"I can't say you're wrong, but...\""
 
-    narrator "Simple things. Fishing and roasting marshmallows, just enjoying our time with one another."
+    mark "\"We'll think of something new and fun to do, once we're there.\""
+   
+    anne "\"Hmm... you promise?\""
+
+    mark "\"Of course.\""
+
+    narrator "I kissed my wife on the head, and that seemed to satify her."
+
+    narrator "There were a lot of things we wanted to do."
+
+    narrator "Simple things like fishing and roasting marshmallows, just enjoying our time with one another."
 
     narrator "... Some things we'd have to wait until Jeff went back to college to do."
 
@@ -48,11 +52,13 @@ label chapter_1:
 
     narrator "Some would probably say we were addicted to our work."
 
-    narrator "It wasn't that we needed the money per se, we just both had a drive to stay busy."
+    narrator "It wasn't that we needed the money per se, we just both had a need to stay busy."
 
-    narrator "But you know, eventually the stress can add up, so things like this are nice."
+    narrator "Eventually that stress can add up, so things like this are a nice change of pace."
 
-    narrator "When was the last time Anne and I went somewhere on vacation?"
+    narrator "A plan should always have room for deviation."
+
+    narrator "I wondered, what was it we did last year?"
 
     narrator "I can't seem to remember."
 
@@ -60,11 +66,16 @@ label chapter_1:
 
     narrator "Or maybe that was the year before..."
 
-    narrator "Well, anyway."
+    narrator "I know I put a lot of thought into it before we actually set out, at the very least."
+
+
+    pause 1.0
+
+    narrator "... Well, anyway."
 
     narrator "It would be nice to have some time to just huddle close to one another in front of the fireplace, just enjoying each other's company."
 
-    narrator "Jeez, the idea of that's kind of cheesy and embarrassing."
+    narrator "The idea of that's kind of cheesy and embarrassing."
 
     narrator "But either way, I was looking forward to it."
 
@@ -72,11 +83,15 @@ label chapter_1:
 
     narrator "... But."
 
-    narrator "Fate intervened, and Anne was called away for Jury duty."
+    narrator "Fate intervened."
 
-    narrator "No matter how hard she tried to wriggle her way out of it, she was stuck."
+    narrator "Anne's mother was recovering from an unexpected medical procedure. She needed someone around the house while she recovered, at least for the first week or two."
 
-    narrator "And so our plans for a peaceful, relaxing vacation were derailed."
+    narrator "That date landed squarely in the middle of our vacation time."
+
+    narrator "Anne made a painful smile, knowing she was the only one her mother could rely on."
+
+    narrator "That's the price of being a dependable person, I guess."
 
         # --------------------------------------------------------------
     # Mark and Anne
@@ -86,52 +101,68 @@ label chapter_1:
 
     mark "\"Well, we can always go on vacation another time.\""
 
-    anne "\"What are you talking about? Aren't the preparations already made? Didn't you already schedule the time off? Call Jeff at the cabin? You can't just call it off.\""
+    anne "\"What are you talking about? Didn't you already schedule the time off and call Jeff at the cabin? You can't just call it off.\""
 
     mark "\"Well, yeah, but...\""
 
-    narrator "But I obviously couldn't go without her. It just wouldn't feel right."
+    narrator "'But I don't want to go without you.'"
 
-    anne "\"It's not that far away, and the case seems pretty open-and-shut. ... Go on, head up there and keep Jeff company and I'll hurry after you as soon as the case is done with.\""
+    narrator "I couldn't quite get the words out."
+
+    anne "\"It probably won't be as long as she thinks. Once she's feeling better, I'll drive up and join you.\""
 
     mark "\"But--\""
 
-    anne "\"You deserve it, Mark. You work so hard and never complain, so just this once, shut up and enjoy yourself.\""
+    anne "\"Enough. You work so hard and never complain, so just this once... shut up and enjoy your vacation, OK?\""
+
+    narrator "My wife planted a kiss on my cheek, and I lost the ability to argue with her about it any further."
 
     mark "\".........\""
+
 
 
     # --------------------------------------------------------------
     # Leaving for the trip
     # --------------------------------------------------------------
 
+
+    stop music fadeout 3.0
+
     scene black
     with Dissolve(2.0)
 
     pause 0.5
 
-    narrator "Since the beginning, I've had a hard time arguing with my wife."
+    narrator "I've always had a hard time arguing with my wife."
 
-    narrator "Is it because she's so persuasive, or am I just a softy? Whatever the case may be, she ends up winning most of the arguments, or at best, we reach a stalemate. A compromise is a nicer way of putting it."
+    narrator "I'm not sure if it's because she's so persuasive (she is) or if it's because I'm too much of a softy (I am)."
 
-    narrator "So in the end I folded, packed up my things and went off on vacation without my wife."
+    narrator "In the end I gave in, packed up my things and went off on vacation without my wife."
 
-    narrator "She said that she'd catch a ride to our camp site as soon as it was done."
+    narrator "She said that she'd catch a ride to our camp site as soon as everything on her end was taken care of."
 
-    narrator "After all that, I finally arrived at our cabin in the woods and settled in."
+    pause 2.0
+
+    
 
 
     # --------------------------------------------------------------
     # Cabin
     # --------------------------------------------------------------
 
+    
+
+    narrator "After all that, I finally arrived at our cabin in the woods and settled in."
+
     scene bg cabin at old_bg
 
-    narrator "Jeff and I had a good enough time by ourselves, but time continued to slip by, and before I knew it he'd left for college and the trial back home was still going on."
+    narrator "Jeff and I had a good enough time by ourselves, but time continued to slip by."
+    
+    narrator "Before I knew it he'd returned to college and Anne still hadn't arrived."
 
-    narrator "Anne apologized, and I knew it was heartfelt, but even so, it bothered me a little."
+    narrator "She apologized, and I knew it was heartfelt, but even so, it bothered me a little."
 
-    narrator "Time passed at the camp site, where I'd had a good time with Jeff days ago, very slowly after that..."
+    narrator "Time passed quietly at the camp site, where I'd had a good time with Jeff days ago, very slowly..."
 
     pause 2.0
 
@@ -141,25 +172,29 @@ label chapter_1:
 
     narrator "What to do, now?"
 
-    narrator "I couldn't play cards with Anne and I felt like going fishing with just myself and my rod would be too depressing."
+    narrator "I couldn't play cards with Anne."
+
+    narrator "Going fishing with just myself and my rod would be too depressing."
 
     narrator "I tried laying down and just taking a nap, but even that didn't feel right."
 
     narrator "After a while I finally decided--I'd take a hike."
 
-    narrator "Maybe trudging around in the middle of good old mother nature would distract me from the loneliness I felt, then."
+    narrator "Maybe trudging around in the middle of mother nature would distract me from the loneliness I was feeling."
 
     scene black
     stop music
 
     pause 4.0
 
+    
+
 
     # --------------------------------------------------------------
     # The Hike
     # --------------------------------------------------------------
 
-    play music credits_fast
+    play music seasons
 
     scene bg sky at old_bg
     with Dissolve(3.0)
@@ -168,11 +203,11 @@ label chapter_1:
 
     mark "\"Nnn... ku... ... ... this is... higher than I remembered...\""
 
-    narrator "The climb to the top was... further than I remembered."
+    narrator "The climb to the top was further than I remembered."
 
-    narrator "I couldn't tell if I'd taken a different path, or whether I was just getting old."
+    narrator "I couldn't tell if I'd taken a different path. Maybe my body was just getting rusty."
 
-    narrator "I hoped it was the former."
+    narrator "I really hoped it was the former, not the latter."
 
     mark "\"Nnnngh... uu... ... a-ah... !\""
 
@@ -182,7 +217,11 @@ label chapter_1:
 
     narrator "After a few more shaky steps I managed to reach the edge, and finally climbed up onto solid ground."
 
-    narrator "It was a field of dandelions stretching from here to the horizon, rippling in the Summer wind."
+    narrator "It was a lush field stretching from here to the horizon, covered in seasonal flowers swaying in the summer wind."
+
+    mark "\"Wow...\""
+
+    narrator "I held a hand over my eyes and simply took it all in."
 
     narrator "I looked it up and down, from near to far, and after a moment or two I realized I wasn't alone."
 
@@ -203,10 +242,6 @@ label chapter_1:
 
     narrator "After a time, the dandelion girl waded over to me in the grass and stopped several yards away."
 
-    narrator "Was she at a loss for words?"
-
-    narrator "I sure as hell was."
-
     mark "\"Hello, Miss. Hope I'm not intruding.\""
 
     pause 1.0
@@ -215,27 +250,27 @@ label chapter_1:
 
     girl "\"Intruding... ?\""
 
-    narrator "\"Getting in the way. Of your dancing I mean. ... Whew, it's a big field, though. We can share it, don't you think?\""
+    narrator "\"Getting in the way. Of your dancing I mean. ... It's a big field, though. I think we could share it?\""
 
     show julie smile at center
 
-    girl "\"Oh... Sure, sure.\""
+    girl "\"Oh... Sure, sure!\""
 
-    narrator "She grinned and nodded her head without an argument of her own."
+    narrator "She gave me a great big grin and nodded her head."
 
     hide julie
 
-    mark "\"Mmmm. My wife and I come up here from time to time when we go camping in the area. She really likes the view.\""
+    mark "\"My wife and I come up here from time to time when we go camping in the area. She really likes the view.\""
 
-    narrator "Without meaning to, I thought my voice had tapered off at the end of my sentence and made me sound melancholy."
-
-    narrator "If it had, the dandelion girl hadn't noticed it."
+    narrator "Without meaning to, my voice had tapered off."
+    
+    narrator "If I sounded sad, thinking about my absent wife, the girl hadn't noticed it."
 
     show julie curious at center
 
-    girl "\"Mmmhmm, mhmhmm. Isn't it a nice view? I come here sometimes and I can watch for hours, and hours, and hours.\""
+    girl "\"Mmmhmm, mhmhmm. It really is a lovely view. I come here sometimes and I can watch for hours, and hours, and hours.\""
 
-    mark "\"I guess, but I'm not sure I could keep at it for hours on end. Don't know where anything is down there. Maybe my eyes aren't so great, these days.\""
+    mark "\"Hours, huh... Don't know where anything is down there. Maybe my eyes aren't so great, these days.\""
 
     narrator "I thought maybe she was exaggerating, but I wasn't kidding about my eyesight."
 
@@ -243,7 +278,7 @@ label chapter_1:
 
     narrator "But everyone looked like ants from where I was sitting, so a part of me thought she was just fooling around."
 
-    girl "\"Have you ever been down to Cove City? I've only been down there once or twice, myself.\""
+    mark "\"Have you ever been down to Cove City? I've only been down there once or twice, myself.\""
 
     show julie excited at center
 
@@ -254,16 +289,17 @@ label chapter_1:
     hide julie
 
     stop music
-    play music cold_funk
+    play music sweet_potato
 
     scene cg julie_pointing at old_cg
 
     girl "Down there, you see that? It's a shop where you can get all the latest dresses. They sell jackets and some things for men, too, but most of their stuff is for young ladies, like me."
 
-
     girl "Oh, oh, and you see that? That's a general store, where you can get anything from aspirin to aerocars. The owner's a really nice man who gives me cookies sometimes."
 
-    mark "Hmmm. It all sounds nice, I suppose. ... But wait, 'aerocars'? What are those?"
+    narrator "I nodded in agreement, even though she'd said a couple of strange things."
+
+    mark "It all sounds pretty nice, I suppose. ... But what exactly is an 'aerocar'?"
 
     girl "A-ah, whoops. I guess they don't have those in this time period, huh?"
 
@@ -284,15 +320,13 @@ label chapter_1:
 
     scene bg dandelion_field at old_bg
 
-    mark "Huh. Neat."
+    mark "Huh. That's pretty interesting."
 
     show julie surprised at center
 
-    girl "Th-that's all you've got to say!?"
+    girl "Th-that's all you've got to say!? Really!?"
 
     show julie excited at center
-
-    girl "Really?"
 
     mark "Sure. Were you expecting something else?"
 
@@ -301,7 +335,7 @@ label chapter_1:
     pause 0.3
     hide julie
 
-    narrator "The dandelion girl clasped her hands together and looked like she was at a loss for words again, ecstatic."
+    narrator "The dandelion girl clasped her hands together and looked like she was at a loss for words, again."
 
     show julie delighted at center
 
@@ -329,17 +363,17 @@ label chapter_1:
 
     girl "What is it, Mr...?"
 
-    mark "Yes, that's the thing. What's your name? You can call me Mark if you want."
+    mark "Yeah, that's the thing. What's your name? You can call me Mark."
 
     show julie smile at center
 
-    girl "Mark, hmmm? I'm Julie Danvers. You can call me Julie."
+    girl "Mr. Mark, hmmm? I'm Julie Danvers! You can call me Julie."
 
     show julie curious at center
 
     julie "It's a pretty name, just like the dandelions here, don't you think?"
 
-    mark "My wife would say someone needs to pluck them all and throw them in the trash, but sure. I suppose so."
+    mark "My wife would say someone needs to weed them out and toss them in the trash... but sure, I guess so.."
 
     hide julie
 
@@ -349,9 +383,9 @@ label chapter_1:
 
     narrator "Julie shuddered, as though the thought of it horrified her."
 
-    narrator "Maybe it did."
+    narrator "Maybe it really did."
 
-    mark "So, you're from 240 years in the future, right? Why did you come back to the sixties? Why not go further ahead in time, maybe to 500 years from now?"
+    mark "You're from 240 years in the future, huh? Why come back to the sixties? Wouldn't going further into the future be more interesting?"
 
     show julie questioning at center
 
@@ -359,9 +393,15 @@ label chapter_1:
 
     show julie surprised at center
 
-    julie "Why wouldn't I? Everything's pretty dingy and industrialized 240 years from now, you know."
+    narrator "Julie gave that some thought."
 
-    mark "I suppose that makes sense."
+    pause 0.3
+
+    julie "Well, everything's pretty dingy and industrialized 240 years from now, you know..."
+
+    mark "Is that right?"
+
+    julie 
     
     julie "I come here all the time, like I said!"
 

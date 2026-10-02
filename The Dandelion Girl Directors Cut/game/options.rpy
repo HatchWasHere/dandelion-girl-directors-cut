@@ -120,7 +120,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 45
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
@@ -158,6 +158,9 @@ define config.window_icon = "gui/window_icon.png"
 ## This section controls how Ren'Py turns your project into distribution files.
 
 init python:
+
+    if "mouseup_3" in config.keymap["game_menu"]:
+        config.keymap["game_menu"].remove("mouseup_3")
 
     ## The following functions take file patterns. File patterns are case-
     ## insensitive, and matched against the path relative to the base directory,

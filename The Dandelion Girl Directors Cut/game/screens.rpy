@@ -149,6 +149,10 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
+
+    color "#f2f0e9"
+    outlines [(1, "#000000cc", 0, 1)]
+
     xalign gui.name_xalign
     yalign 0.5
 
@@ -158,6 +162,10 @@ style say_dialogue:
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
+    
+    color "#f5f3ee"
+
+    outlines [(1, "#00000099", 1, 1)]
 
     adjust_spacing False
 
@@ -261,7 +269,7 @@ screen quick_menu():
 init python:
     config.overlay_screens.append("quick_menu")
 
-default quick_menu = True
+default quick_menu = False
 
 style quick_menu is hbox
 style quick_button is default
@@ -305,7 +313,7 @@ screen navigation():
 
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save") action ShowMenu("custom_save")
 
         textbutton _("Load") action ShowMenu("load")
 
@@ -414,6 +422,88 @@ style main_menu_version:
 ## The scroll parameter can be None, or one of "viewport" or "vpgrid".
 ## This screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
+
+
+screen hamburger_menu():
+
+    
+    tag menu
+    modal True
+
+    add Transform(
+        "images/save_bg.png",
+        xysize=(config.screen_width, config.screen_height),
+        alpha=0.5
+    )
+    
+
+    imagebutton:
+        idle "images/back_button_idle.png"
+        hover "images/back_button_hover.png"
+
+        xpos 1100
+        ypos 50
+
+        action Return()
+
+
+    fixed:
+        xpos 20
+        ypos 188
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/burger_menu/save_button_idle.png"
+            hover "images/burger_menu/save_button_hover.png"
+            action [Hide("hamburger_menu"),ShowMenu("custom_save")]
+
+    fixed:
+        xpos 20
+        ypos 240
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/burger_menu/load_button_idle.png"
+            hover "images/burger_menu/load_button_hover.png"
+            action [Hide("hamburger_menu"),ShowMenu("custom_load")]
+
+
+    fixed:
+        xpos 20
+        ypos 292
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/burger_menu/settings_button_idle.png"
+            hover "images/burger_menu/settings_button_hover.png"
+            action ShowMenu("preferences", return_to="hamburger")
+
+
+    fixed:
+        xpos 20
+        ypos 344
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/burger_menu/title_button_idle.png"
+            hover "images/burger_menu/title_button_hover.png"
+            action MainMenu()
+
+
+    fixed:
+        xpos 20
+        ypos 396
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/burger_menu/quit_button_idle.png"
+            hover "images/burger_menu/quit_button_hover.png"
+            action Quit()
 
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
@@ -576,6 +666,285 @@ style about_label_text:
     size gui.label_text_size
 
 
+
+## == New Save and Load Screen == ##
+
+screen custom_load():
+
+    tag menu
+
+    # --------------------------------------------------
+    # BACKGROUND
+    # --------------------------------------------------
+
+    add Transform(
+        "images/save_bg.png",
+        xysize=(config.screen_width, config.screen_height),
+        alpha=0.5
+    )
+    
+
+    imagebutton:
+        idle "images/back_button_idle.png"
+        hover "images/back_button_hover.png"
+
+        xpos 1100
+        ypos 50
+
+        action [Return(), Show("hamburger_menu")]
+
+    # --------------------------------------------------
+    # TITLE
+    # --------------------------------------------------
+
+    text "Load Game":
+        xalign 0.5
+        ypos 150
+        size 26
+        color "#ffffff"
+
+
+    # --------------------------------------------------
+    # SAVE SLOT 1
+    # --------------------------------------------------
+
+    fixed:
+        xalign 0.5
+        ypos 188
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/save_slot_button_idle.png"
+            hover "images/save_slot_button_hover.png"
+            action FileLoad(1)
+
+        text "SAVE 01":
+            xpos 40
+            ypos 25
+            size 20
+            color "#ffffff"
+
+        text FileTime(
+            1,
+            format="%B %d, %Y  •  %I:%M %p",
+            empty="EMPTY"
+        ):
+            xpos 40
+            ypos 57
+            size 14
+            color "#aaaaaa"
+
+
+    # --------------------------------------------------
+    # SAVE SLOT 2
+    # --------------------------------------------------
+
+    fixed:
+        xalign 0.5
+        ypos 310
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/save_slot_button_idle.png"
+            hover "images/save_slot_button_hover.png"
+            action FileLoad(2)
+
+        text "SAVE 02":
+            xpos 40
+            ypos 25
+            size 20
+            color "#ffffff"
+
+        text FileTime(
+            2,
+            format="%B %d, %Y  •  %I:%M %p",
+            empty="EMPTY"
+        ):
+            xpos 40
+            ypos 57
+            size 14
+            color "#aaaaaa"
+
+
+    # --------------------------------------------------
+    # SAVE SLOT 3
+    # --------------------------------------------------
+
+    fixed:
+        xalign 0.5
+        ypos 432
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/save_slot_button_idle.png"
+            hover "images/save_slot_button_hover.png"
+            action FileLoad(3)
+
+        text "SAVE 03":
+            xpos 40
+            ypos 25
+            size 20
+            color "#ffffff"
+
+        text FileTime(
+            3,
+            format="%B %d, %Y  •  %I:%M %p",
+            empty="EMPTY"
+        ):
+            xpos 40
+            ypos 57
+            size 14
+            color "#aaaaaa"
+
+
+
+
+screen custom_save():
+
+    tag menu
+
+    # --------------------------------------------------
+    # BACKGROUND
+    # --------------------------------------------------
+
+    add Transform(
+        "images/save_bg.png",
+        xysize=(config.screen_width, config.screen_height),
+        alpha=0.5
+    )
+    
+
+    imagebutton:
+        idle "images/back_button_idle.png"
+        hover "images/back_button_hover.png"
+
+        xpos 1100
+        ypos 50
+
+        action [Return(), Show("hamburger_menu")]
+
+    # --------------------------------------------------
+    # TITLE
+    # --------------------------------------------------
+
+    text "Save Game":
+        xalign 0.5
+        ypos 150
+        size 26
+        color "#ffffff"
+
+
+    # --------------------------------------------------
+    # SAVE SLOT 1
+    # --------------------------------------------------
+
+    fixed:
+        xalign 0.5
+        ypos 188
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/save_slot_button_idle.png"
+            hover "images/save_slot_button_hover.png"
+            action FileAction(1)
+
+        text "SAVE 01":
+            xpos 40
+            ypos 25
+            size 20
+            color "#ffffff"
+
+        text FileTime(
+            1,
+            format="%B %d, %Y  •  %I:%M %p",
+            empty="EMPTY"
+        ):
+            xpos 40
+            ypos 57
+            size 14
+            color "#aaaaaa"
+
+
+    # --------------------------------------------------
+    # SAVE SLOT 2
+    # --------------------------------------------------
+
+    fixed:
+        xalign 0.5
+        ypos 310
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/save_slot_button_idle.png"
+            hover "images/save_slot_button_hover.png"
+            action FileAction(2)
+
+        text "SAVE 02":
+            xpos 40
+            ypos 25
+            size 20
+            color "#ffffff"
+
+        text FileTime(
+            2,
+            format="%B %d, %Y  •  %I:%M %p",
+            empty="EMPTY"
+        ):
+            xpos 40
+            ypos 57
+            size 14
+            color "#aaaaaa"
+
+
+    # --------------------------------------------------
+    # SAVE SLOT 3
+    # --------------------------------------------------
+
+    fixed:
+        xalign 0.5
+        ypos 432
+        xsize 530
+        ysize 105
+
+        imagebutton:
+            idle "images/save_slot_button_idle.png"
+            hover "images/save_slot_button_hover.png"
+            action FileAction(3)
+
+        text "SAVE 03":
+            xpos 40
+            ypos 25
+            size 20
+            color "#ffffff"
+
+        text FileTime(
+            3,
+            format="%B %d, %Y  •  %I:%M %p",
+            empty="EMPTY"
+        ):
+            xpos 40
+            ypos 57
+            size 14
+            color "#aaaaaa"
+
+
+screen game_menu_button():
+
+    imagebutton:
+        idle "images/menu_icon_idle.png"
+        hover "images/menu_icon_hover.png"
+
+        xpos 1190
+        ypos 30
+
+        action ShowMenu("hamburger_menu")
+
+
 ## Load and Save screens #######################################################
 ##
 ## These screens are responsible for letting the player save the game and load
@@ -730,86 +1099,187 @@ style slot_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
-screen preferences():
+screen preferences(return_to="main_menu"):
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    modal True
+
+    add Transform(
+        "gui/settings/settings_bg.png",
+        xysize=(config.screen_width, config.screen_height)
+    )
+
+
+    fixed:
+        xfill True
+        yfill True
+
+        imagebutton:
+            idle "gui/settings/back_from_settings_idle.png"
+            hover "gui/settings/back_from_settings_hover.png"
+
+            xpos 1240
+            ypos 40
+            xanchor 1.0
+
+            action If(
+    return_to == "hamburger",
+    ShowMenu("hamburger_menu"),
+    ShowMenu("main_menu")
+)
+
+    # --------------------------------------------------
+    # LEFT COLUMN
+    # --------------------------------------------------
+
+    vbox:
+        xpos 100
+        ypos 210
+        spacing 35
+
+        # DISPLAY
+        vbox:
+            spacing 10
+
+            text "DISPLAY":
+                outlines [(2, "#000000", 0, 0)]
+                size 20
+                color "#ffffff"
+
+            imagebutton:
+                idle "gui/settings/windowed_mode_button_unselected.png"
+                hover "gui/settings/windowed_mode_button_selected.png"
+                selected_idle "gui/settings/windowed_mode_button_selected.png"
+                selected_hover "gui/settings/windowed_mode_button_selected.png"
+                action Preference("display", "window")
+
+            imagebutton:
+                idle "gui/settings/full_screen_button_unselected.png"
+                hover "gui/settings/full_screen_button_selected.png"
+                selected_idle "gui/settings/full_screen_button_selected.png"
+                selected_hover "gui/settings/full_screen_button_selected.png"
+                action Preference("display", "fullscreen")
+
+
+        # SKIPPING
+        vbox:
+            spacing 10
+
+            text "SKIPPING":
+                size 20
+                color "#ffffff"
+                outlines [(2, "#000000", 0, 0)]
+
+            # UNSEEN TEXT
+            imagebutton:
+                idle "gui/settings/skip_new_text_button_unselected.png"
+                hover "gui/settings/skip_new_text_button_selected.png"
+                selected_idle "gui/settings/skip_new_text_button_selected.png"
+                selected_hover "gui/settings/skip_new_text_button_selected.png"
+                action Preference("skip", "toggle")
+
+
+            # AFTER CHOICES
+            imagebutton:
+                idle "gui/settings/skip_after_choices_button_unselected.png"
+                hover "gui/settings/skip_after_choices_button_selected.png"
+                selected_idle "gui/settings/skip_after_choices_button_selected.png"
+                selected_hover "gui/settings/skip_after_choices_button_selected.png"
+                action Preference("after choices", "toggle")
+
+
+            # TRANSITIONS
+            imagebutton:
+                idle "gui/settings/skip_after_transitions_button_unselected.png"
+                hover "gui/settings/skip_after_transitions_button_selected.png"
+                selected_idle "gui/settings/skip_after_transitions_button_selected.png"
+                selected_hover "gui/settings/skip_after_transitions_button_selected.png"
+                action InvertSelected(Preference("transitions", "toggle"))
+
+
+    # --------------------------------------------------
+    # RIGHT COLUMN
+    # --------------------------------------------------
+
+    vbox:
+        xpos 650
+        ypos 220
+        spacing 80
+
+
+        # --------------------------------------------------
+        # VOLUME GROUP
+        # --------------------------------------------------
 
         vbox:
+            spacing 20
 
-            hbox:
-                box_wrap True
+            # MUSIC VOLUME
+            vbox:
+                spacing 5
 
-                if renpy.variant("pc") or renpy.variant("web"):
+                text "MUSIC VOLUME":
+                    outlines [(2, "#000000", 0, 0)]
+                    size 20
+                    color "#ffffff"
 
-                    vbox:
-                        style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
-
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
-
-                ## Additional vboxes of type "radio_pref" or "check_pref" can be
-                ## added here, to add additional creator-defined preferences.
-
-            null height (4 * gui.pref_spacing)
-
-            hbox:
-                style_prefix "slider"
-                box_wrap True
-
-                vbox:
-
-                    label _("Text Speed")
-
-                    bar value Preference("text speed")
-
-                    label _("Auto-Forward Time")
-
-                    bar value Preference("auto-forward time")
-
-                vbox:
-
-                    if config.has_music:
-                        label _("Music Volume")
-
-                        hbox:
-                            bar value Preference("music volume")
-
-                    if config.has_sound:
-
-                        label _("Sound Volume")
-
-                        hbox:
-                            bar value Preference("sound volume")
-
-                            if config.sample_sound:
-                                textbutton _("Test") action Play("sound", config.sample_sound)
+                bar:
+                    style "slider"
+                    value Preference("music volume")
+                    xsize 350
 
 
-                    if config.has_voice:
-                        label _("Voice Volume")
+            # SOUND VOLUME
+            vbox:
+                spacing 5
 
-                        hbox:
-                            bar value Preference("voice volume")
+                text "SOUND VOLUME":
+                    outlines [(2, "#000000", 0, 0)]
+                    size 20
+                    color "#ffffff"
 
-                            if config.sample_voice:
-                                textbutton _("Test") action Play("voice", config.sample_voice)
+                bar:
+                    style "slider"
+                    value Preference("sound volume")
+                    xsize 350
 
-                    if config.has_music or config.has_sound or config.has_voice:
-                        null height gui.pref_spacing
 
-                        textbutton _("Mute All"):
-                            action Preference("all mute", "toggle")
-                            style "mute_all_button"
+        # --------------------------------------------------
+        # TEXT GROUP
+        # --------------------------------------------------
 
+        vbox:
+            spacing 20
+
+            # TEXT SPEED
+            vbox:
+                spacing 5
+
+                text "TEXT SPEED":
+                    outlines [(2, "#000000", 0, 0)]
+                    size 20
+                    color "#ffffff"
+
+                bar:
+                    style "slider"
+                    value Preference("text speed")
+                    xsize 350
+
+
+            # AUTO-FORWARD
+            vbox:
+                spacing 5
+
+                text "AUTO-FORWARD":
+                    outlines [(2, "#000000", 0, 0)]
+                    size 20
+                    color "#ffffff"
+
+                bar:
+                    style "slider"
+                    value Preference("auto-forward time")
+                    xsize 350
 
 style pref_label is gui_label
 style pref_label_text is gui_label_text

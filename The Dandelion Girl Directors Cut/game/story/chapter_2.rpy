@@ -1,217 +1,126 @@
 label chapter_2:
 
-    play music calm
-
-    scene bg cabin at old_bg
-    with Dissolve(2.0)
-
-    pause 2.0
-
-    narrator "After Julie had gone and I'd returned to my little cabin at the edge of the woods, I realized how quiet everything had become."
-
-    narrator "At first I thought it was just the silence of the night far away from the city, then that maybe it was because I'd stopped talking to myself."
-
-    narrator "And then, after I really thought about it, I realized it was because I'd gotten so used to the soundboard that was Julie Danvers."
-
-    narrator "She was so lively and talkative and it made the melancholy quiet of my 'vacation' fade away."
-
-    narrator "And then, she was gone."
-
-    narrator "........."
-
-    narrator "I sat in a cozy armchair by the phone, smoking and looking up at the knotholes in the ceiling overhead. Occasionally I'd see an odd shape that looked something like a face, or a tree, or something like that."
-
-    narrator "It was more or less like looking at the clouds passing by and trying to make sense of their shapes."
-
-    narrator "Now and then I'd look at the phone, which Anne promised to call me on at 7 PM, but not once did it ring."
-
-    narrator "I picked up the receiver and tested it, and it was fine. Making and receiving calls worked."
-
-    narrator "Anne just wasn't calling."
-
-    mark "Must be busy, I wonder who they're trying...? I hope they don't break out the death penalty."
-
-    narrator "I'd been to jury duty once, and even though you're supposed to keep the case to yourself, I'd told Anne some of the details."
-
-    narrator "I won't bother with the grisly details, but it was a pretty scummy guy."
-
-    narrator "The death penalty was on the table, and honestly I thought the son of a bitch deserved the electric chair."
-
-    narrator "Anne didn't like the sound of that at all."
-
-    narrator "I thought about Anne sitting at a table, shuffling around in her seat, trying to make a point without sounding pushy."
-
-    narrator "I really wished Anne would call."
-
-    narrator "But no matter how hard I stared at the rotary phone on that table, it didn't ring."
-
-    narrator "It was a little depressing. Vacationing on your own without a word from your spouse feels like some kind of punishment."
-
-    narrator "I poured a glass of bourbon and sat back down in my chair, and lit another cigarette while I was at it."
-
-    narrator "... On the other hand, it was nice that I could smoke without Anne's objection."
-
-    narrator "She'd lost her father to lung cancer or something like that, and so she gave me the evil eye every time she saw me with a cigarette in my mouth or a pack in my shirt pocket."
-
-    narrator "I guess I'd feel the same way."
-
-    narrator "So, for that reason, I usually didn't smoke. At least not around my wife."
-
-
-    # --------------------------------------------------------------
-    # Night
-    # --------------------------------------------------------------
-
-    scene black
-    stop music
-
-    narrator "After a while I decided that Anne probably wouldn't be calling tonight, so I stood up and locked the place up for the night."
-
-    narrator "As was the usual ritual, I left the porch light on, and locked the front door."
-
-    narrator "It wasn't to protect the place from people so much as wild animals."
-
-    narrator "I headed to bed with my bourbon, and sat down."
-
-    narrator "I thought of Julie Danvers, the inquisitive, energetic girl who seemed to be running around like some kind of wind-up toy."
-
-    narrator "I'd been alone since the start of this 'vacation,' and she was the first person I'd seen since Jeff left and the owner of the cabin came by and checked up on how things were going."
-
-    narrator "I missed her."
-
-    mark "Come on, come on. She's got to be less than half your age, and you're married."
-
-    narrator "But honestly, I'd been by myself for so long, could you blame me?"
-
-    narrator "I thought anyone would be happy to be accompanied by a cute girl like Julie."
-
-    mark "I wonder what Julie or Anne are up to?"
-
-    narrator "I really couldn't tell. I hadn't heard a word from Anne, and I wasn't sure whether a word out of Julie's mouth was true or not."
-
-    narrator "I thought of Julie Danvers' story, her explanation of her time travelling adventures."
-
-    narrator "Of course, it was nothing but fiction. But even so, it was an interesting idea."
-
-    narrator "......... Why had I played along with it?"
-
-    narrator "I could've just shrugged it off and said, 'Right, okay. So anyway...' but I hadn't."
-
-    narrator "So why?"
-
-    narrator "I think it was probably because the whole thing was... fun."
-
-    narrator "I was a serious guy with a serious life living by strict rules."
-
-    narrator "So playing a pretend game once in a while was fun."
-
-    narrator "But in any case, if Julie wasn't from the Cove City of two-hundred years from the future, then where?"
-
-    narrator "It might've been a cottage somewhere deeper in the woods, or maybe she was just from the Cove City of today."
-
-    narrator "If she was still playing the role of a time traveler the next time I saw her, I wondered how I could figure that out without breaking her little act."
-
-    narrator "It might be possible, or maybe not."
-
-    mark "... Well, I'll think about it when I see her next."
-
-    narrator "If I saw her next."
-
-    narrator "There was the possibility that I might never see Julie Danvers again, that she was just a passerby like me, but with an overactive imagination."
-
-    narrator "But for one reason or another, I hoped I'd see her again."
-
-    narrator "I hoped I'd meet Julie Danvers again, and that night I nodded off, drifting in between thoughts of her and my wife, Anne..."
-
-    pause 3.0
-
+    
     # --------------------------------------------------------------
     # The Next Day
     # --------------------------------------------------------------
 
-    play music maid_with_the_flaxen_hair
+    play music dianthus
 
     scene bg sky at old_bg
     with Dissolve(3.0)
 
     pause 1.0
 
-    narrator "I climbed the rocky slope again the next day, hoping to catch another glimpse of the dandelion girl."
 
-    narrator "I knew there was a chance that our meeting had been a fluke from the beginning, and so I wasn't sure whether or not we'd meet again in the field of brilliant yellow flowers."
+    narrator "I wondered whether or not I'd actually see the dandelion girl, again."
 
-    narrator "But still, I hoped."
+    narrator "A part of me wondered if the entire interaction had just been something I'd daydreamed while staring out an empty field."
 
+    narrator "Being isolated for a long enough period of time can make your mind start to play tricks on you."
 
-    # --------------------------------------------------------------
-    # Julie Returns
-    # --------------------------------------------------------------
+    
 
-    scene cg julie_ponders_blue at old_cg
+    narrator "I climbed the rocky slope again the next day, wondering if I'd catch another glimpse of Julie Danvers."
 
-    narrator "Surely enough, when I got there I found that same girl lying on her back in the middle of the dandelion field, watching the clouds go by one by one."
+    pause 2.0
 
-    narrator "Her hair covered the right half of her face and she didn't seem to notice me."
+    narrator "When I reached the field... I didn't see anyone."
 
-    narrator "Deja vu."
+    mark "... ... ..."
 
-    narrator "Eventually she did see me out of the corner of her eye, and sat up."
+    narrator "I slumped down on one of the clean flat stones and let out a breath I hadn't even realized I'd been holding."
 
-    narrator "It wasn't until then that I noticed she was wearing a blue dress this time, not quite as mysterious as the last."
+    narrator "Maybe I had, after all, imagined everything."
 
+    pause 1.0
+
+    julie "Mr. Mark?"
+
+    narrator "But just as I thought that, I heard a familiar voice and a gentle tap on my shoulder."
 
     scene bg dandelion_field at old_bg
     pause 0.3
 
     show julie blue_5 at center
 
-    julie "Oh, Mr. Mark~!"
+    julie "Hmhm. You came back, after all."
 
-    show julie blue_2 at center
-
-    julie "You came back."
-
-    mark "Well, yeah. Wasn't I the one asking you if you'd come by again today?"
+    mark "I was the one asking you if you'd come by again today, wasn't I?"
 
     show julie blue_8 at center
 
-    julie "I think so. Hmmm..."
+    julie "You were. Hmmm..."
 
-    mark "Don't worry about it. What are you doing out here, today?"
+    mark "What are you doing out here, today?"
+
+    narrator "Today, Julie was wearing a blue dress. It had an old-fashioned look that I started to think Julie liked."
+
+    narrator "I wondered if it was made of the same strange material as the last."
+
+    pause 1.0
 
     show julie blue_7 at center
 
-    julie "Oh, I'm just watching the clouds. I was reading a book from this time period, and they said something about watching them and looking out for shapes."
+    julie "I'm just watching the clouds. I was reading a book from this time period, they said something about watching them and looking out for shapes..."
 
     show julie blue_8 at center
 
     julie "I'm still not sure what they mean, though."
 
+    narrator "Julie looked up at the sky and squinted."
+
     mark "The human eye sees what it wants to see. Here, let me take a look."
 
-    show julie blue_1 at center
+    hide julie
+
+    pause 1.0
+
+    scene black
+    with Dissolve(3.0)
 
     julie "........."
 
-    mark "Look at that cloud. It looks like... a bird, I'd say. See? That part is the outline of a wing, and that part--"
+    narrator "We both laid on our backs, and stared at the white shapes overhead."
 
-    show julie blue_4 at center
+    mark "Look at that cloud. It looks like... a bird, I'd say. See?"
+
+    julie "... ... ..."
+
+    mark "That part is the outline of a wing, and that part--"
+
+    pause 0.5
+
+    narrator "Julie practically lept up."
 
     julie "It's a beak!"
 
+    narrator "In the end, it wasn't difficult for Julie to understand."
+
+    narrator "All she'd needed was a guiding hand."
+
     mark "Good job. Understand now?"
+
+    pause 1.0
+
+    scene bg dandelion_field_2 at old_bg
+    with Dissolve(3.0)
+
+    pause 0.25
 
     show julie blue_2 at center
 
-    julie "Yep! Wow, there really all are sorts of shapes if you look hard."
+    julie "Yep! Wow, there really all are sorts of shapes if you look hard enough."
 
-    mark "Hmhmhm. I figured an imaginative girl like you would pick apart something like this pretty quickly."
+    mark "I thought a girl with such a big imagination would've picked up on it right away."
 
     show julie blue_6 at center
 
     julie "... Did you say something, Mr. Mark?"
 
-    mark "Nothing at all. And it's just Mark, thanks."
+    julie "Julie narrowed her eyes at me, squeezing the hem of her dress."
+
+    mark "Nothing at all. And it's just 'Mark', thanks."
 
     show julie blue_7 at center
 
@@ -228,36 +137,96 @@ label chapter_2:
 
     mark "Have you read any other books? From the future, let's say."
 
-    julie "Hmmmm. Well, I read a lot of books on philosophy stuff. Rouseau, Quackel... It's kind of tough, though. Sometimes when I read for too long I get a headache."
+    julie "Books in the future aren't that interesting."
 
-    mark "That happens when you read too much of anything, even when it's something you like."
+    mark "Really?"
 
-    julie "Really?"
+    julie "Yeah. ... There are a lot of books written by machines, but they don't say anything I haven't heard before."
 
-    mark "You learn something new every day, I suppose."
+    mark "Machines!?"
 
-    julie "Hmmmmmm~."
+    julie "... Hmmm. It does sound pretty weird, huh?"
 
-    mark "Anyway, I've read some of that stuff myself. Maybe I read too much..."
+    mark "Definitely weird."
 
-    julie "There's no such thing as that, Mr. Mark!"
+    julie "... In this time period, I read some magical things."
+
+    mark "Is that right?"
+
+    scene black with Dissolve(2.0)
+
+    pause 0.5
+
+    julie "In this time period, they write all kinds of things about what they hope the future will be. Reading those and thinking about where I'm from..."
+
+    narrator "I could hear a bit of disappointment in Julie's voice."
+
+    pause 0.25
+
+    julie "... Sometimes they write about what they worry the future will be, too."
+
+    mark "Are they ever right?"
+
+    julie "Hehe. It's better if I don't tell you."
+
+    narrator "I couldn't tell if she was teasing, or had some deeper reservation about it."
+
+    julie "There was a story about a 'star mother,' a lonely woman whose son is in charge of circling the Earth every night, in the starry sky."
+
+    mark  "Is that right?"
+
+    narrator "Julie wrinkled her nose, still staring at the sky."
+
+    julie "But one day there's an accident in the sky, and..."
+
+    mark "I see."
+
+    julie "And then there was another story, about a man who has to catch a criminal hiding in the space inside of other people's minds. It's like a detective story, I think."
+
+    mark "I see. My brother and I always liked to read detective stories."
+
+    julie "Hehe."
+
+    narrator "That small, silly detail seemed to make Julie happy."
+
+    julie "Eventually he finds his culprit. But along the way, he has to face the things he's been running away from, too..."
+
+    mark "Can't even hide away in his own mind, huh? That's rough."
+
+    julie "Hehe."
+
+    pause 1.5
+
+    narrator "After a bit, Julie sat back up and brushed some leaves from her hair."
+    
+
+    julie "The philosophy books never stopped being important. Rouseau, Quackel... there's the stuff by Oppenheimer and Einstein, too."
+
+    julie "Those guys are really hard to understand, sometimes. I have to read everything over a few more times, and if I do it for too long I get a headache."
+
+    mark "It's good to reset and get a breath of fresh air, sometimes."
+
+    julie "Hmmmmmm~. I think you're right."
+
+    mark "I've read some of that stuff myself. Maybe a bit too much..."
+
+    narrator "That's right, Anne's gotten mad at me for sinking into a chair and disappearing another world while a pot of water starts boiling over in the kitchen..."
+
+    julie "There's no such thing as reading too much, Mr. Mark! It's super important!"
 
     mark "It's Mark, Julie."
 
     julie "Booooooo."
 
-    narrator "The young Julie Danvers pouted."
+    narrator "Julie Danvers pouted."
 
-    mark "Well anyway, now I know your taste in reading. What else? I feel like I've already told you everything about myself by now."
+    mark "You've got quite the taste for literature, huh."
 
-    narrator "At least, everything important."
+    julie "Muuu, I'm not that interesting..."
 
-    julie "Hmmm, it's not all that interesting..."
+    narrator "I disagreed with that."
 
-    mark "Try me."
-
-    julie "W-well, if you insist."
-
+    narrator "Julie Danvers was... an extremely interesting person."
 
     # --------------------------------------------------------------
     # Getting to Know Each Other
@@ -267,7 +236,9 @@ label chapter_2:
 
     show julie blue_1 at center
 
-    narrator "I learned that Julie was seventeen, and her father was a retired government physicist."
+    narrator "After a bit of prodding, Julie told me more about herself other than the types of books she liked to get lost in."
+
+    narrator "She was seventeen years old, and her father was a retired government physicist."
 
     narrator "Her mother had died several years back, and since then she'd been taking care of her father in their little apartment on two-thousand and fourtieth street."
 

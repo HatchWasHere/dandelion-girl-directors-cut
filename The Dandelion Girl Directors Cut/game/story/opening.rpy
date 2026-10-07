@@ -30,6 +30,8 @@ label opening:
     pause 4.0
 
     scene bg sky at old_bg
+    with corner_fade
+    
     with Dissolve(4.0)
 
     narrator "The green field stretched as far as the eye could see."
@@ -48,8 +50,9 @@ label opening:
 
     narrator "But somehow, under this slice of clear summer sky... I thought those bright yellow plants looked beautiful, too."
 
+    scene black at old_bg
+    with Dissolve(0.5)
 
-    pause 1.5
 
     narrator "In the middle of the field was a beautiful girl in a white dress, dancing in circles."
 
@@ -59,17 +62,29 @@ label opening:
 
     narrator "The girl sucked in a deep breath of the sweet summer air and continued her dance."
 
+    pause 1.5
+
+    scene cg julie_dancing at old_bg
+    with Dissolve(0.5)
+
+
     narrator "She looked... simply happy to be alive, and to be here."
 
     narrator "For one reason or another, I couldn't take my eyes off her."
 
     pause 0.5
 
+    scene black at old_bg
+    with Dissolve(0.25)
+
     narrator "She picked up her hat, and held it."
 
     narrator "She didn't put it back on her head right away."
 
     narrator "Instead the dandelion girl grinned and held her hand over her eyes, looking at the bright blue sky overhead, and simply took it all in."
+
+    scene bg sky at old_bg
+    with Dissolve(0.15)
 
     narrator "There's probably something poetic I could've said about it. Something about summer, flowers, or a sonnet..."
 
@@ -84,13 +99,15 @@ label opening:
     # Julie CG
     # --------------------------------------------------------------
 
-    scene cg julie_field at old_bg
+    scene cg_julie_intro_1
+    with Dissolve(0.25)
 
     narrator "........."
 
     pause 2.2
 
-    scene cg julie_field_2 at old_bg
+    scene cg_julie_intro_2
+    with Dissolve(0.25)
 
     narrator "It was some time before I realized."
 
@@ -105,21 +122,29 @@ label opening:
     # Interstitial
     # --------------------------------------------------------------
 
-    scene interstitial 1 at old_bg
-    with Dissolve(3.0)
+    pause 0.5
 
-    pause 1.0
+    scene cg_julie_intro_2b
+    with Dissolve(1.5)
 
-    scene interstitial 1b at old_bg
-    with Dissolve(0.7)
+    pause
 
-    pause 4.0
+    scene outro_1a
+    with Dissolve(1.0)
+
+    pause 2.0
 
     stop music
 
-    scene black
+    scene outro_1b
+    with cross_fade
 
     pause 2.0
+
+    scene black
+    with Dissolve(2.0)
+
+    
 
     jump chapter_1
 

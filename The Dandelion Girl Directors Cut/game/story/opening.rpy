@@ -12,31 +12,27 @@ label opening:
 
     play music time_to_sleep
 
-    
-
-
     narrator "What is deja vu, exactly?"
 
     narrator "It's this nagging sense of familiarity, like we've done something or been somewhere once before."
 
-    narrator "Logically, though, that can't be right. We feel it all the time when it's definitely our first go-around."
+    narrator "You could swear it's definitely your first go-around, though."
 
-    narrator "Somewhere in your head, you think, 'I know I've been here, before.'"
+    narrator "Somewhere in your head, you think, 'I must have been here, before.'"
 
-    narrator "Naturally, all you can do is ignore it. We have to."
+    narrator "Naturally, all you can do is ignore it."
 
-    narrator "We trust that we know what happened over what some strange feeling tries to tell us."
+    narrator "We trust that we know what happened over what some strange voice in our head tries to tell us."
 
-    pause 4.0
+    pause 0.5
 
-    scene bg sky at old_bg
+    scene sky
     with corner_fade
-    
-    with Dissolve(4.0)
+  
 
-    narrator "The green field stretched as far as the eye could see."
+    narrator "The blue sky stretched as far as the eye could see, over the green pasture."
 
-    narrator "Seasonal flowers dotted the field, with bright speckles of yellow scattered among them."
+    narrator "Seasonal flowers dotted the field below, with bright speckles of yellow scattered among them."
 
     narrator "Dandelions."
 
@@ -44,9 +40,7 @@ label opening:
 
     narrator "Technically, dandelions are weeds."
 
-    narrator "Everyone says they're a nuisance, meant to be ripped out of the ground and tossed in a trash bucket before they can take over a garden."
-
-    narrator "Technically, they're not wrong."
+    narrator "They're meant to be ripped out of the ground and tossed in a trash bucket before they can take over a garden."
 
     narrator "But somehow, under this slice of clear summer sky... I thought those bright yellow plants looked beautiful, too."
 
@@ -65,10 +59,10 @@ label opening:
     pause 1.5
 
     scene cg julie_dancing at old_bg
-    with Dissolve(0.5)
+    with Dissolve(0.25)
 
 
-    narrator "She looked... simply happy to be alive, and to be here."
+    narrator "She looked... simply happy to be there."
 
     narrator "For one reason or another, I couldn't take my eyes off her."
 
@@ -83,10 +77,12 @@ label opening:
 
     narrator "Instead the dandelion girl grinned and held her hand over her eyes, looking at the bright blue sky overhead, and simply took it all in."
 
-    scene bg sky at old_bg
+    scene sky
     with Dissolve(0.15)
 
-    narrator "There's probably something poetic I could've said about it. Something about summer, flowers, or a sonnet..."
+    narrator "There's probably something poetic I could've said about the scene."
+
+    narrator "Something about summer, flowers, or a sonnet..."
 
     narrator "I watched the girl and felt a strange, almost painful deja vu."
 
@@ -102,9 +98,7 @@ label opening:
     scene cg_julie_intro_1
     with Dissolve(0.25)
 
-    narrator "........."
-
-    pause 2.2
+    pause 0.75
 
     scene cg_julie_intro_2
     with Dissolve(0.25)
@@ -117,32 +111,36 @@ label opening:
 
     narrator "One time, in a place far away from here, I'd witnessed a scene just like this."
 
+    stop music fadeout 3.0
 
-    # --------------------------------------------------------------
-    # Interstitial
-    # --------------------------------------------------------------
+
+    ## == Transition Effect == ##
 
     pause 0.5
 
     scene cg_julie_intro_2b
-    with Dissolve(1.5)
+    with corner_fade
+
+    pause 1.0
+
+    scene outro_1a
+    with Dissolve(0.75)
+
+    pause 1.5
+    
+    
+    play sound piano_stinger
+    scene outro_1b
+    with Dissolve(0.75)
+
 
     pause
 
-    scene outro_1a
-    with Dissolve(1.0)
-
-    pause 2.0
-
-    stop music
-
-    scene outro_1b
-    with cross_fade
-
-    pause 2.0
-
     scene black
     with Dissolve(2.0)
+
+
+     ## == Transition Effect == ##
 
     
 

@@ -48,30 +48,23 @@ transform old_credits:
 # BACKGROUNDS
 # ================================================================
 
-# Opening sky / dandelion field
-image bg sky = "bg/sky.png"
+# Opening sky
+image sky = "bg/sky.png"
 
 # Mark's office
-image bg office = Transform(
-    "bg/bg08.jpg",
-    xysize=(1920, 1080)
-)
-
+image office = "bg/office.png"
 
 # Mark and Anne's home
 image bg mark_home = "bg/bg04.jpg"
+image home = "bg/home.png"
 
 # Vacation cabin
-image bg cabin = "bg/bg04_05_new.png"
+image cabin = "bg/cabin.png"
 
 # Dandelion field
-image bg dandelion_field = "bg/bg01.jpg"
+image dandelion_field = "bg/dandelion_field.png"
+image dandelion_field_2 = "bg/dandelion_field_2.png"
 
-# Dandelion field, second view
-image bg dandelion_field_2 = Transform(
-    "bg/dandelion_field_2.jpg",
-    xysize=(1920, 1080)
-)
 
 
 ## ====== ##
@@ -81,7 +74,7 @@ image bg dandelion_field_2 = Transform(
 image outro_1a = "images/outros/outro_1_a.png"
 image outro_1b = "images/outros/outro_1_b.png"
 
-
+image outro_black = "images/outros/black_outro.png"
 
 # ================================================================
 # CHARACTER SPRITES
@@ -151,12 +144,14 @@ image cg_julie_intro_2b = "cg/julie_intro_cg_2_b.png"
 # Julie in the dandelion field
 image cg julie_field = "cg/frame01.png"
 image cg julie_field_2 = "cg/frame02.png"
-image cg julie_pointing = "cg/sprite_point_2.png"
+image julie_points = "cg/julie_points.png"
 
 image cg julie_dancing = "cg/frame04.png"
 
 # Julie explains her father's theory of time
 image cg julie_ponders = "cg/CG_blue_0.png"
+image julie_ponders = "cg/julie_ponders.png"
+image julie_ponders_2 = "cg/julie_ponders_2.png"
 
 # ================================================================
 # INTERSTITIALS / TITLE CARDS

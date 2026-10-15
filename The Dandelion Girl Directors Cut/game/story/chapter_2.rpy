@@ -7,7 +7,7 @@ label chapter_2:
 
     play music dianthus
 
-    scene bg sky at old_bg
+    scene sky
     with Dissolve(3.0)
 
     pause 1.0
@@ -39,7 +39,9 @@ label chapter_2:
 
     narrator "But just as I thought that, I heard a familiar voice and a gentle tap on my shoulder."
 
-    scene bg dandelion_field at old_bg
+    scene dandelion_field
+    with Dissolve(0.25)
+
     pause 0.3
 
     show julie blue_5 at center
@@ -103,7 +105,7 @@ label chapter_2:
 
     pause 1.0
 
-    scene bg dandelion_field_2 at old_bg
+    scene dandelion_field_2
     with Dissolve(3.0)
 
     pause 0.25
@@ -133,7 +135,8 @@ label chapter_2:
 
     hide julie
 
-    scene bg sky at old_bg
+    scene sky
+    with Dissolve(1.0)
 
     mark "Have you read any other books? From the future, let's say."
 
@@ -232,7 +235,8 @@ label chapter_2:
     # Getting to Know Each Other
     # --------------------------------------------------------------
 
-    scene bg dandelion_field at old_bg
+    scene dandelion_field
+    with Dissolve(0.25)
 
     show julie blue_1 at center
 
@@ -455,7 +459,8 @@ label chapter_2:
     # Waiting for Julie
     # --------------------------------------------------------------
 
-    scene bg dandelion_field at old_bg
+    scene dandelion_field
+    with Dissolve(0.5)
 
     narrator "The next day I arrived at the dandelion field long before Julie Danvers. I sat down on a big stone, getting some sun and appreciating the nice weather, and waited for some time."
 
@@ -473,7 +478,8 @@ label chapter_2:
     # More Days Pass
     # --------------------------------------------------------------
 
-    scene bg sky at old_bg
+    scene sky
+    with Dissolve(1.0)
 
     narrator "I went back the next day and waited some more. Then, the day after that."
 
@@ -501,7 +507,7 @@ label chapter_2:
 
     play music passing_time
 
-    scene bg office at old_bg
+    scene office
 
     pause 1.0
 

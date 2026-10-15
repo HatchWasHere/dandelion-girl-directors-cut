@@ -11,7 +11,10 @@ define audio.maid_with_the_flaxen_hair = "bgm/maidwiththeflaxenhair.ogg"
 define audio.blue_feather = "bgm/bluefeather.mp3"
 define audio.sad_slow = "bgm/sadslowcut.mp3"
 define audio.moody_princess = "bgm/moody princess snip.mp3"
+define audio.fragrant_olive = "bgm/fragrant_olive.mp3"
 
+define audio.shy_love_stinger = "sfx/shy_love_stinger.mp3"
+define audio.piano_stinger = "sfx/piano_stinger.mp3"
 
 define sprite_dissolve = Dissolve(0.12)
 define slow_sprite_dissolve = Dissolve(1.0)
@@ -47,17 +50,18 @@ define cross_fade = ImageDissolve(
 
 ## TRANSFORMS ##
 
-transform gentle_shake:
-    xoffset 0
-    yoffset 0
 
-    linear 0.05 xoffset -10 yoffset 3
-    linear 0.05 xoffset 8 yoffset -5
-    linear 0.05 xoffset -7 yoffset 5
-    linear 0.05 xoffset 9 yoffset -3
-    linear 0.05 xoffset -5 yoffset 2
-    linear 0.05 xoffset 0 yoffset 0
+transform custom_hpunch(old_widget, new_widget):
+    delay 0.4
 
+    contains:
+        new_widget
+        xoffset 0
+        linear 0.08 xoffset -35
+        linear 0.08 xoffset 35
+        linear 0.08 xoffset -25
+        linear 0.08 xoffset 15
+        linear 0.08 xoffset 0
 
 ## NEW OST ##
 

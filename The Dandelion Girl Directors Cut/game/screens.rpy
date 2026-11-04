@@ -315,7 +315,7 @@ screen navigation():
 
             textbutton _("Save") action ShowMenu("custom_save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load") action ShowMenu("custom_load")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -430,80 +430,85 @@ screen hamburger_menu():
     tag menu
     modal True
 
-    add Transform(
-        "images/save_bg.png",
-        xysize=(config.screen_width, config.screen_height),
-        alpha=0.5
-    )
-    
-
-    imagebutton:
-        idle "images/back_button_idle.png"
-        hover "images/back_button_hover.png"
-
-        xpos 1100
-        ypos 50
-
-        action Return()
-
-
     fixed:
-        xpos 20
-        ypos 188
-        xsize 530
-        ysize 105
+
+        at hamburger_fade
+
+
+        add Transform(
+            "images/save_bg.png",
+            xysize=(config.screen_width, config.screen_height),
+            alpha=0.5
+        )
+        
 
         imagebutton:
-            idle "images/burger_menu/save_button_idle.png"
-            hover "images/burger_menu/save_button_hover.png"
-            action [Hide("hamburger_menu"),ShowMenu("custom_save")]
+            idle "images/back_button_idle.png"
+            hover "images/back_button_hover.png"
 
-    fixed:
-        xpos 20
-        ypos 240
-        xsize 530
-        ysize 105
+            xpos 1100
+            ypos 50
 
-        imagebutton:
-            idle "images/burger_menu/load_button_idle.png"
-            hover "images/burger_menu/load_button_hover.png"
-            action [Hide("hamburger_menu"),ShowMenu("custom_load")]
+            action Return()
 
 
-    fixed:
-        xpos 20
-        ypos 292
-        xsize 530
-        ysize 105
+        fixed:
+            xpos 20
+            ypos 188
+            xsize 530
+            ysize 105
 
-        imagebutton:
-            idle "images/burger_menu/settings_button_idle.png"
-            hover "images/burger_menu/settings_button_hover.png"
-            action ShowMenu("preferences", return_to="hamburger")
+            imagebutton:
+                idle "images/burger_menu/save_button_idle.png"
+                hover "images/burger_menu/save_button_hover.png"
+                action [Hide("hamburger_menu"),ShowMenu("custom_save")]
+
+        fixed:
+            xpos 20
+            ypos 240
+            xsize 530
+            ysize 105
+
+            imagebutton:
+                idle "images/burger_menu/load_button_idle.png"
+                hover "images/burger_menu/load_button_hover.png"
+                action [Hide("hamburger_menu"),ShowMenu("custom_load")]
 
 
-    fixed:
-        xpos 20
-        ypos 344
-        xsize 530
-        ysize 105
+        fixed:
+            xpos 20
+            ypos 292
+            xsize 530
+            ysize 105
 
-        imagebutton:
-            idle "images/burger_menu/title_button_idle.png"
-            hover "images/burger_menu/title_button_hover.png"
-            action MainMenu()
+            imagebutton:
+                idle "images/burger_menu/settings_button_idle.png"
+                hover "images/burger_menu/settings_button_hover.png"
+                action ShowMenu("preferences", return_to="hamburger")
 
 
-    fixed:
-        xpos 20
-        ypos 396
-        xsize 530
-        ysize 105
+        fixed:
+            xpos 20
+            ypos 344
+            xsize 530
+            ysize 105
 
-        imagebutton:
-            idle "images/burger_menu/quit_button_idle.png"
-            hover "images/burger_menu/quit_button_hover.png"
-            action Quit()
+            imagebutton:
+                idle "images/burger_menu/title_button_idle.png"
+                hover "images/burger_menu/title_button_hover.png"
+                action MainMenu()
+
+
+        fixed:
+            xpos 20
+            ypos 396
+            xsize 530
+            ysize 105
+
+            imagebutton:
+                idle "images/burger_menu/quit_button_idle.png"
+                hover "images/burger_menu/quit_button_hover.png"
+                action Quit()
 
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
@@ -691,8 +696,11 @@ screen custom_load():
         xpos 1100
         ypos 50
 
-        action [Return(), Show("hamburger_menu")]
-
+        action If(
+        main_menu,
+        ShowMenu("main_menu"),
+        [Return(), Show("hamburger_menu")]
+    )
     # --------------------------------------------------
     # TITLE
     # --------------------------------------------------
@@ -942,7 +950,7 @@ screen game_menu_button():
         xpos 1190
         ypos 30
 
-        action ShowMenu("hamburger_menu")
+        action ShowMenu("hamburger_menu", _transition=None)
 
 
 ## Load and Save screens #######################################################

@@ -18,16 +18,17 @@ label chapter_2:
     narrator "A part of me wondered if the entire interaction had just been something I'd daydreamed while staring out an empty field."
 
     narrator "Being isolated for a long enough period of time can make your mind start to play tricks on you."
-
     
 
     narrator "I climbed the rocky slope again the next day, wondering if I'd catch another glimpse of Julie Danvers."
+
+    scene black with down_fade
 
     pause 2.0
 
     narrator "When I reached the field... I didn't see anyone."
 
-    mark "... ... ..."
+    mark "\"... ... ...\""
 
     narrator "I slumped down on one of the clean flat stones and let out a breath I hadn't even realized I'd been holding."
 
@@ -35,26 +36,40 @@ label chapter_2:
 
     pause 1.0
 
-    julie "Mr. Mark?"
+    julie "\"Mr. Mark?\""
 
-    narrator "But just as I thought that, I heard a familiar voice and a gentle tap on my shoulder."
+    narrator "But just as I thought that, I heard a familiar voice and felt a gentle tap on my shoulder."
 
     scene dandelion_field
     with Dissolve(0.25)
 
     pause 0.3
 
-    show julie blue_5 at center
+    show julie blue_4 at center
+    with Dissolve(0.15)
 
-    julie "Hmhm. You came back, after all."
+    julie "\"Hmhm. You came back, after all.\""
 
-    mark "I was the one asking you if you'd come by again today, wasn't I?"
+    show julie blue_2 at center
+    with Dissolve(0.10)
+    
+
+    mark "\"I was the one asking you if you'd come by again today, wasn't I?\""
 
     show julie blue_8 at center
+    with Dissolve(0.10)
 
-    julie "You were. Hmmm..."
+    julie "\"I suppose you were. Hmmm...\""
 
-    mark "What are you doing out here, today?"
+    show julie blue_6 at center
+    with Dissolve(0.10)
+
+    pause 0.6
+    hide julie with Dissolve(0.2)
+
+    narrator "Julie scratched at her cheek absent-mindedly, glancing the other way."
+
+    mark "\"What are you doing out here, today?\""
 
     narrator "Today, Julie was wearing a blue dress. It had an old-fashioned look that I started to think Julie liked."
 
@@ -63,70 +78,94 @@ label chapter_2:
     pause 1.0
 
     show julie blue_7 at center
+    with Dissolve(0.2)
 
-    julie "I'm just watching the clouds. I was reading a book from this time period, they said something about watching them and looking out for shapes..."
+    julie "\"I'm just watching the clouds. I was reading a book from this time period, they said something about watching them and looking out for shapes...\""
 
     show julie blue_8 at center
+    with Dissolve(0.2)
 
-    julie "I'm still not sure what they mean, though."
+    julie "\"I'm still not sure what they mean, though.\""
 
     narrator "Julie looked up at the sky and squinted."
 
-    mark "The human eye sees what it wants to see. Here, let me take a look."
+    mark "\"The human eye sees what it wants to see... Here, let me take a look.\""
 
-    hide julie
+    hide julie with Dissolve(0.1)
 
     pause 1.0
 
     scene black
     with Dissolve(3.0)
 
-    julie "........."
+    julie "\"... ... ...\""
 
     narrator "We both laid on our backs, and stared at the white shapes overhead."
 
-    mark "Look at that cloud. It looks like... a bird, I'd say. See?"
+    scene sky
+    with down_fade
 
-    julie "... ... ..."
+    mark "\"Look at that cloud. It looks like... a bird, I'd say. See?\""
 
-    mark "That part is the outline of a wing, and that part--"
+    narrator "I gestured to one of the longer clouds spread across the sky, and Julie managed to focus on it."
+
+    narrator "However, she didn't seem to see the shape I was seeing, and she decided to focus instead on frowning at it with her meanest look."
+
+    julie "\"... ... ...\""
+
+    mark "\"That part is the outline of a wing, and that part--\""
 
     pause 0.5
 
     narrator "Julie practically lept up."
 
-    julie "It's a beak!"
+    scene sky
+    with custom_hpunch    
 
-    narrator "In the end, it wasn't difficult for Julie to understand."
+    julie "\"Oh! It's a beak! I see it, now?\""
 
-    narrator "All she'd needed was a guiding hand."
+    narrator "In the end, it wasn't as difficult for Julie to understand as she thought."
 
-    mark "Good job. Understand now?"
+    narrator "Now she was staring up at the various clusters of clouds in the sky with a look of relief."
 
-    pause 1.0
+    narrator "Julie had a great big smile on her face."
+
+    narrator "All she'd needed was a guiding hand, and someone to tell her to be patient."
+
+    mark "\"Good job. Understand now?\""
+
+    pause 0.2
+
+    scene black with Dissolve(0.5)
+
+    pause 0.50
 
     scene dandelion_field_2
-    with Dissolve(3.0)
-
-    pause 0.25
+    with Dissolve(0.60)
 
     show julie blue_2 at center
+    with Dissolve(0.10)
 
-    julie "Yep! Wow, there really all are sorts of shapes if you look hard enough."
+    julie "\"Yep! Wow, there really all are sorts of shapes if you look hard enough.\""
 
-    mark "I thought a girl with such a big imagination would've picked up on it right away."
+    mark "\"I thought a girl with such a big imagination would've picked up on it right away.\""
+
+    show julie blue_8 at center
+    with Dissolve(0.10)
+
+    julie "\"... Did you say something, Mr. Mark?\""
 
     show julie blue_6 at center
+    with Dissolve(0.10)
 
-    julie "... Did you say something, Mr. Mark?"
+    narrator "Julie narrowed her eyes at me, squeezing the hem of her dress."
 
-    julie "Julie narrowed her eyes at me, squeezing the hem of her dress."
-
-    mark "Nothing at all. And it's just 'Mark', thanks."
+    mark "\"Nothing at all. And it's just 'Mark', thanks.\""
 
     show julie blue_7 at center
+    with Dissolve(0.10)
 
-    julie "Hehe."
+    julie "\"Hehe.\""
 
 
     # --------------------------------------------------------------
@@ -134,102 +173,167 @@ label chapter_2:
     # --------------------------------------------------------------
 
     hide julie
+    with Dissolve(0.20)
+
+    pause 0.5
 
     scene sky
-    with Dissolve(1.0)
+    with down_fade
 
-    mark "Have you read any other books? From the future, let's say."
+    mark "\"You mentioned a book you were reading, a second ago. Have you read any other things? From the future, let's say.\""
 
-    julie "Books in the future aren't that interesting."
+    julie "\"Books in the future aren't that interesting.\""
 
-    mark "Really?"
+    narrator "Julie frowned at that."
 
-    julie "Yeah. ... There are a lot of books written by machines, but they don't say anything I haven't heard before."
+    mark "\"Really?\""
 
-    mark "Machines!?"
+    julie "\"Yeah. ... There are a lot of books written by machines, but they don't say anything I haven't heard before.\""
 
-    julie "... Hmmm. It does sound pretty weird, huh?"
+    scene sky
+    with custom_hpunch
 
-    mark "Definitely weird."
+    mark "\"Machines!?\""
 
-    julie "... In this time period, I read some magical things."
+    julie "\"... Hmmm. It does sound pretty weird, huh?\""
 
-    mark "Is that right?"
+    mark "\"Definitely weird.\""
+
+    julie "\"... In this time period, I read some magical things.\""
+
+    mark "\"Is that right?\""
 
     scene black with Dissolve(2.0)
 
     pause 0.5
 
-    julie "In this time period, they write all kinds of things about what they hope the future will be. Reading those and thinking about where I'm from..."
+    julie "\"In this time period, they write all kinds of things about what they hope the future will be. Reading those and thinking about where I'm from...\""
 
     narrator "I could hear a bit of disappointment in Julie's voice."
 
     pause 0.25
 
-    julie "... Sometimes they write about what they worry the future will be, too."
+    julie "\"... Sometimes they write about what they worry the future will be, too.\""
 
-    mark "Are they ever right?"
+    mark "\"Are they ever right?\""
 
-    julie "Hehe. It's better if I don't tell you."
+    julie "\"Hehe. It's better if I don't tell you.\""
 
     narrator "I couldn't tell if she was teasing, or had some deeper reservation about it."
 
-    julie "There was a story about a 'star mother,' a lonely woman whose son is in charge of circling the Earth every night, in the starry sky."
+    narrator "If something really awful was going to happen, someday, I wonder if it would be better to just not know."
 
-    mark  "Is that right?"
+    narrator "Then, you could confront it when they day came, instead of dreading it."
+
+    scene sky with Dissolve(0.5)
+
+    julie "\"There was a story about a 'star mother,' a lonely woman whose son is in charge of circling the Earth every night, in the starry sky.\""
+
+    mark  "\"Is that right?\""
 
     narrator "Julie wrinkled her nose, still staring at the sky."
 
-    julie "But one day there's an accident in the sky, and..."
+    julie "\"But one day there's an accident in the sky, and...\""
 
-    mark "I see."
+    pause 0.5
 
-    julie "And then there was another story, about a man who has to catch a criminal hiding in the space inside of other people's minds. It's like a detective story, I think."
+    mark "\"I see.\""
 
-    mark "I see. My brother and I always liked to read detective stories."
+    julie "\"And then there was another story, about a man who has to catch a criminal hiding in the space inside of other people's minds. It's like a detective story, I think.\""
 
-    julie "Hehe."
+    mark "\"I see. My brother and I always liked to read detective stories.\""
+
+    julie "\"Hehe.\""
 
     narrator "That small, silly detail seemed to make Julie happy."
 
-    julie "Eventually he finds his culprit. But along the way, he has to face the things he's been running away from, too..."
+    julie "\"Eventually he finds his culprit. But along the way, he has to face the things he's been running away from, too...\""
 
-    mark "Can't even hide away in his own mind, huh? That's rough."
+    mark "\"Can't even hide away in his own mind, huh? That's rough.\""
 
-    julie "Hehe."
+    julie "\"Hehe. It must be!\""
 
     pause 1.5
 
     narrator "After a bit, Julie sat back up and brushed some leaves from her hair."
+
+    scene dandelion_field_2
+    with Dissolve(0.25)
+    
+    pause 0.4
+
+    show julie blue_9 at center
+    with Dissolve(0.20)
+
+    julie "\"The philosophy books never stopped being important. Rouseau, Quackel... there's the stuff by Oppenheimer and Einstein, too.\""
+
+    show julie blue_6 at center
+    with Dissolve(0.20)
+
+    julie "\"Those guys are really hard to understand, sometimes. I have to read everything over a few more times, and if I do it for too long I get a headache.\""
+
+    mark "\"It's good to reset and get a breath of fresh air, sometimes.\""
+
+    show julie blue_6 at center
+    with Dissolve(0.20)
+
+    julie "\"Hmmmmmm~. I think you're right.\""
+
+    narrator "Julie seemed so scatterbrained on the surface, but I wondered if she had actually read all those books."
+
+    narrator "Perhaps she was much sharper than she let on."
+
+    pause 0.4
+
+    hide julie with Dissolve(0.15)
+
+    mark "\"I've read some of that stuff myself. Maybe I've read a bit too much...\""
+
+    narrator "That's right, Anne's gotten mad at me for sinking into a chair and disappearing inside the world of a book while a pot of water starts boiling over in the kitchen..."
+
+    show julie blue_10 at center
+    with custom_hpunch
+
+    pause 0.3
+    
+    show julie blue_6 at center
+    with Dissolve(0.10)
+    
     
 
-    julie "The philosophy books never stopped being important. Rouseau, Quackel... there's the stuff by Oppenheimer and Einstein, too."
+    julie "\"There's no such thing as reading too much, Mr. Mark! It's super important!\""
 
-    julie "Those guys are really hard to understand, sometimes. I have to read everything over a few more times, and if I do it for too long I get a headache."
+    narrator "I was surprised to hear Julie have such a strong reaction to something like that."
 
-    mark "It's good to reset and get a breath of fresh air, sometimes."
+    narrator "She actually looked offended."
 
-    julie "Hmmmmmm~. I think you're right."
+    mark "\"... It's Mark, Julie.\""
 
-    mark "I've read some of that stuff myself. Maybe a bit too much..."
+    show julie blue_8 at center
+    with Dissolve(0.10)
 
-    narrator "That's right, Anne's gotten mad at me for sinking into a chair and disappearing another world while a pot of water starts boiling over in the kitchen..."
+    julie "\"Booooooo.\""
+    
+    show julie blue_6 at center
+    with Dissolve(0.10)
+    
+    pause 0.5
 
-    julie "There's no such thing as reading too much, Mr. Mark! It's super important!"
+    hide julie with Dissolve(0.20)
 
-    mark "It's Mark, Julie."
+    narrator "Julie pouted."
 
-    julie "Booooooo."
+    mark "\"You've got quite the taste for literature, though.\""
 
-    narrator "Julie Danvers pouted."
+    narrator "Hearing that made Julie roll her eyes in a way that made me want to chuckle, but I kept it to myself."
 
-    mark "You've got quite the taste for literature, huh."
-
-    julie "Muuu, I'm not that interesting..."
+    julie "\"Muuu, I'm not that interesting...\""
 
     narrator "I disagreed with that."
 
     narrator "Julie Danvers was... an extremely interesting person."
+
+    scene black with Dissolve(0.65)
 
     # --------------------------------------------------------------
     # Getting to Know Each Other
@@ -239,8 +343,11 @@ label chapter_2:
     with Dissolve(0.25)
 
     show julie blue_1 at center
+    with Dissolve(0.2)
 
-    narrator "After a bit of prodding, Julie told me more about herself other than the types of books she liked to get lost in."
+    pause 0.6
+    
+    narrator "After a bit of prodding, Julie told me more about herself."
 
     narrator "She was seventeen years old, and her father was a retired government physicist."
 
@@ -248,80 +355,136 @@ label chapter_2:
 
     narrator "Aside from the setting it really was a pretty unremarkable story."
 
-    narrator "I filled in my own blanks where I hadn't mentioned things to Julie."
+    narrator "I filled in the blanks to my own story."
 
     narrator "I talked about Anne, being in the war, starting my law firm, and the chaos at my wedding so many years ago."
 
+    narrator "She seemed especially interested in that."
+
 
     show julie blue_8 at center
+    with Dissolve(0.2)
 
-    julie "She's scared of cameras?"
+    julie "\"She's scared of cameras...? That's pretty silly.\""
 
     show julie blue_9 at center
+    with Dissolve(0.2)
 
-    julie "Maybe she doesn't photograph well."
+    julie "\"Maybe she doesn't photograph well.\""
 
-    mark "I remember how pale her face got when I talked about taking a wedding photo. We all kept insisting, but she was pretty assertive with the whole thing, so in the end we dropped it."
+    show julie blue_7 at center
+    with Dissolve(0.2)
 
-    mark "I guess the memory of it is enough, and there are all those little things to remind us of the wedding day, but..."
+    mark "\"I remember how pale her face got when I talked about taking a wedding photo.\""
+
+    mark "\"We all kept insisting, and she was pretty defensive about the whole thing. It's funny to think about now, but at the time...\""
+
+    narrator "It really was quite the scene, huh?"
+
+    mark "\"I guess the memory of it is enough, there are plenty of other souveniers to remind us of the wedding day, but...\""
 
     show julie blue_1 at center
+    with Dissolve(0.1)
 
-    julie "So you just went without a photo altogether?"
+    julie "\"So you just went without a photo altogether?\""
 
-    mark "We had ourselves get drawn by a portrait artist. It doesn't look exactly like us, but... well, maybe I'll bring it next time and show you."
+    mark "\"We had ourselves get drawn by a portrait artist. It doesn't look exactly like us, but... well, maybe I'll bring it next time and show you.\""
+
+    hide julie with Dissolve(0.2)
+
+    scene dandelion_field with custom_hpunch
+
+    julie "\"Hehe, that would be great~! A portrait!\""
+
+    narrator "Julie spun around in a wide circle with her arms at her sides, dancing while I continued telling my story."
+
+    narrator "Even while Julie was doing her silly dance, she watched my face with rapt attention, soaking it all in even though she couldn't seem to sit still."
+
+    pause 0.5
+
+    narrator "Next time, huh?"
+
+    narrator "Was I already getting ahead of myself, assuming I'd see Julie Danvers day after day?"
+
+    narrator "My vacation wouldn't last forever, so I couldn't get too stuck in that habit."
+
+    narrator "But for now... things were just fine."
+
+    pause 0.5
 
     show julie blue_4 at center
+    with Dissolve(0.1)
 
-    julie "Hehe, that would be great!"
-
-    narrator "Next time?"
-
-    narrator "Was I already getting ahead of myself, assuming I'd see her day after day?"
-
-    narrator "My vacation wouldn't last forever, so I couldn't get too stuck in that habit. Right?"
-
-    narrator "Anyway, by the time I was done talking about Anne, my own history and whatnot, Julie's eyes were sparkling."
+    narrator "By the time I was done talking about Anne, my own history and whatnot, Julie's eyes were sparkling."
 
     narrator "... I still didn't think it was THAT fascinating."
 
-    show julie blue_4 at center
-
-    julie "Oh, Mr. Mark. Everything in this time period is so wonderful!"
-
-    show julie blue_9 at center
-
-    julie "I wish I'd grown up in the sixties!"
-
-    mark "When you're older you'll say the same thing about the decades before. But why don't you just move to the sixties if you like it so much? Assuming you could hop back and forth between 1966 and... I can't remember what year you said it was."
-
-    show julie blue_2 at center
-
-    julie "Well if I had to do that, I'd be abandoning Papa."
-
     show julie blue_3 at center
 
-    julie "Which I never ever would! And I'd still have to worry about the Time Police finding me. They're pretty shrewd and clever. They don't give up, no matter how long it takes."
+    julie "\"Oh, Mr. Mark. Everything in this time period is so wonderful!\""
 
-    mark "They sound like tough nuts to crack."
+    show julie blue_9 at center
+    with Dissolve(0.1)
 
-    show julie blue_6 at center
-
-    julie "Hmph. Well, they've got that stupid theory they've got to defend, you know?"
-
-    mark "I don't, actually. What stupid theory?"
-
-    show julie blue_8 at center
-
-    julie "Boooo. They think if you talk with anyone, no matter how small and unimportant, it will change the future. And maybe not for the better."
-
-    mark "Sounds like a pretty plausible explanation to me. What's your counter argument?"
+    julie "\"I wish I'd grown up in the sixties!\""
 
     show julie blue_7 at center
+    with Dissolve(0.1)
 
-    julie "Papa's 'Book of Time' theory."
+    mark "\"Hmmm... If you like it so much, why not stay?\""
 
-    mark "How's that go?"
+    show julie blue_2 at center
+    with Dissolve(0.1)
+
+    julie "\"Well if I had to do that, I'd be abandoning Papa.\""
+
+    show julie blue_1 at center
+    with custom_hpunch
+
+    julie "\"Which I never ever would! And I'd still have to worry about the Time Police finding me.\""
+
+    show julie blue_8 at center
+    with Dissolve(0.1)
+
+    julie "\"They really are a thorn in my side, these days.\""
+
+    show julie blue_6 at center
+    with Dissolve(0.1)
+
+    narrator "Julie sounded pretty disgruntled, saying that."
+
+    mark "\"Yeah, they sound like tough nuts to crack.\""
+
+    show julie blue_8 at center
+    with Dissolve(0.1)
+
+    julie "\"Hmph. Well, they've got that stupid theory they've got to defend, you know?\""
+
+    show julie blue_6 at center
+    with Dissolve(0.1)
+
+    mark "\"I don't, actually. What stupid theory?\""
+
+    show julie blue_3 at center
+    with Dissolve(0.1)
+
+    julie "\"Hmmm... I mentioned it yesterday, didn't I? Them and their flimsy blueprint.\""
+
+    narrator "Right, Julie had said something about that."
+
+    mark "\"But you think they're wrong?\""
+
+    narrator "Their theory sounds pretty reasonable, if you ask me."
+
+    narrator "What's the problem with it, exactly?"
+
+    show julie blue_6 at center
+    with Dissolve(0.10)
+
+    julie "\"Mmmhmmm. Papa's 'Book of Time' theory is how it actually works.\""
+
+    mark "\"How's that go?\""
+
 
 
     # --------------------------------------------------------------
@@ -329,33 +492,52 @@ label chapter_2:
     # --------------------------------------------------------------
 
     scene black
+    with Dissolve(0.6)
+
     pause 0.3
 
-    scene cg julie_ponders at old_cg
+    scene cg julie_ponders
+    with Dissolve(0.2)
 
     narrator "Julie took a minute to gather her thoughts, and then gave her own explanation."
 
-    julie "It's easiest to think of time like a book. Even though there's a beginning, a middle and an end..."
+    julie "\"Well... I guess it's easiest to think of time like a book, instead of some shapeless blob of possibilities.\""
 
-    mark "The book's already written, and sitting in the palm of your hand, so you can't change the result. Something like that? But why?"
+    julie "\"The book's already got a beginning, middle and an end, so...\""
 
-    julie "Everything that leads to the final page is already accounted for. It's already 'written.' If you were to go back in time and tinker around... nothing would happen. Because--"
+    mark "\"The book's already written, so you can't change what's in it?\""
 
-    mark "Because you've already went and done it. That's what led to the end all along. ... Huh. Neat."
+    narrator "Julie nodded her head curtly."
 
-    julie "Kehehe. I'm glad you're a smart man, Mr. Mark."
+    narrator "She looked happy that I'd filled in the gaps so quickly."
 
-    mark "It's Mark."
+    julie "\"Everything that leads to the final page is already accounted for. It's already 'written.' If you were to go back in time and tinker around... nothing would actually change.\""
 
-    julie "........."
+    mark "\"Hmmm... Because you've already went and done it. That's what led to the end all along...\""
 
-    mark "Kind of depressing though. Don't you think? If I were to go and stop something really terrible from happening, it wouldn't matter. ... Hmmm, maybe that would've caused it in the first place. Well, anyway. A stable time loop... that's certainly... different."
+    julie "\"Kehehe. I'm glad you're a smart man, Mr. Mark.\""
 
-    julie "Papa always says 'Whatever happened, happened.'"
+    mark "\"It's 'Mark', Julie.\""
 
-    mark "I guess that's the easiest way to explain it. Hmmmm, but it would be nice, to be able to go back and change things, even if just a little."
+    julie "\"... ... ...\""
 
-    julie "Is there something you'd want to change, Mark?"
+    mark "\"It's a little depressing, though. Don't you think? Even if you could go back in time and try to prevent something horrible from happening...\""
+
+    narrator "It would still happen. In fact, you might've helped cause it in the first place."
+
+    julie "\"Mmhmm. Papa always says 'Whatever happened, happened.'\""
+
+    mark "\"I guess that's the easiest way to explain it. Hmmmm, but it would be nice, to be able to go back and change things, even if just a little.\""
+
+    
+    scene sky with down_fade
+    
+    pause 0.6
+
+
+    julie "\"Is there something you'd want to change, Mark?\""
+
+    pause 1.0
 
 
     # --------------------------------------------------------------
@@ -363,96 +545,122 @@ label chapter_2:
     # --------------------------------------------------------------
 
     scene black
+    with Dissolve(0.7)
 
-    mark "........."
+    mark "\"... ... ...\""
 
     narrator "There was."
 
-    narrator "Years ago, I'd been drafted to fight in the War. The things I'd seen and experienced, the smell of burning flesh and those horrible smells surrounding me, the taste of blood in my mouth... They were etched into me, had gone from things I'd felt to things that were part of me."
+    narrator "Years ago, I'd been drafted to fight in the War."
 
-    narrator "Could I change the flow of time, so that I wouldn't have been drafted to begin with?"
+    narrator "Like so many other young men, there were things I'd seen and experienced that I wanted to purge from my memory."
 
-    narrator "Or else... could I have stopped things from going so horribly, and staining my hands with so much blood?"
+    narrator "Those things had become etched into me, and were a part of who I'd become."
 
-    narrator "Maybe, if I'd been smarter... I wouldn't be forced to remember those things I'd done, which I'd actually been praised for."
+    narrator "What if I could change the flow of time, so that I wouldn't have been drafted to begin with?"
 
-    narrator "There was a soldier I'd killed. He couldn't have been older than eighteen or nineteen, he was just a kid."
+    narrator "Could I have stopped everyone else from experiencing the same thing?"
 
-    narrator "But he was an enemy, and the moment he removed his helmet to fix the strap... I'd put a bullet through his head, and he dropped like a sack of potatoes."
+    narrator "But... if I did, what would've happened to everything after that?"
 
-    narrator "After a while, I got used to it."
+    narrator "What things... wouldn't have happened, as a result?"
 
-    narrator "It wasn't as though I liked it, or felt satisfied, but the notion of kill or be killed had become a part of me, and I accepted it."
+    narrator "Thinking about the scope of it made my head ache."
 
-    narrator "There is nothing honorable about dying on the battlefield. You die pitifully and in that place no one mourns your death. They just keep on firing, and when it's finally over, if your side won... then they'd pick you up and carry you away."
-
-    narrator "What a joke."
-
-    narrator "I wanted to forget those things, the things I'd seen and the things I'd done, so I could finally look at my hands without seeing those invisible stains."
 
 
     # --------------------------------------------------------------
     # Back to Julie
     # --------------------------------------------------------------
 
-    scene cg julie_ponders at old_cg
+    scene cg julie_ponders_2
+    with Dissolve(0.8)
 
-    julie "Mr. Mark? Something on your hands?"
+    julie "\"Mr. Mark? Did you get some dirt on your hands?\""
 
-    mark "Huh? What?"
+    mark "\"Huh? What?\""
 
-    julie "You've been staring at your hands for a while. Is there something wrong with them?"
+    julie "\"You've been staring at your hands for a while. Is there something wrong with them?\""
 
-    mark "Well..."
+    mark "\"Well...\""
 
-    julie "Could it be you thought of something that you'd want to change?"
+    julie "\"Could it be you thought of something that you'd want to change?\""
 
-    mark "No, nothing. I was just spacing out."
 
-    julie "Hmph."
+    pause 1.5
+
+    mark "\"No, nothing. I was just spacing out.\""
+
+    julie "\"Hmph.\""
+
+    narrator "Julie puffed out her cheeks, not looking satisfied with that response."
+
+    pause 0.5
+
+    scene black with Dissolve(0.8)
 
     narrator "Even if it were possible, could I do it?"
 
     narrator "Everything has led me up until this moment, meeting this strange girl."
 
-    narrator "Even if I believed in her game of imagination, I didn't want to think I'd take it back."
+    narrator "Even if I did believe something like that was possible, I didn't want to think I'd take it back."
 
-    narrator "If I did, if I changed those things... I wouldn't have met Anne, who helped me to heal and push away those horrible thoughts, who loved me, and whom I'd married."
+    narrator "If I did, if I changed those things... I wouldn't have met Anne."
 
-    mark "Even if I did, does it matter? You can't change the past."
+    narrator "I wouldn't have met that woman who helped me to push away those horrible thoughts, who loved me, and whom I'd married."
 
-    julie "Booo, I guess you're right."
+    mark "\"You said it yourself, didn't you? You can't change the past.\""
 
-    mark "Hey now, weren't you the one who said so?"
+    julie "\"Booo, I guess you're right.\""
 
-    julie "Hehe."
+    mark "\"Hey now, weren't you the one who said so?\""
 
-    mark "Well, if you can change the present, that's good enough for me."
+    julie "\"Hehe.\""
 
-    julie "........."
+    scene cg julie_ponders_2
+    with Dissolve(0.8)
+
+    mark "\"Well, if you can change the present, that's good enough for me.\""
+
+    julie "\"Mmhmm. Mmhmm.\""
+
+    pause 0.5
+
+    scene black with Dissolve(0.8)
+
+    pause 0.5
+
+    scene sky with corner_fade
 
     pause 2.0
 
-    # --------------------------------------------------------------
-    # Time Passes
-    # --------------------------------------------------------------
+    narrator "That's right, there's no such thing as time travel."
 
-    stop music
+    narrator "The only thing that exists is the present you live in, and that's OK..."
 
-    scene interstitial 6 at old_bg
-    with Dissolve(3.0)
+    narrator "Even if the book is already written, the person writing it is still you."
 
-    pause 2.0
+    narrator "You determine the ending."
 
-    scene interstitial 6b at old_bg
+    pause 0.5
+
+    narrator "I tried to push those thoughts about the future, which weighed so heavily on me, out of my mind."
+
+    narrator "Julie and I watched the clouds pass by, discussed Einstein's theories and the science fiction stories I loved to read so much, until the sun began to sink toward the horizon."
+
+
+    scene black with down_fade
 
     pause 3.0
 
-    scene black
+    play sound piano_stinger
+    scene outro_black
 
-    pause 3.0
+    pause 4.5
 
-    play music blue_feather
+    
+    jump chapter_3
+
 
 
     # --------------------------------------------------------------

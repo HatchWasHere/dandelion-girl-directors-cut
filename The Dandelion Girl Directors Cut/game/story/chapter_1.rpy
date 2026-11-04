@@ -186,7 +186,7 @@ label chapter_1:
 
     narrator "It was a nice gesture, but it just reminded me someone was missing from all this."
 
-    mark "\".........\""
+    mark "\"... ... ...\""
 
     narrator "What to do, now?"
 
@@ -299,7 +299,7 @@ label chapter_1:
 
     mark "\"My wife and I come up here from time to time when we go camping in the area. She really likes the view.\""
 
-    girl "... ... ..."
+    girl "\"... ... ...\""
 
     narrator "Without meaning to, my voice had tapered off."
     
@@ -358,7 +358,7 @@ label chapter_1:
     show julie excited at center
     with custom_hpunch
 
-    girl "Oh, I can tell you all about it~!"
+    girl "\"Oh, I can tell you all about it~!\""
 
     narrator "All at once, the dandelion girl sprung up, suddenly looking really excited."
 
@@ -377,7 +377,9 @@ label chapter_1:
     scene julie_points
     with custom_hpunch
 
-    girl "\"Oh, oh, and you see that? That's a general store, where you can get anything from aspirin to aerocars.\""
+    girl "\"Oh, oh, and you see that? That's a general store, and it's pretty plain right now.\""
+
+    girl "\"But in the future, it'll be a taller building where you can get anything from aspirin to aerocars.\""
 
     girl "\"The owner's a really nice man who gives me cookies sometimes.\""
 
@@ -387,7 +389,7 @@ label chapter_1:
 
     girl "\"A-ah, whoops. I guess they don't have those in this time period, huh?\""
 
-    mark "\".........\""
+    mark "\"... ... ...\""
 
     scene black with Dissolve(0.25)
 
@@ -418,33 +420,37 @@ label chapter_1:
 
     girl "\"Th-that's all you've got to say!? Really!?\""
 
+    show julie shudder at center
+    with Dissolve(0.10)
+
     narrator "She looked a little underwhelmed."
 
-    show julie excited at center
-    with Dissolve(0.10)
-
     mark "\"Sure. Were you expecting something else?\""
-
-    show julie curious at center
-    with Dissolve(0.10)
 
     pause 0.3
     hide julie with Dissolve(0.25)
 
     narrator "The dandelion girl clasped her hands together and looked like she was at a loss for words, again."
 
-    show julie delighted at center
-    with Dissolve(0.25)
+    show julie curious at center
+    with Dissolve(0.10)
 
     girl "\"S-so you believe me?\""
 
-    mark "Sure."
+    show julie relaxed at center
+    with Dissolve(0.10)
+
+    mark "\"Sure thing.\""
+
+    hide julie with Dissolve(0.10)
+
+    pause 0.25
 
     narrator "... No chance."
 
     narrator "When I was a kid my brother and I loved to play pretend. We'd pretend to be exploring outer space, or be pirates or outlaws. Maybe we'd even wondered what time travel would be like."
 
-    narrator "Some of those make-believe sessions ended in scuffs or bruises, but I remembered how much fun they'd been."
+    narrator "I remembered how much fun that had been."
 
     narrator "Even though this girl seemed a little old for make-believe, she really seemed wrapped up in her small imaginary world."
     
@@ -469,21 +475,23 @@ label chapter_1:
     show julie smile at center
     with Dissolve(0.15)
 
-    girl "Mr. Mark, hmmm? I'm Julie Danvers! You can call me Julie."
+    girl "\"Mr. Mark, hmmm? I'm Julie Danvers! You can call me Julie.\""
+
+    narrator "What's with the 'mister'?"
+
+    mark "\"Just 'Mark' is fine, but... sure.\""
 
     show julie curious at center
     with Dissolve(0.25)
 
-    narrator "Just 'Mark' is fine, but... sure."
+    julie "\"My name's so pretty, isn't it? Just like the dandelions here, don't you think?\""
 
-    julie "It's a pretty name, just like the dandelions here, don't you think?"
-
-    mark "My wife would say someone needs to weed them out, but you've got a pretty name, certainly."
-
-    narrator "She'd probably be complaining about how many there were, in fact."
-
-    hide julie
+    show julie relaxed at center
     with Dissolve(0.10)
+
+    mark "\"My wife would say someone needs to weed them out. Julie's certainly a lovely name, though.\""
+
+    narrator "Anne would probably be complaining about how many weeds there were, in fact."
 
     show julie horrified at center
     with Dissolve(0.10)
@@ -496,66 +504,83 @@ label chapter_1:
 
     narrator "Maybe it really did."
 
-    mark "You're from 240 years in the future, huh? Why come back to the sixties? Wouldn't going further into the future be more interesting?"
+    mark "\"You're from 240 years in the future, huh? Why come back to the sixties? Wouldn't going further into the future be more interesting?\""
 
     show julie questioning at center
 
-    julie "Why... ?"
+    julie "\"Why... ?\""
 
     show julie surprised at center
 
-    narrator "Julie gave that some thought, like that had never even occurred to her."
+    narrator "Julie screwed up her face into a thoughtful look and considered that, as if it had never even occurred to her."
 
-    pause 0.3
+    hide julie with Dissolve(0.10)
 
-    julie "Well, everything's pretty dingy and industrialized 240 years from now, you know... There's barely any plant life, these days."
+    pause 1.0
 
-    mark "Is that right?"
+    show julie shudder at center
+    with Dissolve(0.10)
+
+    julie "\"Well, everything's pretty dingy and industrialized 240 years from now, you know... There's barely any plant life, these days.\""
+
+    mark "\"Is that right?\""
+
+    narrator "That sounds like a rough place to live."
 
     show julie relaxed at center
     with Dissolve(0.10)
 
-    julie "Sometimes I'll just roll around in the grass here, or watch the clouds go by, or just lay around and try to get a bit of a tan. Although, I usually burn."
+    julie "\"It's so much nicer, in a place like this. Sometimes I'll just roll around in the grass here, or watch the clouds go by, or just lay around and try to get a bit of a tan.\""
 
-    narrator "I knew what that was like, for sure."
+    show julie shudder at center
+    with Dissolve(0.10)
+
+    julie "\"... Although, I usually burn.\""
+
+    narrator "Sleeping in the grass in a strange place doesn't sound like a great idea, no matter how I try to look at it."
 
     show julie curious at center
     with Dissolve(0.10)
 
-    julie "Oh, oh! You know, the day before yesterday I saw a rabbit, and yesterday a deer, and today, you."
+    julie "\"Oh, oh! You know, the day before yesterday I saw a rabbit, and yesterday a deer, and today, you.\""
 
-    mark "And here I was taking it all for granted. I'll have to stop by more often."
-
-    julie "Don't you live around here or something, Mr. Mark?"
-
-    mark "Sort of. I go on vacation here from time to time. I've got a cabin a ways back. Normally my wife comes along with me, but... well..."
-
-    show julie animated at center
+    show julie relaxed at center
     with Dissolve(0.10)
 
-    julie "She left you behind all to yourself?"
 
-    show julie smile at center
+    mark "\"And here I was, taking it all for granted. I'll have to stop by more often.\""
+
+    show julie surprised at center
     with Dissolve(0.10)
 
-    julie "That sounds kind of rude."
 
-    mark "Well, not exactly. She had to help a friend at the last minute, so she couldn't come with me until that's all settled."
+    julie "\"Hmhm. Don't you live around here or something, Mr. Mark?\""
+
+    mark "\"Sort of. I go on vacation here from time to time. I've got a cabin a ways back. Normally my wife comes along with me, but... well...\""
+
+    show julie neutral at center
+    with Dissolve(0.10)
+
+    julie "\"She left you behind all to yourself?\""
+
+    julie "\"That's not very nice...\""
+
+    mark "\"Well, not exactly. She had to help a friend at the last minute, so she couldn't come with me until that's all settled.\""
 
     show julie suspicious at center
 
-    julie "Muu, that's still too bad..."
+    julie "\"Muu, that's still too bad...\""
 
     narrator "It was, actually."
 
-    mark "Do you ever go on vacation, Julie?"
+    mark "\"Do you ever go on vacation, Julie?\""
 
     narrator "Julie shrugged her shoulders."
 
     show julie animated at center
     with Dissolve(0.10)
 
-    julie "Hmmmmm. Every day's kind of like a vacation..."
+    julie "\"Hmmmmm. Every day's kind of like a vacation...\""
 
     show julie curious at center
     with Dissolve(0.10)
@@ -569,21 +594,29 @@ label chapter_1:
     show julie surprised at center
     with Dissolve(0.10)
 
-    julie "W-why are you laughing all of a sudden...?"
+    julie "\"W-why are you laughing all of a sudden...?\""
 
-    mark "Oh, it's nothing. I haven't laughed in a couple days, actually. It's a bit gloomy without my wife."
+    mark "\"Oh, it's nothing. I haven't laughed in a couple days, actually. It's a bit gloomy without my wife.\""
 
     show julie curious at center
     with Dissolve(0.10)
 
-    julie "Hehe. Well, I'm glad I could make you laugh. You're pretty funny, you know--you make me laugh too. Just a little though."
+    julie "\"Hehe. Well, I'm glad I could make you laugh. You're pretty funny, you know--you make me laugh too."
 
-    mark "Better than nothing, I guess."
+    show julie animated at center
+    with Dissolve(0.10)
+
+    julie "\"Just a little though.\""
+
+    show julie relaxed at center
+    with Dissolve(0.10)
+
+    mark "\"Better than nothing, I guess.\""
 
     show julie giggle at center
     with Dissolve(0.10)
 
-    julie "Hehe."
+    julie "\"Hehe.\""
 
     hide julie
     with Dissolve(0.10)
@@ -592,10 +625,6 @@ label chapter_1:
 
     narrator "A girl from the future? I wasn't so sure of that, but I did think there was something genuine about her."
 
-    narrator "At the very least, she had quite the imagination."
-
-    narrator "She claimed she was from the future. Quite a statement to make."
-
     narrator "Could something crazy like time travel be possible? I'd only read about that kind of thing in science fiction."
 
     narrator "But she looked like someone from my time, and even the dress she was wearing looked dated."
@@ -603,88 +632,110 @@ label chapter_1:
     show julie delighted at center
     with Dissolve(0.10)
 
-    julie "Do you like my dress, Mr. Mark?"
+    julie "\"Do you like my dress, Mr. Mark?\""
 
-    mark "Just 'Mark' is fine. The dress is pretty. Why do you ask?"
+    mark "\"Just 'Mark' is fine. The dress is pretty. Why do you ask?\""
 
     show julie coy at center
     with Dissolve(0.10)
 
-    julie "Well, you've been staring at it for a while. Unless you have a thing for collar bones...?"
+    julie "\"Well, you've been staring at it for a while. Unless you have a thing for collar bones...?\""
 
-    mark "You're a little young for me."
+    mark "\"You're a little young for me.\""
 
     show julie pout at center
     with Dissolve(0.10)
     pause 0.25
     
-    julie "Boooooo!"
-    
+    julie "\"Boooooo!\""
+  
     show julie coy at center
     with Dissolve(0.10)
 
-    narrator "Julie puffed out her cheeks and looked indignant. Even though she seemed a little annoyed, it still managed to be cute, somehow."
+    narrator "Julie puffed out her cheeks and looked indignant."
+
+    narrator "Even though she seemed a little annoyed, it still managed to be cute, somehow."
 
     show julie smile at center
     with Dissolve(0.10)
 
-    julie "It's my favorite dress, I got it a month or two ago down in Cove City in the future!"
+    julie "\"It's my favorite dress, I got it a month or two ago down in Cove City in the future!\""
 
     show julie delighted at center
     with Dissolve(0.10)
 
-    julie "Want to feel how soft it is~?"
+    julie "\"Want to feel how soft it is~?\""
 
-    mark "Thanks, but I--"
+    mark "\"Thanks, but I--\""
 
     hide julie
     with Dissolve(0.10)
 
-    julie "Hmmmmmmmmmmmmm?"
+    julie "\"Hmmmmmmmmmmmmm?\""
 
     narrator "She really wants me to feel it, huh?"
 
     pause 0.5
 
-    mark "......... Sure."
+    mark "\"......... Sure.\""
 
     narrator "Julie scooted over to me, a little closer than I was comfortable with, and danced in a little semicircle."
 
+    scene black with Dissolve(0.5)
+
     pause 1.0
 
-    mark "Hmmmm. So this is fabric from the future, huh...? Strange stuff."
+    mark "\"Hmmmm. So this is fabric from the future, huh...? Strange stuff.\""
 
     narrator "It was made of a strange material, almost like someone had meshed together sea foam, cotton candy and snow together and flattened them into a fabric."
 
     narrator "It might not be from 240 years in the future, but it certainly looked comfortable."
 
-    mark "It's nice. And you're right, it is pretty soft."
 
-    julie "Hehe. That makes me happy."
+    pause 0.2
 
-    mark "If you say so."
+    scene dandelion_field with Dissolve(0.25)
+
+    mark "\"It's nice. And you're right, it is pretty soft.\""
+
+    show julie curious at center
+    with Dissolve(0.10)
+
+    julie "\"Hehe. That makes me happy.\""
+    
+    show julie relaxed at center
+    with Dissolve(0.10)
+    
+
+    mark "\"If you say so.\""
+
+    scene black
+    with custom_hpunch
 
     narrator "Without much warning, Julie Danvers dropped into a seated position, and stared at the clouds overhead."
 
+    pause 0.15
+
+    scene sky with down_fade
     narrator "The sky was blue, but the sun wasn't glaring too brightly so you didn't quite have to squint looking up."
 
-    julie "Papa would really like to see this, you know."
+    julie "\"Papa would really like to see this, you know.\""
     
-    mark "Oh?"
+    mark "\"Oh?\""
     
     narrator "Julie made a sour face at the sky."
 
-    julie "The clouds don't look like this in the future. They're dark and dirty-looking, and... well..."
+    julie "\"The clouds don't look like this in the future. They're dark and dirty-looking, and... well...\""
 
-    mark "You should bring him along, sometime."
+    mark "\"You should bring him along, sometime.\""
 
-    julie "Well, I can't do that, exactly..."
+    julie "\"Well, I can't do that, exactly...\""
 
-    mark "Why not?"
+    mark "\"Why not?\""
 
     pause 0.5
 
-    julie "........."
+    julie "\"... ... ...\""
 
 
     # --------------------------------------------------------------
@@ -693,125 +744,236 @@ label chapter_1:
 
     hide julie
 
-    scene julie_explains
-    with Dissolve(0.10)
+    scene cg julie_explains
+    with down_fade
 
-    julie "Well... Papa's an invalid."
+    julie "\"Well... Papa's an invalid.\""
 
-    mark "Oh? That right?"
+    mark "\"That right?\""
 
-    narrator "Strange choice of words."
+    narrator "What a strange choice of words."
 
-    julie "If he gave up his research and his time machine, he'd probably just be left alone, but he can't help himself."
+    julie "\"If he gave up his research and his time machine, he'd probably just be left alone, but he can't help himself.\""
 
     narrator "The apple doesn't fall far from the tree."
 
-    julie "He keeps tampering with things that shouldn't be tampered with--or so the Time Police say--and there's a shifty crowd that's always giving him a hard time."
+    julie "\"He keeps tampering with things that shouldn't be tampered with--or so the Time Police say--and there's a shifty crowd that's always giving him a hard time.\""
 
-    mark "You seem to be doing pretty well for yourself, though."
+    narrator "'Time Police', huh..."
 
-    julie "Hehe. They can't get ahold of me even if they try! I'm too sneaky."
+    play music gloomy
+    
+    scene black with Dissolve(0.8)
+
+    pause 0.3
+
+    julie "\"'... If you tamper with the past, there will be consequences.'\""
+
+    mark "\"... ... ...\""
+    
+    julie "\"'If you're foolish enough to interact with the citizens of the past, there will be side effects.'\""
+
+    julie "\"'Your father knows what could happen to those people, and the disruptions to their own personal lives it might cause.'\""
+
+    mark "\"... ... ...\""
+    
+    julie "\"... They say people might begin to feel unwell, if they cross paths with someone from the future. They may even be drawn into misfortune, which they'd otherwise stay away from.\""
+
+    julie "\"Interactions have ripple effects, the Time Police say. How can you be sure that a small interaction won't end up having a massive consequence?\""
+    
+    narrator "Julie said that with a serious face, but it didn't look like she herself had a response."
+
+    mark "\"... Could that be right?\""
+
+    julie "\"... ... ...\""
+
+    pause 1.0
+
+    julie "\"Let's say two people were fated to meet. On a cold and rainy day, in September.\""
+
+    julie "\"What if... one of them encountered someone, and that fluke decision to meet at a certain coffee shop was derailed?\""
+
+    julie "\"Those people never meet, and they never fall in love. They don't stay together for half a century, and their family ceases to exist...\""
+
+    narrator "I nodded along as Julie explained."
+
+    julie "\"Then what happens to all the people after that, and the people they were meant to meet, and the families they would create...?\""
+
+    pause 1.0
+
+    julie "\"That's what those people are... afraid of.\""
+
+    mark "\"I see...\""
+
+    stop music
+
+    pause 2.0
+
+    narrator "Julie heaved a heavy sigh, and stared at the ground for a long time."
+
+    pause 0.5
+
+    scene cg julie_explains with down_fade
+    play music seasons
+
+    julie "\"But that's only if their theory is right.\""
+   
+    mark "\"What do you mean?\""
+
+    julie "\"Hmmm... I guess what I'm trying to say is... their blueprint is wrong.\""
+
+    mark "\"Blueprint?\""
+
+    julie "\"Mmmhmm. It's complicated, but...\""
+
+    narrator "Julie frowned, looking like she was struggling to find the right words for it."
+
+    narrator "It certainly did sound like a complicated story."
+
+    mark "\"Still, it sounds like some scary people aren't happy with you jumping back and forth.\""
+
+    julie "\"Hehe. They can't get ahold of me even if they try. I'm too sneaky.\""
 
 
     # Return to the field.
 
-    scene dandelion_field
+    scene black
     with Dissolve(0.5)
 
     narrator "'Sneaky' isn't the most flattering way of phrasing it."
 
+    scene dandelion_field
+    with Dissolve(0.5)
+
+    pause 0.25
+
     show julie happy at center
+    with Dissolve(0.20)
 
     narrator "Julie and I both laughed together."
 
+    show julie questioning at center
+    with Dissolve(0.10)
+
     narrator "Truthfully, I wasn't sure what to make of that."
 
-    narrator "An invalid? Was he really tampering with things better left alone?"
+    narrator "An invalid? Was Julie's father really tampering with things better left alone?"
 
     narrator "I decided to leave it alone, for now."
 
     show julie curious at center
+    with Dissolve(0.10)
 
-    julie "Well, it was nice to meet you Mr. Mark but I should probably be going."
+    julie "\"Well, it was nice to meet you Mr. Mark but I should probably be going.\""
 
-    mark "Oh yeah? Going back to the future?"
+    mark "\"Oh yeah? Going back to the future?\""
 
-    show julie relaxed at center
+    hide julie curious
+    with Dissolve(0.10)
 
-    julie "For now. Papa needs his supper, and I have to clean my room."
+    pause 0.10
 
-    show julie giggle at center
+    show julie relaxed at right
+    with Dissolve(0.10)
 
-    julie "It's kind of messy."
+    julie "\"Mmhmm, mmhmm. For now. Papa needs his supper, and I have to clean my room.\""
 
-    mark "Sounds important. Will I see you again?"
+    show julie giggle at right
+    with Dissolve(0.10)
+
+    julie "\"It's a little messy.\""
+
+    mark "\"Sounds important. Will I see you again?\""
 
     hide julie
+    with Dissolve(0.10)
 
-    show julie smile at center
+    pause 0.65
 
-    julie "Again...?"
+    julie "\"Again...?\""
+    
+    narrator "That seemed to catch her off guard."
 
-    mark "Tomorrow, or the day after that, or something."
+    mark "\"Tomorrow, or the day after that, or something.\""
+
+    pause 0.15
 
     show julie relaxed at center
+    with Dissolve(0.20)
 
-    julie "Oh!"
+    julie "\"Oh!\""
 
-    show julie curious at center
+    julie "\"Hehe, of course. Lately I've been coming here every day. I like a little change of pace, and the time machine's affected by the passing of time just like anything else, you know?\""
 
-    julie "Hehe, of course. Lately I've been coming here every day. I like a little change of pace, and the time machine's affected by the passing of time just like anything else, you know?"
-
-    mark "Well, it wouldn't be fun meeting me for the first time over and over, would it?"
+    mark "\"Well, it wouldn't be fun meeting me for the first time over and over, would it?\""
 
     show julie delighted at center
+    with Dissolve(0.10)
 
-    julie "You get it! That's why I always come here twenty-four hours after the last trip, give or take."
+    julie "\"You get it! That's why I always come here twenty-four hours after the last trip, give or take.\""
 
-    mark "I'll stop by tomorrow, then."
+    show julie giggle at center
+    with Dissolve(0.10)
+
+    mark "\"I'll stop by tomorrow, then.\""
 
     show julie animated at center
 
-    julie "Hmmm, OK! Twenty-four hours from now, then."
+    julie "\"Hmmm, OK! Twenty-four hours from now, then.\""
 
     show julie smile at center
+    with Dissolve(0.10)
 
-    narrator "That seemed to delight her."
+    narrator "Julie looked pleased with that."
 
-    mark "Right, then. I'll see you again."
+    mark "\"Right, then. I'll see you again.\""
 
     hide julie
+    with Dissolve(0.20)
+
+    scene cg julie_walking_away with Dissolve(0.2)
 
     narrator "The dandelion girl, Julie Danvers, giggled and turned her back to me."
 
+    pause 1.5
+
+    scene black
     stop music
-    pause 0.3
 
-    narrator "It was at that moment that I felt an inexplicable deja vu."
+    narrator "Wait--"
 
-    mark "Say, Ju--"
+    narrator "It was at that moment that I felt that inexplicable deja vu, again."
 
-    narrator "But before I could say anything more, Julie Danvers was already walking off into the distance."
-    
-    narrator "Eventually she grew as small as a speck of sand from where I was standing, and she disappeared..."
-
-    narrator "I finally lowered my hand, and waved to her far in the distance."
-
-    narrator "Maybe she could still see me from where she was standing."
+    narrator "Something cold and clammy grabbed me by the wrists."
 
     pause 1.0
+    
+
+    mark "\"Say, Ju--\""
+
+    narrator "But before I could say anything more, Julie Danvers was already walking off into the distance."
+
+    narrator "A sliver of time had seemingly melted away between the moment I'd opened my mouth and felt that chill... and now."
+    
+    narrator "The cold feeling had passed, and my stomach had settled."
+    
+    narrator "I watched Julie grow as small as a speck of sand from where I was standing, rubbing my wrists, and she disappeared..."
+
+    pause 1.0
+
 
 
     # ==============================================================
     # CHAPTER 2 INTERSTITIAL
     # ==============================================================
-
-    scene interstitial 2 at old_bg
-    with Dissolve(3.0)
+    
+    scene outro_2a
+    with Dissolve(0.25)
 
     pause 1.0
 
-    scene interstitial 2b at old_bg
+    play sound piano_stinger
+    scene outro_2b
     with Dissolve(0.7)
 
     pause 4.0
@@ -819,9 +981,28 @@ label chapter_1:
     stop music
 
     scene black
-    pause 2.0
+    play music crickets    
+    pause 3.5
 
-    play music dark_blue_night
+    scene moon_night_sky
+    with down_fade
+
+    play sound footsteps_in_grass
+
+    pause 4.0
+
+    scene black
+
+    play sound door_close
+
+    pause 3.5
+
+
+    play sound phone_pickup
+    pause 0.3
+
+    queue sound dialing_phone
+    
 
 
     ## == POST-JULIE SCENE ##
@@ -834,37 +1015,39 @@ label chapter_1:
 
     narrator "The phone rang for a long time."
 
-    narrator "For a minute or two, I started to think Anne might not pick up at all, and wondered if there might've been a development with Bern's mother"
+    narrator "For a minute or two, I started to think Anne might not pick up at all, and wondered if there might've been a development with Bern's mother."
 
     narrator "But a moment or two after that passed through my head, I heard Anne’s voice."
 
-    anne "Mark?"
+    anne "\"Mark?\""
 
-    mark "Oh, there you are."
+    mark "\"Oh, there you are.\""
 
-    anne "Hmhm. Sorry about that. I was helping put Bern's mother to bed."
+    anne "\"Hmhm. Sorry about that. I was helping put Bern's mother to bed.\""
 
-    mark "What, was Bern not available?"
+    mark "\"What, was Bern not available?\""
 
-    anne "Hehe. She's been so overworked, lately."
+    anne "\"Hehe. She's been so overworked, lately.\""
 
     narrator "I understood that feeling."
 
     pause 1.5
 
-    mark "How’s her mother doing, anyway?"
+    mark "\"How’s the bag of bones doing, anyway?\""
 
-    anne "Hmmm, she’s pretty tired from the procedure. I think she’ll be fine in a few days, honestly. I don't think I'll be too much longer."
+    anne "\"Hmmm, she’s pretty tired from the procedure. I think she’ll be fine in a few days, honestly.\""
 
-    mark "That’s good to hear."
+    anne "\"I don't think I'll be too much longer.\""
 
-    anne "Hehe. She asked about you."
+    mark "\"That’s good to hear.\""
 
-    mark "Oh?"
+    anne "\"Hehe. She asked about you.\""
 
-    anne "That’s right. She said something like, ‘Is that dullard still working himself to death?’"
+    mark "\"Is that so?\""
 
-    mark "That sounds like something she’d say."
+    anne "\"That’s right! She said something like, ‘Is that dullard still working himself to death?’\""
+
+    mark "\"That sounds like something she’d say.\""
 
     narrator "The both of us had a good laugh about that."
 
@@ -878,31 +1061,31 @@ label chapter_1:
 
     pause 1.5
 
-    anne "I miss you."
+    anne "\"I miss you.\""
 
-    mark "A-ah, um..."
+    mark "\"A-ah, um...\""
 
-    anne "Hehe, it’s OK. I know you’re shy to say it back, even now."
+    anne "\"Hehe, it’s OK. I know you’re shy to say it back, even now.\""
 
-    mark "No, it’s not that. I just..."
+    mark "\"N-no, it’s not that. I just...\""
 
     narrator "My wife chuckled."
 
-    narrator "She knows I’m easy to read. I always have been."
+    narrator "She knows I’m easy to read."
 
-    mark "I... miss you too."
+    mark "\"I... miss you too.\""
 
-    anne "There it is! Hehe."
+    anne "\"There it is! Hehe.\""
 
     pause 1.0
 
-    mark "Something strange happened, today."
+    mark "\"Something strange happened, today.\""
 
-    anne "Oh?"
+    anne "\"Oh?\""
 
-    mark "Yeah. I was going for a walk, and I met a strange girl."
+    mark "\"Yeah. I was going for a walk, and I met a strange girl.\""
 
-    anne "Oh?"
+    anne "\"Oh?\""
 
     narrator "I told Anne about my experience with the dandelion girl."
 
@@ -910,15 +1093,15 @@ label chapter_1:
 
     pause 1.5
 
-    anne "She sounds like quite the character."
+    anne "\"She sounds like quite the character.\""
 
-    mark "That’s one way of putting it."
+    mark "\"That’s one way of putting it.\""
 
-    anne "She’s a fan of stories—she’s sort of like you, isn’t she?"
+    anne "\"She’s a fan of stories—she’s sort of like you, isn’t she?\""
 
-    mark "I guess you’re right. You would’ve found her charming."
+    mark "\"I guess you’re right. You would’ve found her charming.\""
 
-    anne "I think you’re right. Hehe."
+    anne "\"I think you’re right. Hehe.\""
 
     pause 1.5
 
@@ -928,41 +1111,45 @@ label chapter_1:
 
     narrator "That’s right. If we had, she’d... maybe be Julie’s age, now."
 
-    mark "I told her all about you, too."
+    mark "\"I told her all about you, too.\""
 
-    anne "Oh? I hope you didn’t say anything too embarrassing."
+    anne "\"Oh? I hope you didn’t say anything too embarrassing.\""
 
-    mark "Anything too embarrassing, huh..."
+    mark "\"Anything too embarrassing, huh...\""
 
     narrator "I couldn’t even begin to think what might qualify."
 
-    anne "Where did you say she was from?"
+    anne "\"Where did you say she was from?\""
 
-    mark "Cove City... supposedly. Do you know anyone, down there?"
+    narrator "That was still an unanswered question."
 
-    anne "Hmmm. Can’t say I do. If she’s from there, I wouldn’t have any way to check."
+    mark "\"I think... Cove City, maybe. Do you know anyone, down there?\""
+
+    anne "\"Hmmm. Can’t say I do. If she’s from there, I wouldn’t have any way to check.\""
 
     pause 1.0
 
     narrator "That’s right. I still wondered which parts of Julie’s story might be true."
 
-    narrator "Even if that girl’s not from the future, she must live somewhere. Where, aside from Cove City? I couldn’t think of any other places within walking distance..."
+    narrator "Even if that girl’s not from the future, she must live somewhere."
+
+    narrator "But where, aside from Cove City? I couldn’t think of any other places within walking distance..."
 
     narrator "It was hard for me to say which parts of her story were true, embellished, or total works of fiction."
 
     narrator "Maybe the entire thing, or maybe very little, outside of the time travel."
 
-    anne "Hmmm. Well, it shouldn’t be too much longer over here. I’d like to meet her."
+    anne "\"Hmmm. Well, it shouldn’t be too much longer over here. I’d like to meet her.\""
 
-    mark "Me too."
+    mark "\"Me too.\""
 
     narrator "To be honest, I felt a little guilty hanging around a girl like Julie instead of my wife, even if she was young enough to be my child."
 
     narrator "But Anne didn’t seem to look at it like that at all."
 
-    anne "Well... I look forward to seeing what other stories that strange girl has in store for you, and for us."
+    anne "\"Well... I look forward to seeing what other stories that strange girl has in store for you, and for us.\""
 
-    mark "For sure."
+    mark "\"For sure.\""
 
     pause 1.0
 
@@ -974,12 +1161,40 @@ label chapter_1:
 
     narrator "And then, we wished each other good night."
 
+    play sound phone_pickup
+
+    scene moon_night_sky
+    with down_fade
+    
+    
+
+    pause 1.5
+
     narrator "I began the slow walk back to the cabin, accompanied only by the sound of the summer crickets and the moon hanging low in the sky..."
     
+    pause 0.5
+
+    window hide
+
+    pause 4.0
+
     stop music
 
     pause 3.0
 
+    play sound piano_stinger
+    scene outro_3 with Dissolve(0.20)
+
+    pause 3.0
+
+    scene black
+    with Dissolve(2.5)
+    
+
+    pause
+
+    
+    
 
 
     jump chapter_2

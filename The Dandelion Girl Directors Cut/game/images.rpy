@@ -51,6 +51,10 @@ transform old_credits:
 # Opening sky
 image sky = "bg/sky.png"
 
+# Night sky
+
+image moon_night_sky = "bg/moon_night.jpeg"
+
 # Mark's office
 image office = "bg/office.png"
 
@@ -75,6 +79,11 @@ image outro_1a = "images/outros/outro_1_a.png"
 image outro_1b = "images/outros/outro_1_b.png"
 
 image outro_black = "images/outros/black_outro.png"
+
+image outro_2a = "images/outros/outro_2.png"
+image outro_2b = "images/outros/outro_2_b.png"
+
+image outro_3 = "images/outros/outro_3.png"
 
 # ================================================================
 # CHARACTER SPRITES
@@ -101,7 +110,7 @@ image julie neutral = "char/julie/sprite_white_talk_1-1.png"
 
 
 # Julie explaining her father / the future
-image cg julie_explains = "cg/srsexpln.png"
+image cg julie_explains = "cg/julie_explains.png"
 
 
 # ================================================================
@@ -142,6 +151,7 @@ image cg_julie_intro_2b = "cg/julie_intro_cg_2_b.png"
 
 
 # Julie in the dandelion field
+image cg julie_walking_away = "cg/julie_step_cg.png"
 image cg julie_field = "cg/frame01.png"
 image cg julie_field_2 = "cg/frame02.png"
 image julie_points = "cg/julie_points.png"
@@ -149,9 +159,8 @@ image julie_points = "cg/julie_points.png"
 image cg julie_dancing = "cg/frame04.png"
 
 # Julie explains her father's theory of time
-image cg julie_ponders = "cg/CG_blue_0.png"
-image julie_ponders = "cg/julie_ponders.png"
-image julie_ponders_2 = "cg/julie_ponders_2.png"
+image cg julie_ponders = "cg/julie_ponders.png"
+image cg julie_ponders_2 = "cg/julie_ponders_2.png"
 
 # ================================================================
 # INTERSTITIALS / TITLE CARDS
@@ -163,6 +172,10 @@ image interstitial 1b = "bg/inbetween1b.png"
 
 image interstitial 2 = "bg/inbetween2.png"
 image interstitial 2b = "bg/inbetween2b.png"
+
+image interstitial 3 = "bg/inbetween3.png"
+image interstitial 3 = "bg/inbetween2b.png"
+
 
 
 # ================================================================

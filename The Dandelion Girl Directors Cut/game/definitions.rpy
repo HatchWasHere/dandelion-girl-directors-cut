@@ -12,6 +12,13 @@ define audio.blue_feather = "bgm/bluefeather.mp3"
 define audio.sad_slow = "bgm/sadslowcut.mp3"
 define audio.moody_princess = "bgm/moody princess snip.mp3"
 define audio.fragrant_olive = "bgm/fragrant_olive.mp3"
+define audio.gloomy = "bgm/gloomy.mp3"
+
+define audio.door_close = "sfx/door_close.mp3"
+define audio.crickets = "sfx/crickets.mp3"
+define footsteps_in_grass = "sfx/footsteps_in_grass.mp3"
+define audio.dialing_phone = "sfx/dialing_phone.mp3"
+define audio.phone_pickup = "sfx/phone_pickup.mp3"
 
 define audio.shy_love_stinger = "sfx/shy_love_stinger.mp3"
 define audio.piano_stinger = "sfx/piano_stinger.mp3"
@@ -62,6 +69,10 @@ transform custom_hpunch(old_widget, new_widget):
         linear 0.08 xoffset -25
         linear 0.08 xoffset 15
         linear 0.08 xoffset 0
+
+transform hamburger_fade:
+    alpha 0.0
+    linear 0.05 alpha 1.0
 
 ## NEW OST ##
 

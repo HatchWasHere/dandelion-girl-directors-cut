@@ -95,12 +95,12 @@ label opening:
     # Julie CG
     # --------------------------------------------------------------
 
-    scene cg_julie_intro_1
+    scene cg julie_intro_1
     with Dissolve(0.25)
 
     pause 0.75
 
-    scene cg_julie_intro_2
+    scene cg julie_intro_2
     with Dissolve(0.25)
 
     narrator "It was some time before I realized."

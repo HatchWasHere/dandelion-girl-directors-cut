@@ -128,12 +128,7 @@ image julie blue_8 = "char/julie/sprite_blue_talk_2-8.png"
 image julie blue_9 = "char/julie/sprite_blue_talk_2-9.png"
 image julie blue_10 = "char/julie/sprite_blue_talk_2-10.png"
 
-# Julie lying in the dandelion field
-image cg julie_ponders_blue = "cg/CG_blue_1.png"
 
-
-# Julie grieving / Mark comforting her
-image cg julie_sobbing = "cg/sprite_black_hugz_1.png"
 
 # Julie — black outfit
 image julie black_4 = "char/julie/sprite_black_stand_3.png"
@@ -145,25 +140,21 @@ image julie black_6 = "char/julie/sprite_black_stand_5.png"
 # ================================================================
 
 
-image cg_julie_intro_1 = "cg/julie_intro_cg_1.png"
-image cg_julie_intro_2 = "cg/julie_intro_cg_2.png"
+image cg julie_intro_1 = "cg/julie_intro_cg_1.png"
+image cg julie_intro_2 = "cg/julie_intro_cg_2.png"
 image cg_julie_intro_2b = "cg/julie_intro_cg_2_b.png"
-
-
-# Julie in the dandelion field
 image cg julie_walking_away = "cg/julie_step_cg.png"
 image cg julie_field = "cg/frame01.png"
 image cg julie_field_2 = "cg/frame02.png"
 image julie_points = "cg/julie_points.png"
-
 image cg julie_dancing = "cg/frame04.png"
-
-# Julie explains her father's theory of time
 image cg julie_ponders = "cg/julie_ponders.png"
 image cg julie_ponders_2 = "cg/julie_ponders_2.png"
+image cg julie_ponders_blue = "cg/CG_blue_1.png"
+image cg julie_sobbing = "cg/sprite_black_hugz_1.png"
 
 # ================================================================
-# INTERSTITIALS / TITLE CARDS
+# INTERSTITIALS / TITLE CARDS / OUTROS
 # ================================================================
 
 # Opening chapter transition
@@ -175,6 +166,7 @@ image interstitial 2b = "bg/inbetween2b.png"
 
 image interstitial 3 = "bg/inbetween3.png"
 image interstitial 3 = "bg/inbetween2b.png"
+
 
 
 

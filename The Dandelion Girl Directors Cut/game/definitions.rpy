@@ -1,3 +1,6 @@
+
+default persistent.gallery_unlocked = False
+
 define narrator = Character(None)
 define mark = Character("Mark")
 define girl = Character("Strange Girl")
@@ -13,6 +16,8 @@ define audio.sad_slow = "bgm/sadslowcut.mp3"
 define audio.moody_princess = "bgm/moody princess snip.mp3"
 define audio.fragrant_olive = "bgm/fragrant_olive.mp3"
 define audio.gloomy = "bgm/gloomy.mp3"
+define audio.autumn_and_sadness = "bgm/autumn_and_sadness.mp3"
+
 
 define audio.door_close = "sfx/door_close.mp3"
 define audio.crickets = "sfx/crickets.mp3"

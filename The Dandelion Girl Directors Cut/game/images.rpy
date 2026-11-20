@@ -43,6 +43,18 @@ transform old_credits:
     yalign 0.5
 
 
+transform scrolling_credits:
+    xalign 0.5
+    yanchor 0.0
+    ypos 720
+
+    linear 143.0 yanchor 1.0 ypos 0
+
+
+## CREDITS ##
+
+image credits_roll = "credits/DG_credits_roll.png"
+
 
 # ================================================================
 # BACKGROUNDS
@@ -51,8 +63,11 @@ transform old_credits:
 # Opening sky
 image sky = "bg/sky.png"
 
-# Night sky
+## Sunset sky
 
+image sunset_sky = "bg/sunset_sky.png"
+
+# Night sky
 image moon_night_sky = "bg/moon_night.jpeg"
 
 # Mark's office
@@ -71,18 +86,30 @@ image dandelion_field_2 = "bg/dandelion_field_2.png"
 
 
 
+## ==== FLASHBACKS ==== ##
+
+image flashback_1 = "cg/julie_explains_flashback.png"
+image flashback_2 = "cg/julie_stands_in_field_solemn_flashback.png"
+image flashback_3 = "cg/office_anne_flashback.png"
+image flashback_4 = "bg/dandelion_field_flashback.png"
+image flashback_5 = "cg/julie_points_flashback.png"
+image flashback_6 = "cg/julie_ponders_flashback.png"
+
 ## ====== ##
 ## OUTROS ##
 ## ====== ##
 
-image outro_1a = "images/outros/outro_1_a.png"
-image outro_1b = "images/outros/outro_1_b.png"
 
+## Mark meeting Julie in the prologue scene. ##
+image outro_1 = "images/outros/outro_1.png"
+image outro_1b = "images/outros/outro_1b.png"
+
+
+## Outro on a black screen ##
 image outro_black = "images/outros/black_outro.png"
 
-image outro_2a = "images/outros/outro_2.png"
-image outro_2b = "images/outros/outro_2_b.png"
 
+## Outro in the woods, looking at the moon in the sky. ##
 image outro_3 = "images/outros/outro_3.png"
 
 # ================================================================
@@ -144,6 +171,7 @@ image cg julie_intro_1 = "cg/julie_intro_cg_1.png"
 image cg julie_intro_2 = "cg/julie_intro_cg_2.png"
 image cg_julie_intro_2b = "cg/julie_intro_cg_2_b.png"
 image cg julie_walking_away = "cg/julie_step_cg.png"
+image cg depressed_julie_in_field = "cg/julie_stands_in_field_solemn.png"
 image cg julie_field = "cg/frame01.png"
 image cg julie_field_2 = "cg/frame02.png"
 image julie_points = "cg/julie_points.png"
@@ -151,7 +179,9 @@ image cg julie_dancing = "cg/frame04.png"
 image cg julie_ponders = "cg/julie_ponders.png"
 image cg julie_ponders_2 = "cg/julie_ponders_2.png"
 image cg julie_ponders_blue = "cg/CG_blue_1.png"
-image cg julie_sobbing = "cg/sprite_black_hugz_1.png"
+image cg julie_sobs = "cg/julie_sobs.png"
+
+image cg anne_hugs = "cg/mark_anne_hug.png"
 
 # ================================================================
 # INTERSTITIALS / TITLE CARDS / OUTROS
@@ -189,9 +219,6 @@ image bg sad_dandelion_field = "bg/sprite_black_bg_1.png"
 # Julie's return
 image cg sad_julie_standing = "cg/sprite_black_stand_1.png"
 
-# ================================================================
-# CHAPTER 2 — MARK'S HOME / ATTIC
-# ================================================================
 
 image bg home = "bg/bg05.jpg"
 image bg rain = "bg/bg10.png"
@@ -219,14 +246,14 @@ image bg bus_stop_b = "bg/rain_2.png"
 image bg bus_stop_c = "bg/rain_3.png"
 image bg bus_stop_d = "bg/rain_4.png"
 
-image cg anne_runs_in_rain = "cg/CG_rain_5.png"
-image cg anne_runs_in_rain_dark = "cg/CG_rain_5_dark.png"
-
-# This is the same image used earlier for Julie's breakdown.
-image cg julie_sobs = "cg/sprite_black_hugz_1.png"
+image cg anne_runs_in_rain = "cg/anne_runs.png"
+image cg anne_runs_in_rain_b = "cg/anne_runs_b.png"
 
 image cg hugs_for_anne = "cg/04_sprite_01.jpg"
 image cg julie_looks_up = "cg/cg_final_2.png"
+
+
+image cg office_anne = "cg/office_anne.png"
 
 # ================================================================
 # CREDITS

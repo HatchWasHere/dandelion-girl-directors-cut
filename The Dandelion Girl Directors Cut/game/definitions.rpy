@@ -17,7 +17,9 @@ define audio.moody_princess = "bgm/moody princess snip.mp3"
 define audio.fragrant_olive = "bgm/fragrant_olive.mp3"
 define audio.gloomy = "bgm/gloomy.mp3"
 define audio.autumn_and_sadness = "bgm/autumn_and_sadness.mp3"
-
+define audio.longing_still_goes_on = "bgm/longing_still_goes_on.mp3"
+define audio.looking_on_the_fall = "bgm/looking_on_the_fall.mp3"
+define audio.dandelion_outro = "bgm/dandelion.mp3"
 
 define audio.door_close = "sfx/door_close.mp3"
 define audio.crickets = "sfx/crickets.mp3"

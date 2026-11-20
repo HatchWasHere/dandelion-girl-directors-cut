@@ -1,7 +1,7 @@
 
 default persistent.gallery_unlocked = False
 
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -959,70 +959,70 @@ screen custom_save():
 screen image_gallery():
     tag menu
 
-        add "images/save_bg.png"
+    add "images/save_bg.png"
 
-        text "IMAGE GALLERY":
-            xalign 0.5
-            ypos 35
-            size 36
-            color "#FFFFFF"
+    text "IMAGE GALLERY":
+        xalign 0.5
+        ypos 35
+        size 36
+        color "#FFFFFF"
 
         # First row: CGs 1-4
-        hbox:
-            xpos 164
-            ypos 100
-            spacing 32
+    hbox:
+        xpos 164
+        ypos 100
+        spacing 32
 
-            for cg in gallery_cgs[0:4]:
+        for cg in gallery_cgs[0:4]:
 
-                imagebutton:
-                    idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
-                    hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
+            imagebutton:
+                idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
+                hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
 
-                    action Show("gallery_viewer", cg=cg)
+                action Show("gallery_viewer", cg=cg)
 
         # Second row: CGs 5-8
-        hbox:
-            xpos 164
-            ypos 280
-            spacing 32
+    hbox:
+        xpos 164
+        ypos 280
+        spacing 32
 
-            for cg in gallery_cgs[4:8]:
+        for cg in gallery_cgs[4:8]:
 
-                imagebutton:
-                    idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
-                    hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
+            imagebutton:
+                idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
+                hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
 
-                    action Show("gallery_viewer", cg=cg)
+                action Show("gallery_viewer", cg=cg)
 
         # Third row: CGs 9-10
-        hbox:
-            xpos 410
-            ypos 460
-            spacing 32
+    hbox:
+        xpos 410
+        ypos 460
+        spacing 32
 
-            for cg in gallery_cgs[8:10]:
+        for cg in gallery_cgs[8:10]:
 
-                imagebutton:
-                    idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
-                    hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
+            imagebutton:
+                idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
+                hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
 
-                    action Show("gallery_viewer", cg=cg)
+                action Show("gallery_viewer", cg=cg)
 
         # Back button
-        imagebutton:
-            idle "images/back_button_idle.png"
-            hover "images/back_button_hover.png"
+    imagebutton:
+        idle "images/back_button_idle.png"
+        hover "images/back_button_hover.png"
 
-            xpos 1100
-            ypos 50
+        xpos 1100
+        ypos 50
 
-            action ShowMenu("extras_menu")
+        action ShowMenu("extras_menu")
 
 
 screen gallery_viewer(cg):
 
-   modal True
+    modal True
     zorder 100
 
     # Full-screen CG
@@ -1041,42 +1041,37 @@ screen gallery_viewer(cg):
     # Escape / right-click to close
     key "game_menu" action Hide("gallery_viewer")
 
-
 screen extras_menu():
     tag menu
 
-        add "images/save_bg.png"
+    add "images/save_bg.png"
 
-        text "EXTRAS":
+    text "EXTRAS":
+        xalign 0.5
+        ypos 45
+        size 40
+        color "#FFFFFF"
+
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 25
+
+        textbutton "IMAGE GALLERY":
             xalign 0.5
-            ypos 45
-            size 40
-            color "#FFFFFF"
+            text_size 32
+            action ShowMenu("image_gallery")
 
-        vbox:
-            xalign 0.5
-            yalign 0.5
-            spacing 25
+        # Additional extras can go here.
 
-            textbutton "IMAGE GALLERY":
-                xalign 0.5
-                text_size 32
+    imagebutton:
+        idle "images/back_button_idle.png"
+        hover "images/back_button_hover.png"
 
-                action ShowMenu("image_gallery")
+        xpos 1100
+        ypos 50
 
-            # Additional extras can go here.
-            # Example: Music Room, Credits, etc.
-
-        imagebutton:
-            idle "images/back_button_idle.png"
-            hover "images/back_button_hover.png"
-
-            xpos 1100
-            ypos 50
-
-            action Return()
-
-
+        action Return()
 screen game_menu_button():
 
     imagebutton:

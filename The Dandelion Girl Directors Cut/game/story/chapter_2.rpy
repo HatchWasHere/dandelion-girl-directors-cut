@@ -15,7 +15,7 @@ label chapter_2:
 
     narrator "I wondered whether or not I'd actually see the dandelion girl, again."
 
-    narrator "A part of me wondered if the entire interaction had just been something I'd daydreamed while staring out an empty field."
+    narrator "A part of me wondered if the entire interaction had just been something I'd daydreamed while staring out at an empty field."
 
     narrator "Being isolated for a long enough period of time can make your mind start to play tricks on you."
     
@@ -91,12 +91,12 @@ label chapter_2:
 
     mark "\"The human eye sees what it wants to see... Here, let me take a look.\""
 
-    hide julie with Dissolve(0.1)
+    hide julie with Dissolve(0.25)
 
     pause 1.0
 
     scene black
-    with Dissolve(3.0)
+    with Dissolve(1.5)
 
     julie "\"... ... ...\""
 
@@ -109,7 +109,7 @@ label chapter_2:
 
     narrator "I gestured to one of the longer clouds spread across the sky, and Julie managed to focus on it."
 
-    narrator "However, she didn't seem to see the shape I was seeing, and she decided to focus instead on frowning at it with her meanest look."
+    narrator "However, she didn't seem to see the shape I was seeing, and she decided to focus instead on frowning at it with her meanest face."
 
     julie "\"... ... ...\""
 
@@ -180,7 +180,7 @@ label chapter_2:
     scene sky
     with down_fade
 
-    mark "\"You mentioned a book you were reading, a second ago. Have you read any other things? From the future, let's say.\""
+    mark "\"You mentioned a book you were reading, a second ago.{w} Have you read any other things? From the future, let's say.\""
 
     julie "\"Books in the future aren't that interesting.\""
 
@@ -207,7 +207,7 @@ label chapter_2:
 
     pause 0.5
 
-    julie "\"In this time period, they write all kinds of things about what they hope the future will be. Reading those and thinking about where I'm from...\""
+    julie "\"In this time period, they write all kinds of things about what they hope the future will be.{w} Reading those and thinking about where I'm from...\""
 
     narrator "I could hear a bit of disappointment in Julie's voice."
 
@@ -265,17 +265,18 @@ label chapter_2:
     show julie blue_9 at center
     with Dissolve(0.20)
 
-    julie "\"The philosophy books never stopped being important. Rouseau, Quackel... there's the stuff by Oppenheimer and Einstein, too.\""
+    julie "\"The philosophy and physics books never stopped being important.{w} Rouseau, Quackel... there's the stuff by Oppenheimer and Einstein, too.\""
+
+    narrator "I hadn't expected to hear Julie, of all people, to mention those names so casually."
 
     show julie blue_6 at center
     with Dissolve(0.20)
 
-    julie "\"Those guys are really hard to understand, sometimes. I have to read everything over a few more times, and if I do it for too long I get a headache.\""
+    julie "\"Those guys are really hard to understand, sometimes.{w} I have to read everything over a few more times, and if I do it for too long I get a headache.\""
 
     mark "\"It's good to reset and get a breath of fresh air, sometimes.\""
 
-    show julie blue_6 at center
-    with Dissolve(0.20)
+    hide julie with Dissolve(0.20)
 
     julie "\"Hmmmmmm~. I think you're right.\""
 
@@ -349,11 +350,11 @@ label chapter_2:
     
     narrator "After a bit of prodding, Julie told me more about herself."
 
-    narrator "She was seventeen years old, and her father was a retired government physicist."
+    narrator "She was eighteen years old, and her father was a retired government physicist."
+
+    narrator "With the way Julie described it, I believed that part probably wasn't make-believe."
 
     narrator "Her mother had died several years back, and since then she'd been taking care of her father in their little apartment on two-thousand and fourtieth street."
-
-    narrator "Aside from the setting it really was a pretty unremarkable story."
 
     narrator "I filled in the blanks to my own story."
 
@@ -511,23 +512,31 @@ label chapter_2:
 
     narrator "She looked happy that I'd filled in the gaps so quickly."
 
-    julie "\"Everything that leads to the final page is already accounted for. It's already 'written.' If you were to go back in time and tinker around... nothing would actually change.\""
+    julie "\"Everything that leads to the final page is already accounted for. It's already 'written.'{w} If you were to go back in time and tinker around... nothing would actually change.\""
 
-    mark "\"Hmmm... Because you've already went and done it. That's what led to the end all along...\""
+    mark "\"Hmmm... Because you've already went and done it.{w} That's what led to the end all along...\""
 
-    julie "\"Kehehe. I'm glad you're a smart man, Mr. Mark.\""
+    julie "\"Hehe. You pick up on stuff pretty quick, Mr. Mark.\""
 
     mark "\"It's 'Mark', Julie.\""
 
     julie "\"... ... ...\""
 
-    mark "\"It's a little depressing, though. Don't you think? Even if you could go back in time and try to prevent something horrible from happening...\""
+    narrator "Julie grumbled something under her breath."
+
+    pause 0.5
+
+    mark "\"It's a little depressing, though. Don't you think?{w} Even if you could go back in time and try to prevent something horrible from happening...\""
 
     narrator "It would still happen. In fact, you might've helped cause it in the first place."
 
-    julie "\"Mmhmm. Papa always says 'Whatever happened, happened.'\""
+    julie "\"Mmhmm. Papa always says 'Whatever happened, happened.'{w} ... You could say that means everything is pointless... but I think it means things are destined to happen.\""
 
-    mark "\"I guess that's the easiest way to explain it. Hmmmm, but it would be nice, to be able to go back and change things, even if just a little.\""
+    narrator "There was a certain warmth to that, which I wasn't sure how I felt about."
+
+    narrator "You could view that inevitability as fate, or destiny, maybe."
+
+    mark "\"Hmmm... what happened, happened.{w} I guess that's the easiest way to explain it.{w} Hmmmm, but it would be nice, to be able to go back and change things, even if just a little.\""
 
     
     scene sky with down_fade
@@ -539,11 +548,6 @@ label chapter_2:
 
     pause 1.0
 
-
-    # --------------------------------------------------------------
-    # Mark Remembers the War
-    # --------------------------------------------------------------
-
     scene black
     with Dissolve(0.7)
 
@@ -551,7 +555,7 @@ label chapter_2:
 
     narrator "There was."
 
-    narrator "Years ago, I'd been drafted to fight in the War."
+    narrator "Years ago, I'd been drafted to fight in the war."
 
     narrator "Like so many other young men, there were things I'd seen and experienced that I wanted to purge from my memory."
 
@@ -567,11 +571,6 @@ label chapter_2:
 
     narrator "Thinking about the scope of it made my head ache."
 
-
-
-    # --------------------------------------------------------------
-    # Back to Julie
-    # --------------------------------------------------------------
 
     scene cg julie_ponders_2
     with Dissolve(0.8)
@@ -593,7 +592,7 @@ label chapter_2:
 
     julie "\"Hmph.\""
 
-    narrator "Julie puffed out her cheeks, not looking satisfied with that response."
+    narrator "Julie puffed out her cheeks and huffed."
 
     pause 0.5
 
@@ -605,9 +604,9 @@ label chapter_2:
 
     narrator "Even if I did believe something like that was possible, I didn't want to think I'd take it back."
 
-    narrator "If I did, if I changed those things... I wouldn't have met Anne."
+    narrator "If I did, if I changed those things... I might not have met Anne."
 
-    narrator "I wouldn't have met that woman who helped me to push away those horrible thoughts, who loved me, and whom I'd married."
+    narrator "I might not have met that woman who helped me deal with the fallout of being in the war, who I'd married."
 
     mark "\"You said it yourself, didn't you? You can't change the past.\""
 
@@ -628,7 +627,7 @@ label chapter_2:
 
     scene black with Dissolve(0.8)
 
-    pause 0.5
+    pause 1.2
 
     scene sky with corner_fade
 
@@ -644,871 +643,235 @@ label chapter_2:
 
     pause 0.5
 
+
+    stop music fadeout 4.5
+    scene black with down_fade
+
+
     narrator "I tried to push those thoughts about the future, which weighed so heavily on me, out of my mind."
 
     narrator "Julie and I watched the clouds pass by, discussed Einstein's theories and the science fiction stories I loved to read so much, until the sun began to sink toward the horizon."
 
+    narrator "That's right.{w} Even if I could change things... I wouldn't want to."
 
-    scene black with down_fade
+    narrator "Julie and I chatted for a long time."
+
+    narrator "I'd decided... I'd focus on the story I was writing, now."
 
     pause 3.0
 
-    play sound piano_stinger
-    scene outro_black
+    scene outro_black with Dissolve(0.20)
 
     pause 4.5
 
-    
-    jump chapter_3
+    scene black with Dissolve(3.5)
 
+    pause 1.5
 
-
-    # --------------------------------------------------------------
-    # Waiting for Julie
-    # --------------------------------------------------------------
-
-    scene dandelion_field
-    with Dissolve(0.5)
-
-    narrator "The next day I arrived at the dandelion field long before Julie Danvers. I sat down on a big stone, getting some sun and appreciating the nice weather, and waited for some time."
-
-    narrator "I didn't feel impatient, and there wasn't a need to rush anything. I simply waited for Julie Danvers, the dandelion girl, to make another appearance..."
-
-    scene black
-    pause 1.0
-
-    narrator "But, I didn't see her."
-
-    narrator "I waited for a long time, glancing at my pocket watch from time to time as the sun gradually passed through the sky and sunk toward the horizon, but the girl with golden-colored hair, Julie Danvers, didn't show her face again."
-
-
-    # --------------------------------------------------------------
-    # More Days Pass
-    # --------------------------------------------------------------
-
-    scene sky
-    with Dissolve(1.0)
-
-    narrator "I went back the next day and waited some more. Then, the day after that."
-
-    pause 1.0
-
-    scene bg sad_sunset at old_bg
-
-    pause 1.0
-
-    narrator "I kept on going to that dandelion field every day and waiting... but eventually my vacation finally ended, and I went back to my busy work life back home."
-
-    narrator "Anne kept on apologizing for not being able to follow through and enjoy the vacation at the very end, but I told her it wasn't a big deal--it really wasn't--and things returned to normal, somewhat."
-
-
-    # --------------------------------------------------------------
-    # Back Home
-    # --------------------------------------------------------------
-
-    stop music
-
-    scene black
-    with Dissolve(3.0)
-
-    pause 2.0
-
-    play music passing_time
-
-    scene office
-
-    pause 1.0
-
-    anne "Hmmm. You look really out of it lately, Mark."
-
-    mark "You think?"
-
-    anne "Yeah. So cut the crap, and get back to the grindstone."
-
-    mark "Heh."
-
-    anne "Hehe."
-
-    narrator "Even Anne seemed to notice a small change in me, which had formed while I was away from the city, enjoying the company of Julie Danvers."
-
-    narrator "Fortunately, or maybe not, she wasn't entirely sure what had caused it."
-
-    narrator "Maybe that was for the best. It does sound pretty suspicious."
-
-    narrator "There's no one out there, where we have our regular vacation, so I figured she wouldn't suspect anything like that had gone on."
-
-    narrator "... Why did I feel so guilty?"
-
-    narrator "I wasn't entirely sure."
-
-    narrator "But every now and then, as the seasons started shifting from one to another, I'd drive down to that place."
-
-    narrator "Sometimes with Anne, usually not. ... And I'd look around, hoping I'd catch a glimpse of Julie."
-
-    narrator "But, like she'd been just an apparition or a pleasant daydream, she didn't reappear again."
-
-
-    # --------------------------------------------------------------
-    # Months Later
-    # --------------------------------------------------------------
-
-    stop music
-
-    scene black
-
-    pause 1.0
-
-    narrator "But then--"
-
-    narrator "Eventually, one day, she did."
-
-    narrator "I met Julie Danvers again when I was strolling through the dandelion field where I'd met her months ago, which had been plucked free of dandelions and filled with real flowers that were surviving and thriving in the sunlight."
-
-    narrator "At least for the time being, shortly before Winter arrived when it would kill most or all of them."
-
-    narrator "I saw her, wearing dark clothes that looked strange on her, standing in one spot, staring emptily into the distance."
-
-
-    # --------------------------------------------------------------
-    # Julie Returns
-    # --------------------------------------------------------------
-
-    scene bg sad_dandelion_field at old_bg
-
-    mark "Julie, is that you? Hey, Julie!"
-
-    narrator "I hurried over and called her name, but she didn't respond."
-
-    julie "........."
-
-    mark "Julie? That's you, right...? Are you alright? Julie?"
-
-    scene cg sad_julie_standing at old_cg
-
-    narrator "The air of the dandelion girl I'd come to know and appreciate had been wiped away, and there was nothing but a heaviness in the air that made me uneasy."
-
-    narrator "It wasn't the same girl who had felt so easy to talk to before standing in front of me, I was sure of it."
-
-    pause 2.0
-
-    julie "... I'm sorry I lied. I thought I could make a couple more trips, and then everything would be fine. I could... fix it, you know? And then we could go on meeting until the day you left to go home, and then..."
-
-    mark "Did something bad happen?"
-
-    narrator "It was more of a rhetorical question, but Julie nodded her head just the same."
-
-    mark "What is it?"
-
-    play music sad_slow
-
-    julie "Papa... died."
-
-    mark "What? Your father passed away? When? I'm so sorry, Julie."
-
-    pause 2.0
-
-    julie "... *hic* ........."
-
-    pause 0.8
-
-    julie "I didn't understand..."
-
-    pause 0.8
-
-    julie "... he was sick for a long time... but he always kept his spirits up, and then..."
-
-    pause 0.8
-
-    julie "One day he got really sick, and... by then they couldn't do anything to help him."
-
-    pause 0.8
-
-    julie "... All I did was jump around through time... having fun, and waiting for him to fix the time machine when it wore down..."
-
-    pause 0.8
-
-    julie "I never thought........."
-
-    pause 0.8
-
-    julie "They just made him comfortable in the end, and..."
-
-    pause 0.8
-
-    julie "He smiled... at me... and... he......... he........."
-
-    mark "I'm so sorry, Julie."
-
-    narrator "She wiped her eyes with her sleeve, then continued--"
-
-    julie "I could've set the coordinates to the day right after the last we met, but with everything... well, I just couldn't remember them. So, sorry."
-
-    julie "I wasn't even sure if you'd come, so I've been waiting here for a while. Today was going to be the last day. ... Is that selfish?"
-
-    mark "I don't think so."
-
-    julie "........."
-
-    julie "So Mark, I... ..."
-
-    pause 0.6
-
-    scene black
-
-    julie "Ah--"
-
-    narrator "Before Julie Danvers could turn around and push me away, I hugged her."
-
-    narrator "And to my surprise, she didn't fight back. On the contrary, her body seemed to turn to jam, and she just slumped down, leaning against me."
-
-    narrator "I had many conflicting feelings."
-
-    narrator "There was the image of my wife, deep in my heart, frowning."
-
-    narrator "And then there was the dandelion girl, Julie, whose own heart was full of pain of a different type."
-
-
-    # --------------------------------------------------------------
-    # Julie Breaks Down
-    # --------------------------------------------------------------
-
-    scene cg julie_sobbing at old_cg
-
-    mark "You're strong, Julie. You're really strong. So if you want to cry, it's okay. I'm here, at least for now. So--"
-
-    julie "......... ku ... ...... nngh ...... uu ... uwaaaa... aaaaaahhhhhhhhhhhhhhh......... !"
-
-    narrator "She choked on them for just a moment, and then... gently... the dam creaked as it slowly broke open, and the suffering of Julie Danvers which she'd probably held back for a long time started to flow down her cheeks, unabated."
-
-    scene black
-    with Dissolve(1.0)
-
-    pause 6.0
-
-    stop music
+    play music crickets fadein 2.0
 
     pause 4.0
 
 
-    # --------------------------------------------------------------
-    # Afterward
-    # --------------------------------------------------------------
+    play sound door_close
 
-    play music blue_feather
+    pause 3.5
 
-    scene bg sad_dandelion_field at old_bg
-    with Dissolve(1.0)
 
-    narrator "After a while, she calmed down, and dried her eyes on her sleeve again."
+    play sound phone_pickup
+    pause 0.3
 
-    narrator "By then she would actually look at me, and she looked like a completely different person."
-
-    narrator "What kind of person had Julie become...?"
-
-    julie "... Thanks, Mr. Mark."
-
-    mark "Like I said, just 'Mark' is fine."
-
-    julie "Hehe."
-
-    mark "That's better. I'm glad to see you're feeling better."
-
-    scene cg sad_julie_standing at old_cg
-
-    julie "Yeah, I'm better. But, I still wonder what I'll do now."
-
-    mark "What do you mean? Won't you go back to your own time?"
-
-    julie "I don't think there's a place for me there, anymore. Or 'when.'"
-
-    julie "And besides... it won't be much longer before my time machine falls apart. After all, I don't have anyone to fix it anymore."
-
-    julie "No matter how much I try to make it sound right, I just... don't want to be stuck in that time period, at all."
-
-    mark "Then where will you go? How many more times can you travel?"
-
-    scene bg sad_dandelion_field at old_bg
-
-    julie "Maybe... one more. I should be able to do at least one more."
-
-    mark "Then, go to a time where it feels right."
-
-    show julie black_5 at center
-
-    julie "How will I know what feels right?"
-
-    mark "There's no explanation I can give you for that. Sometimes, it just... feels like something was meant to happen."
-
-    mark "You talked about the 'book of time theory,' right? What happened, happened."
-
-    mark "Probably, wherever you end up going is the place... no, the time where you were meant to be."
-
-    mark "So maybe there's no need to think about it too hard. Just close your eyes, and think. And just... go."
-
-    mark "Before it breaks down, and you're stranded here forever."
-
-    hide julie
-
-    julie "Hehe. It makes sense, when you say it like that."
-
-    julie "I can't stay here, can I? I don't want this world to become like the Ethan Frome story."
-
-    mark "The what?"
-
-    narrator "Julie shook her head and told me not to worry about it."
-
-    show julie black_4 at center
-
-    julie "I think... I know what you mean. There's something only I can do. That's what I've got to do."
-
-    mark "Something only you can do, is it?"
-
-    julie "That's right."
-
-    mark "Well, whatever that is, I believe in you. So do it, and don't regret it."
-
-    mark "As long as you can do that, everything will be okay."
-
-    hide julie
-
-    narrator "Julie nodded her head in agreement. Then she slowly, very carefully, turned around."
+    queue sound dialing_phone
 
     pause 5.0
 
-    show julie black_5 at center
-    pause 0.5
-
-    show julie black_6 at center
-    pause 0.5
-
-    hide julie
-    pause 1.0
-
-    narrator "Just once."
-
-    narrator "Julie glanced back at me just once, then turned back around right away like she was embarrassed."
-
-    scene black
-
-    narrator "And then--"
-
-    narrator "A moment or two later--"
-
-    narrator "There was a crash like thunder, and a flicker of light, and then the image of Julie Danvers disappeared forever."
+    narrator "That night, I told Anne all about the conversation I had with the dandelion girl."
 
     pause 1.0
 
-    stop music
+    anne "\"Sounds like a heavy conversation.\""
 
-    pause 4.0
+    mark "\"For sure.{w} I definitely wasn't expecting it to take a turn like that.\""
 
-
-    # --------------------------------------------------------------
-    # Back Home
-    # --------------------------------------------------------------
-
-    scene bg home at old_bg
-    play music moody_princess
-
-    anne "Mark? ... Mark? Are you listening to me?"
-
-    mark "Huh? Sorry, I was daydreaming."
-
-    anne "I hope it was about something more interesting than Bingo. Hmph."
-
-    narrator "It was."
-
-    mark "I'm listening, sorry."
-
-    narrator "Anne sighed and slumped her shoulders."
-
-    anne "I was just letting you know I'm leaving for bingo. I'll be back later, alright? There's a couple little things in the refrigerator in case you get hungry before dinner."
-
-    mark "All right, got it."
-
-    anne "........."
-
-    narrator "Anne opened her mouth and looked like she had something else to say, but a second or two later she closed it and simply shook her head."
-
-    narrator "Then, she turned around and picked up an umbrella from the stand by the door, and left for her weekly bingo game."
-
-    mark "Mmmmm. I really haven't been the same, have I?"
-
-    narrator "When would I go back to normal? It felt like something about Julie Danvers had touched me, and then just as I was beginning to get used to it, she was snatched away before I could figure out just what it was."
-
-    narrator "My wife saw that, but I didn't think she knew exactly what it was."
-
-    narrator "Still, I must be acting pretty suspicious."
-
-
-    # --------------------------------------------------------------
-    # Rain
-    # --------------------------------------------------------------
-
-    scene bg rain at old_bg
-
-    narrator "I looked out the window, which was streaked with rain drops, and sighed."
-
-    narrator "Eventually. Once enough days, weeks or months went by I'd forget all about Julie Danvers and her ridiculous story. Something I wouldn't be able to tell anyone about, solely because they wouldn't believe a word of it."
-
-    narrator "Now that's depressing. On many levels."
-
-
-    # --------------------------------------------------------------
-    # The Puzzle
-    # --------------------------------------------------------------
-
-    scene bg home at old_bg
-
-    narrator "After a little while I finished the jigsaw puzzle I'd been working on, on the kitchen table. It was a field of flowers, and I wanted to just scramble it up again and dump it back in the box."
-
-    narrator "But Anne liked to frame these when I finished them, so I felt too guilty to do that."
-
-    narrator "Either way, I needed to find another puzzle. Or something else to keep my mind busy."
-
-
-    # --------------------------------------------------------------
-    # The Attic
-    # --------------------------------------------------------------
-
-    scene black
-    pause 0.5
-
-    scene bg attic at old_bg
-    pause 3.0
-
-    mark "I need to clean this place out. I don't even recognize half of these boxes."
-
-    narrator "The attic was filled with dozens of cardboard boxes, all coated in a thick layer of dust. I didn't remember most of them, even when they had words scribbled on them in marker. Those words didn't mean much of anything, and none of them were legible enough to suggest that they really meant something."
-
-    narrator "Had Anne put these up here? I wasn't entirely sure. I'm not much of a cleaner, myself."
-
-    mark "Hmhmhm... oh, there's one in here. I... a--ah!"
-
-    scene black
-    play sound fall
-
-    narrator "Suddenly, a few boxes stacked on top of each other were jerked loose, and fell on top of me."
-
-    narrator "Like humpty dumpty, it had a great fall... and I was left coughing out the dust in my lungs."
-
-    scene bg attic at old_bg
-    pause 0.5
-
-    mark "Kuh...! Gu... ugh... ugh... jesus... ... ... learn to stack... boxes the right way, Anne... ku! Guhhh!"
-
-    narrator "I spent a minute or two gagging and waving the dust away before I was able to get my head straight and stand up."
-
-    narrator "A spider skittered away somewhere."
-
-    mark "... *cough* ... Well, I got the puzzle at least. Five-hundred pieces. That should keep me busy for a... while?"
-
-    narrator "I was looking just ahead of where the puzzle box had fallen when I noticed it."
-
-    narrator "There was an ornate-looking suitcase with a rusted lock. It was big enough to hold a lot more than the usual luggage. It must've tumbled down from somewhere with the rest of the boxes. That lock, which must've been shut for decades now, had broken, and the case flipped open automatically."
-
-    narrator "Inside, was a bundle of papers, a dress, and a dozen broken pieces of dark glass in a box."
-
-    mark "... ?"
-
-    narrator "The case belonged to Anne. Just after we'd gotten married she'd showed up with it, blushed and told me it was a bundle of embarrassing sentimental things from her father. It didn't seem like much of a big deal, but she'd made me promise not to open it."
-
-    narrator "She'd even gone as far as to lock it up tight, and as far as I knew she'd lost the key. She'd joked that she'd swallowed it. ... That was a joke, right?"
-
-    narrator "'Embarrassing sentimental things.'"
-
-    narrator "I'd always wondered what she meant by that. So even though I was going against my word and looking through things I'd promised not to, I couldn't help but be curious and see what she was so ashamed of. It would probably be okay, as long as I did my best to shut the case again, tuck it away somewhere inconspicuous and not bring it up in front of her."
-
-    mark "........."
-
-    narrator "But--"
-
-    mark "What the hell is this stuff? ... Birth certificate, a bunch of... I can't even make sense of these papers. ......... ?"
+    narrator "I heard Anne chuckle on the other end of the phone."
 
     pause 1.0
 
+    scene flashback_6 with Dissolve(0.6)
 
-    # --------------------------------------------------------------
-    # Interstitial
-    # --------------------------------------------------------------
+    anne "\"You sure are taking her game of pretend seriously, aren't you?\""
 
-    scene interstitial 5 at old_bg
-    with Dissolve(3.0)
+    narrator "That was true.{w} What had Julie said that had gotten under my skin so quickly?"
 
     pause 1.0
 
-    scene interstitial 5b at old_bg
-    with Dissolve(0.7)
+    anne "\"But it's sweet.\""
 
-    pause 4.0
-
-    stop music
-
-    scene black
-    pause 2.0
-
-    # ==============================================================
-    # THE WEDDING — YEARS EARLIER
-    # ==============================================================
-
-    mark "Everything's all set, right?"
-
-    "Woman" "That's right. ... Getting nervous, Mr. Randolph? The tuxedo looks fabulous. Oh, or is it the flower arrangement?"
-
-    mark "W-what makes you think I'm nervous?"
-
-    "Woman" "I don't know. It could be your shaking hands? Ahahahaha."
-
-    mark "........."
-
-    "Woman" "Sorry, I'm just ribbing you. All in good fun."
-
-    mark "Right, right."
-
-    narrator "I'd never been to a wedding before, so my own was pretty disorienting. I didn't have a damn clue where anything went or how to proceed. ... Thankfully we had someone to direct it and put everyone in the proper place."
-
-    narrator "It was someone Anne had met on a business trip apparently, and she seemed to know what she was doing."
-
-    narrator "So, hypothetically, everything should work out in the end."
-
-    narrator "But still, I felt something uncomfortable settled in the bottom of my stomach."
-
-    narrator "The bridesmaids. The best man. All the usual details of a wedding were sorted out, accounted for and we'd rehearsed everything without a hitch."
-
-    narrator "In that case, why was I so nervous?"
-
-    narrator "It wasn't as though I was getting cold feet. ... Right?"
-
-    narrator "I guess anyone would be nervous."
-
-    narrator "I kept telling myself that, again and again, but it didn't seem to help much."
-
-    narrator "I just shook my head and struggled to swallow the lump in my throat."
-
-    anne "Mark? Are you in here?"
-
-    "Woman" "Yikes. There's the lady of the hour. I'll make myself scarce."
-
-    narrator "The woman giggled and made her way out, and I heard Anne's--Julianne's--voice fill the room."
-
-    stop music
-
-    scene black
-
-    pause 2.0
-
-    mark "Ju.................. li................. Anne..........?"
-
-
-    # --------------------------------------------------------------
-    # Anne Enters
-    # --------------------------------------------------------------
-
-    scene bg church_a at old_bg
-    with Dissolve(1.0)
-
-    pause 1.0
-
-    anne "Oh, there you are. Not going to freak out about seeing me beforehand, are you?"
-
-    mark "I'm not a superstitious man. It takes away a bit of the surprise, but what does it matter? You're beautiful. Everything's going to go just fine."
-
-    narrator "Anne took a seat next to me on one of the pews where that woman had been a moment or two ago, and laughed. Unlike me, she was in pretty good spirits."
-
-    anne "Superstitious, hmmm? You're not a religious man either, come to think of it. Whatever happened to that? We're getting married in a church after all."
-
-    mark "... I don't know. I think maybe I lost sight of the whole thing when I was deployed. Some of the other guys on the battlefield, they prayed when things got tough. Not me, though."
-
-    anne "So what, is the marriage thing a farce? Maybe we should just call it off."
-
-    mark "Heh. You're joking about something pretty serious, aren't you?"
-
-    anne "Come now, you know I don't mean it."
-
-    mark "Right, right."
-
-    anne "Hmmmmmmm. I wonder what Papa would think of the whole thing, himself?"
-
-    mark "What do you mean?"
-
-    anne "Mmmmm. The two of you would've gotten along pretty well, you know? He has a man of science. He'd say all of this was a load of nonsense. Not the marriage, just the church. The priest. All of that."
-
-    mark "Kind of sounds like he was a bit of an insensitive guy."
-
-    anne "You think?"
-
-    mark "Maybe."
-
-    narrator "The two of us laughed together, in the empty church where we would get married tomorrow."
-
-    anne "Well, I think everything will go well. Just don't get cold feet now, okay? You'll embarrass me wearing this beautiful dress."
-
-    mark "I get it, I get it. Why are you wearing the dress now, anyway? Don't you have something more breathable to move around in?"
-
-    anne "I do. But hey, I wanted to take it for a spin, hehehehe."
-
-    mark "Goofball."
-
-    narrator "Tomorrow, this place would be full of familiar and strange people, and the two of us would be married. ... Even though everything had been said and done, I still felt extremely anxious."
-
-    narrator "Everything would definitely be fine, so why did I feel so uneasy?"
-
-    narrator "Maybe it was the feeling of... finality."
-
-
-    # --------------------------------------------------------------
-    # Till Death Do Us Part
-    # --------------------------------------------------------------
-
-    scene bg church_b at old_bg
-    with Dissolve(1.0)
-
-    narrator "Once you're married, there's no going back."
-
-    narrator "'Till death do us part' and all of that."
-
-    anne "Still. I'm glad I met you, and I'm glad we've arrived at this point. ... I love you, Mark. It really was fate that I met you."
-
-    mark "C-come on, you're embarrassing me."
-
-    anne "Ehehehe."
-
-    pause 2.0
-
-    anne "......... The day before yesterday I saw a rabbit..... and then yesterday a deer... and today, you..."
-
-    mark "Hmmm?"
-
-    anne "Since that time, wonderful things have happened one after another. At first all I could see was that cute little rabbit, and then I found the deer. And now, at the end, I've found you."
-
-    mark "........."
-
-    anne "At a loss for words?"
-
-    mark "Yeah, it's just..."
-
-    anne "Just what?"
-
-    mark "I don't know. I'm... having this really bad case of deja vu."
-
-    anne "Hmhmhm. Is that soooo?"
-
-    mark "........."
-
-    anne "Well, what happened, happened. That's what Papa would say, now."
-
-    mark "You think so, eh?"
-
-    anne "Yes... I'm pretty sure."
-
-    narrator "Anne smiled sadly, and swung her feet back and forth underneath the pew. For a moment she looked like a restless child sitting through mass."
-
-    anne "It's... a shame he couldn't make it to see this."
-
-    mark "Right."
-
-    anne "I wonder... if he'd think I look beautiful, too."
-
-    mark "Good question."
-
-    pause 2.0
-
-
-    # --------------------------------------------------------------
-    # The Photograph
-    # --------------------------------------------------------------
-
-    mark "Anne, I've been meaning to ask you something."
-
-    anne "Oh?"
-
-    mark "Yeah. ... Why are you so hesitant to get your picture taken? It's our wedding, after all. We'll remember it for the rest of our lives, and it only happens once. Don't you want some sort of memento?"
-
-    anne "........."
-
-    anne "It's not that I don't want to remember this wonderful day. It's just that, well... ... it's impossible for me. I can't really say why, but, umm..."
-
-    mark "It's okay. We're getting our portrait done, so it's not a total loss."
-
-    anne "Hehe. Thanks for understanding my feelings."
-
-    mark "Never said I understand those."
-
-    narrator "Anne giggled."
-
-    scene black
-    with Dissolve(1.0)
-
-    pause 2.0
-
-    narrator "What happened, happened."
-
-    pause 2.0
-
-    anne "......... The day before yesterday I saw a rabbit..... and then yesterday a deer... and today, you..."
-
-    pause 1.0
-
-
-    # --------------------------------------------------------------
-    # Mark Understands
-    # --------------------------------------------------------------
-
-    scene cg wedding at old_cg
-    with Dissolve(1.0)
-
-    narrator "At last, I understood. The feeling of deja vu and familiarity that I couldn't wipe away, which had been plaguing me ever since I first met the dandelion girl Julie Danvers."
-
-    narrator "That night, the evening before we were married, I fell asleep with a slightly puzzled feeling, like something still wasn't quite right."
-
-    narrator "Decades later, I finally understood."
-
-    pause 1.0
-
-    scene black
-    with Dissolve(1.0)
-
-    pause 2.0
-
-    # ==============================================================
-    # THE BUS STOP
-    # ==============================================================
-
-    play music sad_slow
-
-    scene bg bus_stop_a at old_bg
-    with Dissolve(1.0)
-
-    narrator "It was so stupid, and so petty."
-
-    narrator "But still, I understood."
-
-    narrator "At the very end, I was able to understand \"Anne.\""
-
-
-    scene bg bus_stop_b at old_bg
-    with Dissolve(1.0)
-
-    pause 1.0
-
-    scene bg bus_stop_c at old_bg
-    with Dissolve(1.0)
-
-    pause 1.0
-
-    scene bg bus_stop_d at old_bg
-    with Dissolve(1.0)
-
-
-    narrator "I walked to the bus stop, where I knew it would drop Anne off after her bingo game."
-
-    narrator "I waited. Not for just a single hour, or even two or three. I sat on that bench, underneath the feeble-looking bus shelter, and waited for a long time, until Anne came to return from her Bingo game."
-
-    narrator "Eventually, that bus rolled up and several people got off. After a little shuffling, Anne stepped out too, and I gave her a start."
-
-    narrator "Unsure of what I was doing here, she just... stared..."
-
-    narrator "She looked into my eyes, and after seeing some understanding at last, she looked weak in the knees."
-
-
-    # --------------------------------------------------------------
-    # Mark Knows
-    # --------------------------------------------------------------
-
-    scene bg bus_stop_c at old_bg
-    with Dissolve(1.0)
-
-    mark "I get it, now. I understand everything. ... Not wanting to have your picture taken, the uneasy feeling I had the night before our wedding, the sensation of deja vu... The reason I felt so... lovestricken. All along, it was you."
-
-    anne "........."
-
-    mark "You were scared. So many years have passed since I met you at my practice, and we've grown old. I fell in love with you this year, and you returned to the past. Then I fell in love with you again."
-
-    anne "........."
-
-    mark "I don't care how old you've gotten. I don't care about any of that. Just knowing that you and Julie are one and the same... makes my heart so happy."
-
-    anne "Mark......... Mr. Mark."
-
-    mark "I fell in love with the young you. I guess I fell in love with you twice, in that case. But seeing the young you doesn't change anything. ... I... love you, Anne."
-
-    anne "Mark...!"
-
-
-    # --------------------------------------------------------------
-    # Anne Runs to Mark
-    # --------------------------------------------------------------
-
-    scene black
-    with Dissolve(0.5)
+    mark "\"Huh?\""
 
     pause 0.5
 
-    scene cg anne_runs_in_rain at old_cg
-    with Dissolve(1.0)
+    anne "\"You said that even if you could change things, you wouldn't.{w} I wonder why that is...\""
 
-    narrator "She ran. Anne ran and hugged me, and buried her face in my chest. And she cried, and cried, and I felt yet another sting of deja vu. Months ago, Julie Danvers had done this too."
+    narrator "Anne giggled, and I could tell she already knew my reasoning."
 
-    pause 2.0
+    mark "\"Well... it's the truth.\""
 
+    anne "\"Hehe. I believe you.\""
 
-    # Julie's earlier embrace.
-
-    scene cg julie_sobs at old_cg
-    with Dissolve(1.0)
-
-    pause 3.0
-
-
-    # And now Anne.
-
-    scene cg hugs_for_anne at old_cg
-    with Dissolve(1.0)
-
-    narrator "It was a warm, reassuring deja vu."
-
-    narrator "I had never lost Julie Danvers. At the same time, I had never stopped loving my wife or fallen for someone else."
-
-    narrator "In an imperfect world where nothing seems to ever line up neatly, things had fallen into place."
-
-
-    # --------------------------------------------------------------
-    # Epilogue
-    # --------------------------------------------------------------
-
-    scene black
-    with Dissolve(1.0)
-
-    narrator "That ended the chapter in my life about Julie Danvers. Or, in a way maybe it had it just begun."
-
-    narrator "Whatever the case may be, Anne and I walked hand in hand in the rain, clinging to one another. Anne joked that I might have caught a cold."
-
-    narrator "But she said that would be okay, since she could nurse me back to health. And I knew she would."
-
-    narrator "After a while the rain finally stopped, and we looked up at the sky."
-
-    narrator "The bright, beautiful sky began to peek through the clouds, and I thought it looked like the sky I'd seen when I first met the dandelion girl........."
-
-    pause 4.0
-
-
-    # --------------------------------------------------------------
-    # Final CG
-    # --------------------------------------------------------------
-
-    scene cg julie_looks_up at old_cg
-    with Dissolve(1.0)
-
-    pause 2.0
-
-    # The original waits for a click here.
-    pause
-
-    scene black
-    with Dissolve(1.0)
-
-    pause 4.0
-
-    jump credits
+    scene black with Dissolve(1.2)
     
+    narrator "Bad things had happened to me along the way, but if they hadn't, I might not be on the phone talking to my wife, now."
+    
+    narrator "Even if it had been a small chance... I wouldn't want to risk it."
+
+    anne "\"There's lots of people with regrets who'd want to go back and change things.{w} I think it's rare for someone to have an answer like that.\""
+   
+    mark "\"You do, huh?\""
+
+    anne "\"Mmmhmmm.\""
+
+    narrator "I thought about that."
+
+    narrator "I wondered if my answer was strange, or if what was so out of the ordinary was that I thought about all the unintended consequences."
+    
+    narrator "Maybe most people wouldn't bother."
+
+    pause 1.0
+
+    narrator "I didn't want to think of what it would be like if the woman on the other end of this phone wasn't there."
+
+    mark "\"... ... ...\""
+
+    pause 1.0
+
+    anne "\"You must really love me, huh.\""
+
+    mark "\"Wh...!?\""
+
+    narrator "Even without seeing her face, I could tell Anne had a big grin on her face."
+
+    anne "\"Unless there's another reason?\""
+
+    mark "\"... ... ...\""
+
+    anne "\"Hmhm.{w} You're such a sweet man, Mark.\""
+
+    pause 0.6
+
+    narrator "I glanced over my shoulder, at the kid sitting by the front desk, but he seemed to have dozed off and wasn't listening."
+
+    pause 0.6
+
+    scene moon_night_sky with down_fade
+
+    pause 0.5
+
+    anne "\"Let's say Julie's story was real.{w} Which interpretation would you like to be real?\""
+
+    mark "\"If...\""
+
+    narrator "If time travel was real, how would I want it to work?"
+
+    narrator "I hadn't wondered about something like that since my last science fiction novel."
+
+    pause 1.5
+
+    mark "\"Hmmm...{w} I think... the idea of unintended consequences makes more sense.\""
+
+    anne "\"Oh?\""
+
+    narrator "Maybe that wasn't entirely true.{w} If it came down to what was probably true... the 'book of time' made more sense.{w} But there was something about the idea of time being inevitable..."
+
+    pause 0.5
+
+    anne "\"You don't seem to like the idea of fate.\""
+
+    scene black with down_fade
+
+    pause 0.5
+
+    mark "\"... I guess.{w} Julie would probably say it's destiny.\""
+
+    narrator "I guess it comes down to perspective."
+
+    anne "\"That does sound a bit nicer.{w} You've always been someone who likes defying the odds. It makes sense that the sound of that would rub you the wrong way.\""
+
+    mark "\"Well... it's all just a theory, anyway, isn't it?\""
+
+    narrator "Why was I getting so wound up over a game of make-believe, anyway?"
+
+    narrator "I wasn't entirely sure why Julie's theory bothered me so much."
+
+    narrator "It wasn't like I was annoyed with Julie, per se.{w} Like Anne said, it was the idea of fate that left a bad taste in my mouth."
+
+    scene moon_night_sky with down_fade
+
+    anne "\"Hmmm, I have some thoughts of my own.\""
+
+    mark "\"Is that right?\""
+
+    anne "\"Hehe.{w} I'll tell you all about it when I'm there, how about that?\""
+
+    mark "\"Sure, that's fine.\""
+
+    narrator "Maybe Anne would change her mind after hearing Julie's thoughts, or maybe it would be the other way around."
+
+    narrator "Maybe it would be during that conversation that I'd find out where Julie was really from, and what parts of her story were all fiction."
+
+    narrator "A part of me wondered if that might feel like something of a letdown, like finding out how your favorite magic trick worked."
+
+    narrator "But ultimately, it is still just a trick, after all."
+
+    scene black with Dissolve(1.5)
+
+    mark "\"Yeah... that'll be interesting.{w} But how's Bern doing, anyway?\""
+
+    anne "\"Well, she's a bit tired, but things have mostly calmed down.{w} Hmmm... I think I'll be up the day after next.\""
+
+    narrator "Eventually, our conversation turned away from the dandelion girl."
+
+    narrator "My heart felt lighter, knowing Anne would be back in the picture, soon."
+
+    narrator "We talked about Bern, the procedure her mother had undergone, and all of Bern and her mother's questions about how I was holding up."
+
+    narrator "I wasn't used to being the center of attention, so I tried to turn the discussion away from myself."
+
+    narrator "Unsurprisingly, that seemed to amuse Anne."
+
+    narrator "The three of them had only had good things to say about me, but that seemed to make it worse, somehow..."
+
+    pause 1.0
+
+    narrator "After a time I heard Anne yawn, then heard a similar sound from the kid at the ranger's station."
+
+    play sound phone_pickup
+
+
+    narrator "We ended our call after saying good night to each other."
+
+    scene moon_night_sky with down_fade
+
+    pause 1.5
+
+
+    narrator "I thought of Anne and Julie and the sort of meeting they'd have as I walked back to the cabin along the familiar, moon-lit path."
+
+    narrator "The moon hung low in the sky, so pale and intense that I thought it might be watching me."
+
+    narrator "I wondered what would happen when my wife, Anne, crossed paths with the dandelion girl..."
+
+    pause 3.0
+
+    scene outro_3 with Dissolve(0.4)
+
+
+    pause 4.0
+
+    scene black with Dissolve(4.0)
+
+    pause 3.0
+    
+
+    jump chapter_3
 

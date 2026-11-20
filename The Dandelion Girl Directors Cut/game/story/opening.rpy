@@ -90,16 +90,12 @@ label opening:
 
     narrator "It was our very first meeting, wasn't it?"
 
-
-    # --------------------------------------------------------------
-    # Julie CG
-    # --------------------------------------------------------------
-
     scene cg julie_intro_1
     with Dissolve(0.25)
 
     pause 0.75
 
+    stop music fadeout 4.5
     scene cg julie_intro_2
     with Dissolve(0.25)
 
@@ -111,30 +107,23 @@ label opening:
 
     narrator "One time, in a place far away from here, I'd witnessed a scene just like this."
 
-    stop music fadeout 3.0
-
 
     ## == Transition Effect == ##
 
     pause 0.5
 
-    scene cg_julie_intro_2b
+    scene outro_1
     with corner_fade
-
-    pause 1.0
-
-    scene outro_1a
-    with Dissolve(0.75)
-
-    pause 1.5
     
+    pause 1.5
+
     
     play sound piano_stinger
     scene outro_1b
     with Dissolve(0.75)
 
 
-    pause
+    pause 2.5
 
     scene black
     with Dissolve(2.0)

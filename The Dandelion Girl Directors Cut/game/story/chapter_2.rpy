@@ -22,7 +22,7 @@ label chapter_2:
 
     narrator "I climbed the rocky slope again the next day, wondering if I'd catch another glimpse of Julie Danvers."
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 2.0
 
@@ -95,7 +95,7 @@ label chapter_2:
 
     pause 1.0
 
-    scene black
+    scene new_black
     with Dissolve(1.5)
 
     julie "\"... ... ...\""
@@ -136,7 +136,7 @@ label chapter_2:
 
     pause 0.2
 
-    scene black with Dissolve(0.5)
+    scene new_black with Dissolve(0.5)
 
     pause 0.50
 
@@ -203,7 +203,7 @@ label chapter_2:
 
     mark "\"Is that right?\""
 
-    scene black with Dissolve(2.0)
+    scene new_black with Dissolve(2.0)
 
     pause 0.5
 
@@ -334,7 +334,7 @@ label chapter_2:
 
     narrator "Julie Danvers was... an extremely interesting person."
 
-    scene black with Dissolve(0.65)
+    scene new_black with Dissolve(0.65)
 
     # --------------------------------------------------------------
     # Getting to Know Each Other
@@ -492,7 +492,7 @@ label chapter_2:
     # The Book of Time
     # --------------------------------------------------------------
 
-    scene black
+    scene new_black
     with Dissolve(0.6)
 
     pause 0.3
@@ -548,7 +548,7 @@ label chapter_2:
 
     pause 1.0
 
-    scene black
+    scene new_black
     with Dissolve(0.7)
 
     mark "\"... ... ...\""
@@ -596,7 +596,7 @@ label chapter_2:
 
     pause 0.5
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     narrator "Even if it were possible, could I do it?"
 
@@ -625,7 +625,7 @@ label chapter_2:
 
     pause 0.5
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     pause 1.2
 
@@ -645,7 +645,7 @@ label chapter_2:
 
 
     stop music fadeout 4.5
-    scene black with down_fade
+    scene new_black with down_fade
 
 
     narrator "I tried to push those thoughts about the future, which weighed so heavily on me, out of my mind."
@@ -664,7 +664,7 @@ label chapter_2:
 
     pause 4.5
 
-    scene black with Dissolve(3.5)
+    scene new_black with Dissolve(3.5)
 
     pause 1.5
 
@@ -719,7 +719,7 @@ label chapter_2:
 
     anne "\"Hehe. I believe you.\""
 
-    scene black with Dissolve(1.2)
+    scene new_black with Dissolve(1.2)
     
     narrator "Bad things had happened to me along the way, but if they hadn't, I might not be on the phone talking to my wife, now."
     
@@ -747,9 +747,11 @@ label chapter_2:
 
     anne "\"You must really love me, huh.\""
 
+    scene new_black with custom_hpunch
+
     mark "\"Wh...!?\""
 
-    narrator "Even without seeing her face, I could tell Anne had a big grin on her face."
+    narrator "Even without seeing her, I could tell Anne had a big grin on her face."
 
     anne "\"Unless there's another reason?\""
 
@@ -787,7 +789,7 @@ label chapter_2:
 
     anne "\"You don't seem to like the idea of fate.\""
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 0.5
 
@@ -823,7 +825,7 @@ label chapter_2:
 
     narrator "But ultimately, it is still just a trick, after all."
 
-    scene black with Dissolve(1.5)
+    scene new_black with Dissolve(1.5)
 
     mark "\"Yeah... that'll be interesting.{w} But how's Bern doing, anyway?\""
 
@@ -868,7 +870,7 @@ label chapter_2:
 
     pause 4.0
 
-    scene black with Dissolve(4.0)
+    scene new_black with Dissolve(4.0)
 
     pause 3.0
     

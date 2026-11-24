@@ -90,6 +90,7 @@ define audio.sweet_potato = "bgm/sweet_potato.mp3"
 
 define audio.credits_fast = "bgm/creditsfast.mp3"
 define audio.fall = "sfx/fall.wav"
+define audio.heartbeat = "sfx/heartbeat.mp3"
 
 define audio.dark_blue_night = "bgm/dark_blue_night.mp3"
 define audio.dianthus = "bgm/dianthus.mp3"

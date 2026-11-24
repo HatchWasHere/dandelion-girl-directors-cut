@@ -4,44 +4,7 @@
 # ================================================================
 
 
-# ----------------------------------------------------------------
-# TRANSFORMS
-# ----------------------------------------------------------------
-
-# Temporary transform for original 800x600 backgrounds.
-#
-# The remake runs at 1280x720 (16:9), while the original game
-# ran at 800x600 (4:3).
-#
-# This enlarges the old background proportionally to 1280x960
-# and centers it, allowing the top and bottom to be cropped.
-#
-# DO NOT use this on character sprites, logos, UI elements, etc.
-#
-# As backgrounds are replaced with native 1280x720 artwork,
-# they will no longer need this transform.
-
-transform old_bg:
-    xysize (1280, 960)
-    xalign 0.5
-    yalign 0.5
-
-# Temporary transform for original 800x600 fullscreen CGs.
-# Preserves the original 4:3 aspect ratio while filling a 1280x720 screen.
-#
-# Like old_bg, this is temporary until CGs are replaced/reworked
-# for the remake's native 16:9 resolution.
-
-transform old_cg:
-    xysize (1280, 960)
-    xalign 0.5
-    yalign 0.5
-
-transform old_credits:
-    xysize (1280, 960)
-    xalign 0.5
-    yalign 0.5
-
+## == TRANSFORMS == ##
 
 transform scrolling_credits:
     xalign 0.5
@@ -50,41 +13,40 @@ transform scrolling_credits:
 
     linear 143.0 yanchor 1.0 ypos 0
 
+transform gallery_fade:
+    alpha 0.0
+    linear 0.25 alpha 1.0
 
-## CREDITS ##
+## == Credits == ##
 
 image credits_roll = "credits/DG_credits_roll.png"
 
 
-# ================================================================
-# BACKGROUNDS
-# ================================================================
+## == Opening Card == ##
 
-# Opening sky
+image opening_card = "cg/deer_rabbit_you_screen.png"
+
+## == Backgrounds == ##
+
 image sky = "bg/sky.png"
-
-## Sunset sky
-
 image sunset_sky = "bg/sunset_sky.png"
-
-# Night sky
 image moon_night_sky = "bg/moon_night.jpeg"
+image new_black = "bg/new_black.png"
 
-# Mark's office
 image office = "bg/office.png"
-
-# Mark and Anne's home
-image bg mark_home = "bg/bg04.jpg"
 image home = "bg/home.png"
-
-# Vacation cabin
 image cabin = "bg/cabin.png"
-
-# Dandelion field
 image dandelion_field = "bg/dandelion_field.png"
 image dandelion_field_2 = "bg/dandelion_field_2.png"
 
+image bg home = "bg/bg05.jpg"
+image bg rain = "bg/bg10.png"
+image bg attic = "bg/attic.png"
 
+image bg bus_stop_a = "bg/rain_1.png"
+image bg bus_stop_b = "bg/rain_2.png"
+image bg bus_stop_c = "bg/rain_3.png"
+image bg bus_stop_d = "bg/rain_4.png"
 
 ## ==== FLASHBACKS ==== ##
 
@@ -95,12 +57,9 @@ image flashback_4 = "bg/dandelion_field_flashback.png"
 image flashback_5 = "cg/julie_points_flashback.png"
 image flashback_6 = "cg/julie_ponders_flashback.png"
 
-## ====== ##
-## OUTROS ##
-## ====== ##
+## == Outros == ##
 
-
-## Mark meeting Julie in the prologue scene. ##
+## Dandelion field
 image outro_1 = "images/outros/outro_1.png"
 image outro_1b = "images/outros/outro_1b.png"
 
@@ -109,14 +68,10 @@ image outro_1b = "images/outros/outro_1b.png"
 image outro_black = "images/outros/black_outro.png"
 
 
-## Outro in the woods, looking at the moon in the sky. ##
+## Outro in the woods, looking at the moon in the sky ##
 image outro_3 = "images/outros/outro_3.png"
 
-# ================================================================
-# CHARACTER SPRITES
-# ================================================================
-
-# Julie — white outfit
+## == Julie (White Dress) == ##
 
 image julie curious = "char/julie/sprite_white_talk_2-4.png"
 image julie smile = "char/julie/sprite_white_talk_1-2.png"
@@ -136,13 +91,7 @@ image julie happy = "char/julie/sprite_white_talk_1-9.png"
 image julie neutral = "char/julie/sprite_white_talk_1-1.png"
 
 
-# Julie explaining her father / the future
-image cg julie_explains = "cg/julie_explains.png"
-
-
-# ================================================================
-# JULIE — BLUE DRESS
-# ================================================================
+## == Julie (Blue Dress) == ##
 
 image julie blue_1 = "char/julie/sprite_blue_talk_2-1.png"
 image julie blue_2 = "char/julie/sprite_blue_talk_2-2.png"
@@ -156,114 +105,20 @@ image julie blue_9 = "char/julie/sprite_blue_talk_2-9.png"
 image julie blue_10 = "char/julie/sprite_blue_talk_2-10.png"
 
 
-
-# Julie — black outfit
-image julie black_4 = "char/julie/sprite_black_stand_3.png"
-image julie black_5 = "char/julie/sprite_black_stand_4.png"
-image julie black_6 = "char/julie/sprite_black_stand_5.png"
-
-# ================================================================
-# CGs
-# ================================================================
+## == CGs == ##
 
 
+image cg julie_explains = "cg/julie_explains.png"
 image cg julie_intro_1 = "cg/julie_intro_cg_1.png"
 image cg julie_intro_2 = "cg/julie_intro_cg_2.png"
-image cg_julie_intro_2b = "cg/julie_intro_cg_2_b.png"
 image cg julie_walking_away = "cg/julie_step_cg.png"
 image cg depressed_julie_in_field = "cg/julie_stands_in_field_solemn.png"
-image cg julie_field = "cg/frame01.png"
-image cg julie_field_2 = "cg/frame02.png"
 image julie_points = "cg/julie_points.png"
-image cg julie_dancing = "cg/frame04.png"
+image cg julie_dancing = "cg/julie_flower_dance.png"
 image cg julie_ponders = "cg/julie_ponders.png"
 image cg julie_ponders_2 = "cg/julie_ponders_2.png"
-image cg julie_ponders_blue = "cg/CG_blue_1.png"
 image cg julie_sobs = "cg/julie_sobs.png"
-
 image cg anne_hugs = "cg/mark_anne_hug.png"
-
-# ================================================================
-# INTERSTITIALS / TITLE CARDS / OUTROS
-# ================================================================
-
-# Opening chapter transition
-image interstitial 1 = "bg/inbetween1.png"
-image interstitial 1b = "bg/inbetween1b.png"
-
-image interstitial 2 = "bg/inbetween2.png"
-image interstitial 2b = "bg/inbetween2b.png"
-
-image interstitial 3 = "bg/inbetween3.png"
-image interstitial 3 = "bg/inbetween2b.png"
-
-
-
-
-# ================================================================
-# CHAPTER 2 — TIME PASSING / JULIE'S RETURN
-# ================================================================
-
-# Interstitial used after the Book of Time conversation.
-# Note: ONScripter calls these inbetween_6/inbetween_6b,
-# but the actual files are inbetween7a/7b.
-image interstitial 6 = "bg/inbetween7a.png"
-image interstitial 6b = "bg/inbetween7b.png"
-
-# Sunset as Mark continues returning to the field
-image bg sad_sunset = "bg/bg06.jpg"
-
-# Field when Mark encounters Julie again
-image bg sad_dandelion_field = "bg/sprite_black_bg_1.png"
-
-# Julie's return
-image cg sad_julie_standing = "cg/sprite_black_stand_1.png"
-
-
-image bg home = "bg/bg05.jpg"
-image bg rain = "bg/bg10.png"
-image bg attic = "bg/attic.png"
-
-# Next interstitial
-image interstitial 5 = "bg/inbetween5.png"
-image interstitial 5b = "bg/inbetween5b.png"
-
-# ================================================================
-# FINALE — WEDDING FLASHBACK
-# ================================================================
-
-image bg church_a = "bg/Church1.png"
-image bg church_b = "bg/Church2.png"
-
-image cg wedding = "cg/CG_Wedding_1.png"
-
-# ================================================================
-# FINALE — BUS STOP / ENDING
-# ================================================================
-
-image bg bus_stop_a = "bg/rain_1.png"
-image bg bus_stop_b = "bg/rain_2.png"
-image bg bus_stop_c = "bg/rain_3.png"
-image bg bus_stop_d = "bg/rain_4.png"
-
-image cg anne_runs_in_rain = "cg/anne_runs.png"
-image cg anne_runs_in_rain_b = "cg/anne_runs_b.png"
-
-image cg hugs_for_anne = "cg/04_sprite_01.jpg"
-image cg julie_looks_up = "cg/cg_final_2.png"
-
-
+image cg wedding = "cg/julieanne_wedding.png"
 image cg office_anne = "cg/office_anne.png"
 
-# ================================================================
-# CREDITS
-# ================================================================
-
-image credits 1 = "c/credits1.png"
-image credits 2 = "c/credits2.png"
-image credits 3 = "c/credits3.png"
-image credits 4 = "c/credits4.png"
-image credits 5 = "c/credits5.png"
-image credits 6 = "c/credits6.png"
-image credits 12 = "c/credits12.png"
-image credits final = "c/finalcredit.png"

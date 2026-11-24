@@ -2,11 +2,11 @@
 
 label chapter_1:
 
+    pause 2.0
+
     play music seasons
 
-    scene black
-
-    pause 1.0
+    pause 1.5
 
     scene office
     with down_fade
@@ -22,7 +22,11 @@ label chapter_1:
 
     narrator "It was only a matter of time until the day crept up on us, and we'd pack up the car and set off."
 
-    anne "\"You put way too much thought into this kind of thing. It's OK to be a little spontaneous now and then.\""
+    narrator "I'd already planned out how we'd spend the first few days..."
+
+    pause 0.5
+
+    anne "\"You put way too much thought into this kind of thing, Mark.{w} It's OK to be a little spontaneous now and then...\""
 
     mark "\"I don't like surprises.\""
 
@@ -49,9 +53,11 @@ label chapter_1:
 
     narrator "Anne and I were busy, hard-working people."
 
-    narrator "It wasn't that we needed the money per se, we just both had a need to stay busy."
+    narrator "It wasn't that we needed a lot of money, we just both had a need to stay busy."
 
-    narrator "Eventually that stress can add up, so things like this are a nice change of pace."
+    narrator "Eventually that stress can add up, though, so things like this are a nice change of pace."
+
+    narrator "Rest is something worth scheduling, just like work."
 
     scene office with Dissolve(0.8)
 
@@ -73,22 +79,19 @@ label chapter_1:
 
     narrator "Fate intervened."
 
-    narrator "My wife had met a quiet, mousey-looking woman named Bern when she was back in college."
+    narrator "My wife had met a quiet, mousy-looking woman named Bern when she was back in college."
 
     narrator "The two had been inseparable ever since."
-
-    narrator "I didn't know what it was like to be that close to someone. It made me a little jealous."
 
     narrator "Over years, Anne had practically become a part of Bern's family, and eventually I'd been dragged into the picture, as well."
 
     narrator "Bern's father was always working, and her mother was always quite the busybody."
 
-    narrator "Pleasant people, all in all."
-
     narrator "Now, Bern's mother was recovering from a medical procedure and she needed someone to lean on."
 
     narrator "Bern asked if she could rely on Anne for help, not realizing the date had fallen square in the middle of our vacation."
 
+    narrator "They were pleasant people, all in all, but..."
 
     narrator "That's the price of being a dependable person, I guess."
 
@@ -101,7 +104,7 @@ label chapter_1:
 
     mark "\"Well, we can always go on vacation another time.\""
 
-    anne "\"What are you talking about? Didn't you already schedule the time off? You can't just call it quits.\""
+    anne "\"What are you talking about? Didn't you already schedule the time off and call the camp ground?\""
 
     mark "\"Well, yeah, but...\""
 
@@ -125,11 +128,45 @@ label chapter_1:
 
     narrator "Anne simply wasn't going to allow me to throw away my vacation."
 
-    stop music fadeout 3.5
+    
 
     narrator "I slumped my shoulders in resignation, and she wandered off to make me some tea."
 
     narrator "I would relax and have a good time at camp, even if she had to force me."
+
+    pause 1.0
+
+    narrator "I guessed there's no use complaining."
+
+    narrator "This isn't the first time our plans had gone awry, or the first time we'd had to make adjustments at the last minute."
+
+    narrator "A good plan has room for deviation."
+
+    narrator "Anne had promised to join me as soon as she could.{w} Hopefully it wouldn't actually take that long, like she'd said."
+
+    pause 0.5
+
+    scene home with down_fade
+
+    anne "\"Good grief, springing this on me at the last minute...{w} I know she helped me out last summer, but...\""
+
+    narrator "Anne grumbled while scrubbing a dish in the sink."
+
+    scene new_black with Dissolve(0.6)
+
+    narrator "Even though my wife was good natured and happy to help, she didn't exactly seem happy that the plans had gone off the rails a bit, herself."
+
+    pause 1.0
+
+    narrator "I could already imagine her arriving at the campground, complaining about the long drive and asking me where she'd left her fishing pole..."
+
+    narrator "That thought made me smile a little."
+
+    narrator "Right... I suppose a few days apart wouldn't hurt."
+
+    stop music fadeout 3.5
+
+    pause 1.5
 
     narrator "And so..."
 
@@ -171,9 +208,13 @@ label chapter_1:
 
     narrator "After all that, I finally arrived at our cabin in the woods and settled in."
 
-    scene black with Dissolve(0.25)
+    scene new_black with Dissolve(0.25)
 
     pause 0.5
+
+    play sound fall
+    
+    narrator "I placed my suitcase by the fireplace, and took a seat in one of the dusty chairs."
 
     narrator "The property manager had left a bottle of champagne on the coffee table before he left."
 
@@ -191,19 +232,34 @@ label chapter_1:
 
     narrator "I tried laying down and just taking a nap, but even that didn't feel right."
 
-    narrator "After a while I finally decided... I'd take a hike."
+    scene new_black with down_fade
 
-    scene black with Dissolve(1.5)
+    mark "\"... Hmmm. If Anne were here, what would she suggest...?\""
 
-    narrator "I gathered my things, slipped on the only pair of boots I owned, and frowned at the emptiness of the cabin before setting out for the wilderness..."
+    narrator "Knowing her, she'd come up with something right away."
 
-    narrator "A hike..."
+    pause 1.0
 
-    narrator "Maybe something like that would distract me from the loneliness I felt being here without my wife."
-    
+    mark "\"She'd say... hmmm... something about getting up and stretching my legs, probably...\""
 
     pause 2.0
 
+    scene cabin with down_fade
+
+    narrator "Then I guess I'll do that."
+
+    narrator "After a few minutes of pacing and mulling it over, I decided I'd take a hike."
+
+    narrator "I gathered my things, slipped on the only pair of boots I owned, and frowned at the emptiness of the cabin before setting out for the wilderness."
+    
+    stop music fadeout 3.5
+
+    scene new_black with Dissolve(3.0)
+
+    pause 2.0
+
+
+    play music seasons fadein 2.0
     scene sky
     with down_fade
 
@@ -238,7 +294,7 @@ label chapter_1:
 
     mark "\"Wow...\""
 
-    narrator "I held a hand over my eyes and simply took it all in."
+    narrator "I held a hand over my eyes and took it all in."
 
     narrator "I looked it up and down, from near to far, and after a moment or two I realized I wasn't alone."
 
@@ -291,7 +347,7 @@ label chapter_1:
 
     narrator "Without meaning to, my voice had tapered off."
     
-    narrator "If I sounded sad, thinking about my absent wife, the girl hadn't noticed it."
+    narrator "The dandelion girl must've noticed, because she gave me a reassuring grin."
 
     show julie curious at center
     with sprite_dissolve
@@ -323,7 +379,7 @@ label chapter_1:
     show julie giggle at center
     with Dissolve(0.10)
 
-    narrator "Julie giggled at that."
+    narrator "The girl giggled at that."
 
     pause 0.5
 
@@ -354,8 +410,7 @@ label chapter_1:
 
     hide julie with Dissolve(0.20)
 
-    stop music
-    play music sweet_potato
+    play music sweet_potato fadein 2.0
 
     scene julie_points
     with custom_hpunch
@@ -490,7 +545,7 @@ label chapter_1:
     show julie shudder at center
     with Dissolve(0.10)
 
-    narrator "Julie shuddered, as though the thought of that horrified her."
+    narrator "Julie shuddered, as though the thought of the dandelions being plucked and thrown in the trash horrified her."
 
     narrator "Maybe it really did."
 
@@ -667,7 +722,7 @@ label chapter_1:
 
     narrator "Julie scooted over to me, a little closer than I was comfortable with, and twirled around in a circle."
 
-    scene black with Dissolve(0.5)
+    scene new_black with Dissolve(0.5)
 
     pause 1.0
 
@@ -695,7 +750,7 @@ label chapter_1:
 
     mark "\"If you say so.\""
 
-    scene black
+    scene new_black
     with custom_hpunch
 
     narrator "Without much warning, Julie Danvers dropped into a seated position, and stared at the clouds overhead."
@@ -754,7 +809,7 @@ label chapter_1:
 
     pause 1.0
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     julie "\"Hmmmm...\""
 
@@ -766,23 +821,31 @@ label chapter_1:
 
     pause 0.3
 
-    julie "\"'... If you tamper with the past, there will be consequences.'\""
+    julie "\"They say if you tamper with the past, there will be consequences.\""
 
     mark "\"... ... ...\""
     
     julie "\"'If you're foolish enough to interact with the citizens of the past, can you take responsibility for what happens?'\""
 
-    julie "\"'Your father isn't a stupid man, he knows what could happen to those people, and the timeline of the world.'\""
+    julie "\"They say Papa's not a stupid man, he knows what could happen to the timeline of the world.\""
+
+    julie "\"He knows that, and he's told them he understands, but they don't seem satisfied with that.\""
 
     mark "\"... ... ...\""
 
     narrator "I listened and nodded along with Julie's story."
     
-    julie "\"... 'They say people might begin to feel unwell, if they cross paths with someone from the future.{w} They might get sick, or show some other strange symptoms...'.\""
+    julie "\"Hmmmm.{w} The Time Police say people might begin to feel unwell if they cross paths with someone from the future.{w} They might get sick, or show some other strange symptoms.\""
 
-    julie "\"Interactions have ripple effects. That's what the Time Police say, anyway.{w} How can you be sure that a small interaction won't end up having a massive consequence?\""
+    mark "\"Hmmm... will I get sick after our chat, then?\""
+
+    julie "\"... ... ...\""
+
+    narrator "Julie frowned, but didn't respond to my ribbing."
+
+    julie "\"They keep telling him, over and over: 'How can you be sure a small interaction won't end up having a massive consequence'?\""
     
-    narrator "Julie said that with a serious face, but it didn't look like she herself had a response to the idea she supposedly disagreed with."
+    narrator "Julie said that with a serious face, but it didn't look like she herself necessarily disagreed."
 
     mark "\"... Could that be right?\""
 
@@ -790,15 +853,13 @@ label chapter_1:
 
     pause 1.0
 
-    julie "\"Let's say two lovers were fated to meet on a cold and rainy day.\""
+    julie "\"I understand the idea...{w} If two people were fated to meet at a random place, fall in love, and then get married, just distracting one of them might be enough to derail that meeting, and ruin it...\""
 
-    julie "\"What if... one of them encountered someone, and that fluke decision to meet at a certain coffee shop was derailed?\""
+    julie "\"Those two people who fell in love, who were meant to spend the rest of their lives together...\""
 
-    julie "\"As a result... two certain people never meet, and they never fall in love.{w} They don't stay together for half a century, and their family ceases to exist...\""
+    narrator "Julie stared off into the distance, frowning."
 
-    narrator "I nodded along as Julie explained."
-
-    julie "\"Then what happens to all the people after that, and the people they were meant to meet, and the families they would create...?\""
+    julie "\"What would happen to all the people after that, the people they were meant to meet, and the families they would create...?\""
 
     pause 1.0
 
@@ -842,7 +903,7 @@ label chapter_1:
 
     # Return to the field.
 
-    scene black
+    scene new_black
     with Dissolve(0.5)
 
     narrator "'Sneaky' isn't the most flattering way of phrasing it."
@@ -855,16 +916,18 @@ label chapter_1:
     show julie happy at center
     with Dissolve(0.20)
 
-    narrator "Julie and I both laughed together."
+    narrator "Julie told me all about the Time Police, their gaudy-looking uniforms and their insufferable no-nonsense attitude."
+    
+    narrator "What a strange-sounding bunch."
 
     show julie questioning at center
     with Dissolve(0.10)
 
-    narrator "Truthfully, I wasn't sure what to make of that."
+    narrator "Truthfully, I wasn't sure what to make of any of it."
 
     narrator "An invalid? Was Julie's father really tampering with things better left alone?"
 
-    narrator "I decided to leave that alone, for now."
+    narrator "I had a lot of questions."
 
     show julie curious at center
     with Dissolve(0.10)
@@ -933,7 +996,7 @@ label chapter_1:
 
     hide julie with Dissolve(0.20)
     pause 0.2
-    scene black with Dissolve(0.4)
+    scene new_black with Dissolve(0.4)
 
     narrator "The dandelion girl, Julie Danvers, giggled and turned her back to me."
    
@@ -947,14 +1010,15 @@ label chapter_1:
 
     pause 2.5
 
-    scene black
+    play sound heartbeat
+    scene new_black
     
 
     narrator "Wait--"
 
     narrator "It was at that moment that I felt that inexplicable deja vu, again."
 
-    narrator "Something cold and clammy grabbed me by the wrists."
+    narrator "Something heavy dropped in my stomach."
 
     pause 1.0
     
@@ -983,7 +1047,7 @@ label chapter_1:
 
     stop music
 
-    scene black with Dissolve(4.0)
+    scene new_black with Dissolve(4.0)
 
     pause 2.0
 
@@ -997,7 +1061,7 @@ label chapter_1:
 
     pause 4.0
 
-    scene black
+    scene new_black
 
     play sound door_close
 
@@ -1039,7 +1103,7 @@ label chapter_1:
 
     pause 1.5
 
-    mark "\"How’s the bag of bones doing, anyway?\""
+    mark "\"How’s that bag of bones doing, anyway?\""
 
     anne "\"Hmmm, she’s pretty tired from the procedure.{w} I think she’ll be fine in a few days, though.\""
 
@@ -1099,9 +1163,11 @@ label chapter_1:
 
     narrator "She listened quietly, murmuring “hmm” or “hrm” every now and then."
 
+    narrator "It took a few mintues before I'd explained everything that had happened, in full."
+
     pause 1.5
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     anne "\"She sounds like quite the character.\""
 
@@ -1153,7 +1219,7 @@ label chapter_1:
 
     anne "\"Hmmm. Well, it shouldn’t be too much longer over here.{w} I’d like to meet her.\""
 
-    mark "\"Me too.\""
+    mark "\"I'd like that, too.\""
 
     narrator "To be honest, I felt a little guilty hanging around a girl like Julie instead of my wife, even if she was young enough to be my child."
 
@@ -1198,7 +1264,7 @@ label chapter_1:
     pause 3.0
     stop music fadeout 4.5
 
-    scene black
+    scene new_black
     with Dissolve(2.5)
     
 

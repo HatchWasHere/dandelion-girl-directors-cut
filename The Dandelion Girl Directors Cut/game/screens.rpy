@@ -1,4 +1,4 @@
-
+default persistent.game_completed = False
 default persistent.gallery_unlocked = False
 
 ################################################################################
@@ -79,6 +79,80 @@ style frame:
     background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
 
+define record_player_tracks = {
+    "autumn_and_sadness": {
+        "title": "Autumn and Sadness",
+        "composer": "Kamaboko Sachiko",
+        "file": "bgm/autumn_and_sadness.mp3",
+        "description": "Don't you remember me?"
+    },
+
+    "dandelion": {
+        "title": "Dandelion",
+        "composer": "YULI",
+        "file": "bgm/dandelion.mp3",
+        "description": "He was reunited with his Dandelion Girl."
+    },
+
+    "dianthus": {
+        "title": "Dianthus",
+        "composer": "Yuuki Wataru",
+        "file": "bgm/dianthus.mp3",
+        "description": "Those were happy days."
+    },
+
+    "fragrant_olive": {
+        "title": "Fragrant Olive",
+        "composer": "Yuuki Wataru",
+        "file": "bgm/fragrant_olive.mp3",
+        "description": "She thought these brillaint Summer days would last forever."
+    },
+
+    "gloomy": {
+        "title": "Gloomy",
+        "composer": "SHIMTONE",
+        "file": "bgm/gloomy.mp3",
+        "description": "Is the cat inside the box alive... or dead?"
+    },
+
+    "longing_still_goes_on": {
+        "title": "Longing Still Goes On",
+        "composer": "Kamaboko Sachiko",
+        "file": "bgm/longing_still_goes_on.mp3",
+        "description": "A melancholy settles on everything."
+    },
+
+    "looking_on_the_fall": {
+        "title": "Looking on the Fall",
+        "composer": "Kamaboko Sachiko",
+        "file": "bgm/looking_on_the_fall.mp3",
+        "description": "A stinging sensation of deja vu."
+    },
+
+
+    "seasons": {
+        "title": "Seasons",
+        "composer": "NORU",
+        "file": "bgm/seasons.mp3",
+        "description": "And just like that... the seasons changed."
+    },
+
+    "sunshine_doll": {
+        "title": "Sunshine Doll",
+        "composer": "Marron Fields",
+        "file": "bgm/sunshine_doll.mp3",
+        "description": "A girl with an overactive imagination."
+    },
+
+    "sweet_potato": {
+        "title": "Sweet Potato",
+        "composer": "Edamame88",
+        "file": "bgm/sweet_potato.mp3",
+        "description": "Can you see the shapes in the clouds?"
+    },
+
+}
+
 
 ################################################################################
 ## In-game screens
@@ -119,20 +193,81 @@ screen say(who, what):
         add SideImage() xalign 0.0 yalign 1.0
 
 
+define gallery_cgs = [
+        "julie_step",
+        "julie_dancing",
+        "julie_points",
+        "julie_explains",
+        "julie_ponders",
+        "julie_in_field_somber",
+        "julie_sobs",
+        "julieanne_wedding",
+        "office_anne",              
+        "julie_hug",        
+        "julie_skygazing",
+
+]
+
+define gallery_variations = {
+
+    "julie_step": [
+        "julie_step_cg.png",
+    ],
+    
+    "julie_dancing": [
+        "julie_flower_dance.png",
+        "julie_flower_dance_b.png",
+    ],
+    "julie_dancing": [
+        "julie_flower_dance.png",
+        "julie_flower_dance_b.png",
+    ],
+
+    "julie_in_field_somber": [
+        "julie_stands_in_field_solemn.png",
+    ],
+
+    "julie_sobs": [
+        "julie_sobs.png",
+    ],
+
+    "office_anne": [
+        "office_anne.png",
+    ],
+
+    
+    "julieanne_wedding": [
+            "julieanne_wedding.png",
+        ],
+
+    "julie_hug": [
+            "mark_anne_hug.png",
+        ],
+
+    "julie_ponders": [
+        "julie_ponders.png",
+        "julie_ponders_2.png",
+    ],
+
+    "julie_points": [
+        "julie_points.png",
+    ],
+
+    "julie_explains": [
+        "julie_explains.png",
+    ],
+
+    "julie_skygazing": [
+        "julie_looks_at_sky.png",
+    ],
+
+    }
+
 ## Make the namebox available for styling through the Character object.
 init python:
 
 
-    gallery_cgs = [
-        "anne_runs",
-        "julie_ponders",
-        "julie_ponders_2",
-        "julianne_wedding",
-        "julie_flower_dance",
-        "julie_flower_dance_b",
-        "julie_points",
-
-]
+    
 
     config.character_id_prefixes.append('namebox')
 
@@ -311,50 +446,60 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+
 screen navigation():
 
-    vbox:
-        style_prefix "navigation"
+    fixed:
+        xpos 920  # Horizontal position
+        ypos 375  # Vertical position
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        vbox:
+            style_prefix "navigation"
+            spacing -2  # Space between buttons
 
-        spacing gui.navigation_spacing
+            if main_menu:
 
-        if main_menu:
+                imagebutton:
+                    idle "images/title/new_game_button_idle.png"
+                    hover "images/title/new_game_button_hover.png"
+                    action Show("new_game_fade")
 
-            textbutton _("Start") action Start()
+            else:
 
-        else:
+                textbutton _("History") action ShowMenu("history")
+                textbutton _("Save") action ShowMenu("custom_save")
 
-            textbutton _("History") action ShowMenu("history")
+            imagebutton:
+                idle "images/title/continue_game_button_idle.png"
+                hover "images/title/continue_game_button_hover.png"
+                action ShowMenu("custom_load")
 
-            textbutton _("Save") action ShowMenu("custom_save")
+            imagebutton:
+                idle "images/title/settings_button_idle.png"
+                hover "images/title/settings_button_hover.png"
+                action ShowMenu("preferences")
 
-        textbutton _("Load") action ShowMenu("custom_load")
+            if persistent.game_completed:
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+                imagebutton:
+                    idle "images/title/memorandum_button_idle.png"
+                    hover "images/title/memorandum_button_hover.png"
+                    action ShowMenu("memorandum")
 
-        if _in_replay:
+            if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+                textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+            elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+                textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+            if renpy.variant("pc"):
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+                imagebutton:
+                    idle "images/title/quit_button_idle.png"
+                    hover "images/title/quit_button_hover.png"
+                    action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -376,29 +521,16 @@ style navigation_button_text:
 
 screen main_menu():
 
-    ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    # Select the background based on game completion.
+    if persistent.game_completed:
+        add "images/title/title_2.png"
+    else:
+        add "images/title/title_bg.png"
 
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
-
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
+    # Display the menu buttons.
     use navigation
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -411,7 +543,8 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "images/title/title_bg.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -459,8 +592,8 @@ screen hamburger_menu():
         
 
         imagebutton:
-            idle "images/back_button_idle.png"
-            hover "images/back_button_hover.png"
+            idle "gui/settings/back_from_settings_idle.png"
+            hover "gui/settings/back_from_settings_hover.png"
 
             xpos 1100
             ypos 50
@@ -706,16 +839,16 @@ screen custom_load():
     
 
     imagebutton:
-        idle "images/back_button_idle.png"
-        hover "images/back_button_hover.png"
+        idle "gui/settings/back_from_settings_idle.png"
+        hover "gui/settings/back_from_settings_hover.png"
 
         xpos 1100
         ypos 50
 
         action If(
-        main_menu,
-        ShowMenu("main_menu"),
-        [Return(), Show("hamburger_menu")]
+            main_menu,
+            ShowMenu("main_menu"),
+            ShowMenu("hamburger_menu")
     )
     # --------------------------------------------------
     # TITLE
@@ -842,13 +975,13 @@ screen custom_save():
     
 
     imagebutton:
-        idle "images/back_button_idle.png"
-        hover "images/back_button_hover.png"
+        idle "gui/settings/back_from_settings_idle.png"
+        hover "gui/settings/back_from_settings_hover.png"
 
         xpos 1100
         ypos 50
 
-        action [Return(), Show("hamburger_menu")]
+        action ShowMenu("hamburger_menu")
 
     # --------------------------------------------------
     # TITLE
@@ -956,68 +1089,245 @@ screen custom_save():
             size 14
             color "#aaaaaa"
 
+
 screen image_gallery():
     tag menu
 
-    add "images/save_bg.png"
+    add "memorandum/gallery/photo_album_bg.png"
 
-    text "IMAGE GALLERY":
-        xalign 0.5
-        ypos 35
-        size 36
-        color "#FFFFFF"
 
-        # First row: CGs 1-4
+    # First row: CGs 1-4
     hbox:
-        xpos 164
-        ypos 100
-        spacing 32
+        xalign 0.5
+        ypos 125
+        spacing 22
 
         for cg in gallery_cgs[0:4]:
 
             imagebutton:
-                idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
-                hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
-
+                idle "memorandum/gallery/thumbnails/" + cg + "_thumbnail_icon_idle.png"
+                hover "memorandum/gallery/thumbnails/" + cg + "_thumbnail_icon_hover.png"
                 action Show("gallery_viewer", cg=cg)
 
-        # Second row: CGs 5-8
+    # Second row: CGs 5-8
     hbox:
-        xpos 164
-        ypos 280
-        spacing 32
+        xalign 0.5
+        ypos 305
+        spacing 22
 
         for cg in gallery_cgs[4:8]:
 
             imagebutton:
-                idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
-                hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
-
+                idle "memorandum/gallery/thumbnails/" + cg + "_thumbnail_icon_idle.png"
+                hover "memorandum/gallery/thumbnails/" + cg + "_thumbnail_icon_hover.png"
                 action Show("gallery_viewer", cg=cg)
 
-        # Third row: CGs 9-10
+    # Third row: CGs 9-12
     hbox:
-        xpos 410
-        ypos 460
-        spacing 32
+        xpos 116
+        ypos 485
+        spacing 22
 
-        for cg in gallery_cgs[8:10]:
+        for cg in gallery_cgs[8:12]:
 
             imagebutton:
-                idle "images/gallery/" + cg + "_thumbnail_icon_idle.png"
-                hover "images/gallery/" + cg + "_thumbnail_icon_hover.png"
-
+                idle "memorandum/gallery/thumbnails/" + cg + "_thumbnail_icon_idle.png"
+                hover "memorandum/gallery/thumbnails/" + cg + "_thumbnail_icon_hover.png"
                 action Show("gallery_viewer", cg=cg)
 
-        # Back button
+    # Back button
     imagebutton:
-        idle "images/back_button_idle.png"
-        hover "images/back_button_hover.png"
-
+        idle "gui/settings/back_from_settings_idle.png"
+        hover "gui/settings/back_from_settings_hover.png"
         xpos 1100
-        ypos 50
+        ypos 30
+        action ShowMenu("memorandum")
 
-        action ShowMenu("extras_menu")
+
+screen record_player():
+
+    tag menu
+
+    # Background
+    add "memorandum/record_player/record_player_bg.png"
+
+    hbox:
+        xpos 60
+        ypos 120
+        spacing 2
+
+        # LEFT COLUMN
+        vbox:
+            spacing 4
+
+            textbutton "Autumn and Sadness":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "autumn_and_sadness"),
+                    Play("music", record_player_tracks["autumn_and_sadness"]["file"])
+                ]
+
+            textbutton "Dandelion":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "dandelion"),
+                    Play("music", record_player_tracks["dandelion"]["file"])
+                ]
+
+            textbutton "Dianthus":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "dianthus"),
+                    Play("music", record_player_tracks["dianthus"]["file"])
+                ]
+
+            textbutton "Fragrant Olive":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "fragrant_olive"),
+                    Play("music", record_player_tracks["fragrant_olive"]["file"])
+                ]
+
+            textbutton "Gloomy":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "gloomy"),
+                    Play("music", record_player_tracks["gloomy"]["file"])
+                ]
+
+        # RIGHT COLUMN
+        vbox:
+            spacing 4
+
+            textbutton "Longing Still Goes On":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "longing_still_goes_on"),
+                    Play("music", record_player_tracks["longing_still_goes_on"]["file"])
+                ]
+
+            textbutton "Looking on the Fall":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "looking_on_the_fall"),
+                    Play("music", record_player_tracks["looking_on_the_fall"]["file"])
+                ]
+
+            textbutton "Seasons":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "seasons"),
+                    Play("music", record_player_tracks["seasons"]["file"])
+                ]
+
+            textbutton "Sunshine Doll":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "sunshine_doll"),
+                    Play("music", record_player_tracks["sunshine_doll"]["file"])
+                ]
+
+            textbutton "Sweet Potato":
+                style "record_player_button"
+                action [
+                    SetScreenVariable("selected_track", "sweet_potato"),
+                    Play("music", record_player_tracks["sweet_potato"]["file"])
+                ]
+
+
+    # Currently selected track
+    default selected_track = None
+
+    # SONG INFORMATION PANEL
+    frame:
+        background Frame(
+            "memorandum/record_player/record_player_panel.png",
+            20, 20
+        )
+
+        xpos 50
+        ypos 365
+        xsize 665
+        ysize 275
+
+        padding (40, 40)
+
+        if selected_track is not None:
+
+            $ track = record_player_tracks[selected_track]
+
+            vbox:
+                spacing 12
+
+                text track["title"]:
+                    font "fonts/ShipporiMincho-SemiBold.ttf"
+                    size 25
+                    color "#F3EFE5"
+
+                text "Composer: " + track["composer"]:
+                    font "fonts/ShipporiMincho-SemiBold.ttf"
+                    size 18
+                    color "#F3EFE5"
+
+                text track["description"]:
+                    font "fonts/ShipporiMincho-Regular.ttf"
+                    size 15
+                    color "#F3EFE5"
+                    xmaximum 380
+
+
+    fixed:
+        xpos 1100
+        ypos 30
+
+        imagebutton:
+            idle "gui/settings/back_from_settings_idle.png"
+            hover "gui/settings/back_from_settings_hover.png"
+
+            xpos 0
+            ypos 0
+
+            action ShowMenu("memorandum") 
+    
+    # SONG SELECTION BUTTONS
+    
+
+
+screen memorandum():
+
+    tag menu
+
+    # Background
+    add "memorandum/memorandum_bg.png"
+
+    # Main buttons
+    hbox:
+        xpos 62
+        ypos 30
+        spacing 18
+
+        # Photo Album
+        imagebutton:
+            idle "memorandum/photo_album_button_idle.png"
+            hover "memorandum/photo_album_button_hover.png"
+            action ShowMenu("image_gallery")
+
+        # Record Player
+        imagebutton:
+            idle "memorandum/record_player_button_idle.png"
+            hover "memorandum/record_player_button_hover.png"
+            action ShowMenu("record_player")
+
+    # Back button
+    imagebutton:
+        idle "memorandum/memorandum_back_button_idle.png"
+        hover "memorandum/memorandum_back_button_hover.png"
+
+        xpos 75
+        ypos 575
+
+        action ShowMenu("main_menu")
+
 
 
 screen gallery_viewer(cg):
@@ -1025,53 +1335,30 @@ screen gallery_viewer(cg):
     modal True
     zorder 100
 
-    # Full-screen CG
-    add Transform(
-        "cgs/" + cg + ".png",
-        xysize=(1280, 720)
+    default variation_index = 0
+
+    $ variations = gallery_variations[cg]
+    $ total_variations = len(variations)
+
+    # Display current CG with a quick fade
+    if variation_index < total_variations:
+
+        add "cg/" + variations[variation_index]:
+            at gallery_fade
+
+    # Left-click to advance or close
+    key "mouseup_1" action If(
+        variation_index < total_variations - 1,
+        SetScreenVariable("variation_index", variation_index + 1),
+        Hide("gallery_viewer")
     )
 
-    # Click anywhere to close
-    button:
-        xfill True
-        yfill True
-        background None
-        action Hide("gallery_viewer")
+    # Right-click or Escape to close
+    key "mouseup_3" action Hide("gallery_viewer")
+    key "K_ESCAPE" action Hide("gallery_viewer")
 
-    # Escape / right-click to close
-    key "game_menu" action Hide("gallery_viewer")
 
-screen extras_menu():
-    tag menu
 
-    add "images/save_bg.png"
-
-    text "EXTRAS":
-        xalign 0.5
-        ypos 45
-        size 40
-        color "#FFFFFF"
-
-    vbox:
-        xalign 0.5
-        yalign 0.5
-        spacing 25
-
-        textbutton "IMAGE GALLERY":
-            xalign 0.5
-            text_size 32
-            action ShowMenu("image_gallery")
-
-        # Additional extras can go here.
-
-    imagebutton:
-        idle "images/back_button_idle.png"
-        hover "images/back_button_hover.png"
-
-        xpos 1100
-        ypos 50
-
-        action Return()
 screen game_menu_button():
 
     imagebutton:
@@ -1767,22 +2054,41 @@ screen confirm(message, yes_action, no_action):
     add "gui/overlay/confirm.png"
 
     frame:
+        background "gui/prompt.png"
+        xsize 450
+        ysize 250
+        xalign 0.5
+        yalign 0.5
 
         vbox:
-            xalign .5
-            yalign .5
-            spacing 30
+            spacing 20
+            xalign 0.5
+            yalign 0.5
 
             label _(message):
-                style "confirm_prompt"
                 xalign 0.5
+                text_font "fonts/ShipporiMincho-Regular.ttf"
+                text_size 18
+                text_color "#F3EFE5"
+                text_text_align 0.5
 
             hbox:
                 xalign 0.5
-                spacing 100
+                spacing 40
 
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+                textbutton _("Yes"):
+                    action yes_action
+                    text_font "fonts/ShipporiMincho-Regular.ttf"
+                    text_size 22
+                    text_color "#F3EFE5"
+                    text_hover_color "#D6B878"
+
+                textbutton _("No"):
+                    action no_action
+                    text_font "fonts/ShipporiMincho-Regular.ttf"
+                    text_size 22
+                    text_color "#F3EFE5"
+                    text_hover_color "#D6B878"
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -2228,3 +2534,45 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 600
+
+style record_player_button:
+    background Transform(
+        "memorandum/record_player/record_player_button_template_idle.png",
+        xysize=(320, 45)
+    )
+
+    hover_background Transform(
+        "memorandum/record_player/record_player_button_template_hover.png",
+        xysize=(320, 45)
+    )
+
+    xsize 320
+    ysize 45
+
+    xpadding 10
+    ypadding 10
+
+
+style record_player_button_text:
+    font "fonts/ShipporiMincho-Regular.ttf"
+    size 18
+
+    color "#211C17"
+    hover_color "#75684F"
+
+    xalign 0.5
+    yalign 0.5
+
+
+screen new_game_fade():
+
+    zorder 100
+
+    add Solid("#000") at new_game_fade_transform
+
+    timer 1.5 action Start()
+
+
+transform new_game_fade_transform:
+    alpha 0.0
+    linear 1.5 alpha 1.0

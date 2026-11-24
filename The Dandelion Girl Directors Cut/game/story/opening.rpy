@@ -1,16 +1,24 @@
 
 label opening:
 
-    scene black
+    stop music fadeout 2.0    
 
-    pause 1.0
+    scene new_black with Dissolve(2.0)
+
+    pause 3.0
+
+    scene opening_card with Dissolve(4.0)
+
+    pause 4.0
+
+    scene new_black with Dissolve(3.0)
 
 
     # --------------------------------------------------------------
     # Dandelion Field
     # --------------------------------------------------------------
 
-    play music time_to_sleep
+    play music longing_still_goes_on
 
     narrator "What is deja vu, exactly?"
 
@@ -44,8 +52,7 @@ label opening:
 
     narrator "But somehow, under this slice of clear summer sky... I thought those bright yellow plants looked beautiful, too."
 
-    scene black at old_bg
-    with Dissolve(0.5)
+    scene new_black with Dissolve(0.5)
 
 
     narrator "In the middle of the field was a beautiful girl in a white dress, dancing in circles."
@@ -58,8 +65,7 @@ label opening:
 
     pause 1.5
 
-    scene cg julie_dancing at old_bg
-    with Dissolve(0.25)
+    scene cg julie_dancing with Dissolve(0.25)
 
 
     narrator "She looked... simply happy to be there."
@@ -68,8 +74,8 @@ label opening:
 
     pause 0.5
 
-    scene black at old_bg
-    with Dissolve(0.25)
+    scene new_black
+    with Dissolve(0.65)
 
     narrator "She picked up her hat, and held it."
 
@@ -78,7 +84,7 @@ label opening:
     narrator "Instead the dandelion girl grinned and held her hand over her eyes, looking at the bright blue sky overhead, and simply took it all in."
 
     scene sky
-    with Dissolve(0.15)
+    with down_fade
 
     narrator "There's probably something poetic I could've said about the scene."
 
@@ -125,7 +131,7 @@ label opening:
 
     pause 2.5
 
-    scene black
+    scene new_black
     with Dissolve(2.0)
 
 

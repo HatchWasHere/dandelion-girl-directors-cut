@@ -17,7 +17,7 @@ label chapter_3:
 
     narrator "I tried to push that thought out of my head, rubbing the sweat off the back of my neck as I sat down on one of the long, flat stones."
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 1.0
 
@@ -28,14 +28,14 @@ label chapter_3:
 
     pause 2.0
 
-    scene black
+    scene new_black
     with down_fade
 
     narrator "I closed my eyes, and waited."
     
     pause 2.0
 
-    scene black with Dissolve(2.0)
+    scene new_black with Dissolve(2.0)
 
     pause 3.0
 
@@ -52,7 +52,7 @@ label chapter_3:
 
     pause 1.0
 
-    scene black with Dissolve(0.5)
+    scene new_black with Dissolve(0.5)
 
     pause
 
@@ -80,9 +80,9 @@ label chapter_3:
     narrator "I sat back down, and stared up at the sky."
 
     narrator "Just a day ago, I was staring at all kinds of white shapes in the sky, trying to make them into proper images."
-    narrator "... But now, there wasn't a single cloud in the sky."
+ 
 
-    scene black with Dissolve(3.0)
+    scene new_black with Dissolve(3.0)
 
     narrator "Maybe she was running late."
 
@@ -104,7 +104,7 @@ label chapter_3:
 
     pause 2.0
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 1.5
 
@@ -125,13 +125,13 @@ label chapter_3:
 
     narrator "Instead of returning to the cabin, I walked back to the entrance of the camp grounds, then set off for the ranger's station."
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     narrator "... But that wasn't right, either."
 
     pause 1.0
 
-    scene black with Dissolve(1.4)
+    scene new_black with Dissolve(1.4)
 
     narrator "The young man at the counter, looking a bit more annoyed than usual, let out a big yawn and grumbled, 'something funny going on with the telephone.'"
 
@@ -142,7 +142,7 @@ label chapter_3:
     narrator "He gave me a weary look, and said 'Yeah... real sorry about that.'"
 
     narrator "He'd been having issues with it all week, apparently."
-    narrator "So that night, I didn't speak to my wife."
+    narrator "So that night, I didn't speak to Anne."
 
     pause 1.0
 
@@ -152,7 +152,11 @@ label chapter_3:
 
     narrator "I walked along the beaten path to the cabin, all by myself."
     narrator "The sound of the crickets, which were normally loud, seemed less present than usual."
-    narrator "Even the moon, which would normally be hanging low in the sky, seemed to be hidden away behind dark gray clouds."
+    narrator "Even the moon, which was still hanging low in the sky, seemed even further away, tonight."
+
+    stop music fadeout 3.0
+
+    narrator "I didn't hear from Anne, or Julie Danvers, and spent the rest of that day in solitude..."
 
     pause 4.0
 
@@ -161,7 +165,7 @@ label chapter_3:
 
     pause 3.0
 
-    scene black with Dissolve(4.0)
+    scene new_black with Dissolve(4.0)
     
 
     pause 5.0
@@ -185,7 +189,7 @@ label chapter_3:
     narrator "We entered the cabin, and Anne made tea for all three of us."
 
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 2.0
 
@@ -224,7 +228,7 @@ label chapter_3:
     anne "\"Well, it's fine...{w} I'm glad you kept busy, until now.\""
 
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 0.6
 
@@ -263,9 +267,9 @@ label chapter_3:
     
     narrator "The next day, we did just that."
 
-    narrator "We made out way up the same path, with Anne telling me to mind my footing, until we finally reached the familiar field."
+    narrator "We made our way up the same path, with Anne telling me to mind my footing, until we finally reached the familiar field."
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     pause 0.65
 
@@ -301,7 +305,7 @@ label chapter_3:
 
     narrator "It was only dawning on me now how little I knew about Julie Danvers."
 
-    narrator "There was... a tiny part of me that wondered if I'd imagined the whole thing."
+    narrator "There was... a tiny part of me that wondered if the entire thing had been an elaborate daydream."
 
     narrator "But the smile on Anne's face made me think that probably hadn't even entered her mind."
 
@@ -311,7 +315,7 @@ label chapter_3:
 
     anne "\"Hehe... that's a good answer.\""
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
     
     narrator "Anne wrapped an arm around my waist, and pressed her body to mine."
 
@@ -328,7 +332,7 @@ label chapter_3:
 
     pause 3.0
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 4.0
 
@@ -357,7 +361,7 @@ label chapter_3:
 
     stop music fadeout 4.0
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 2.0
 
@@ -396,7 +400,7 @@ label chapter_3:
 
     pause 4.0
 
-    scene black with Dissolve(3.0)
+    scene new_black with Dissolve(3.0)
 
     pause 3.0
 
@@ -405,7 +409,7 @@ label chapter_3:
     play music longing_still_goes_on fadein 3.0
     pause 5.0
     
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
     
     pause 0.5
 
@@ -436,7 +440,7 @@ label chapter_3:
 
     narrator "One day... years later, I saw a familiar face, standing perfectly still among the growing, late Summer weeds."
 
-    scene black with Dissolve(1.5)
+    scene new_black with Dissolve(1.5)
 
     pause 2.0
 
@@ -485,7 +489,7 @@ label chapter_3:
 
     julie "\"... Papa was always in poor health.{w} He never slept enough, and he was always forgetting to eat.{w} So... of course, I didn't notice when he began to get worse.\""
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     julie "\"He was so wrapped up in his research, and I was so selfishly jumping back and forth through time, that I never even thought about it.\""
 
@@ -511,7 +515,7 @@ label chapter_3:
 
     julie "\"... Where am I supposed to go, now?{w} There's nothing back home for me, now, except for an empty aparment full of old dusty books.\""
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 0.3
 
@@ -559,7 +563,7 @@ label chapter_3:
 
     julie "\"Nn... nnnn...\""
 
-    scene black with Dissolve(1.0)
+    scene new_black with Dissolve(1.0)
 
     pause 2.0
 
@@ -633,7 +637,7 @@ label chapter_3:
 
     julie "\"... I think I know which one you believe in.\""
 
-    scene black with Dissolve(0.6)
+    scene new_black with Dissolve(0.6)
 
     narrator "Julie smiled bitterly, clutching the hem of her skirt."
 
@@ -660,7 +664,7 @@ label chapter_3:
 
     julie "\"But even if I fail...{w} ... you'll know I was telling the truth.\""
 
-    scene black with Dissolve(0.6)
+    scene new_black with Dissolve(0.6)
 
     pause 2.0
 
@@ -676,7 +680,7 @@ label chapter_3:
 
     pause 2.0
 
-    scene black with Dissolve(0.5)
+    scene new_black with Dissolve(0.5)
 
     narrator "Julie glanced down at something on her wrist."
 
@@ -705,7 +709,7 @@ label chapter_3:
 
     narrator "I thought she'd jumped."
 
-    scene black
+    scene new_black
 
     narrator "I jumped to my feet, and ran after her."
 
@@ -753,7 +757,7 @@ label chapter_3:
 
     narrator "What... was that?"
 
-    narrator "I'd heard something like a crack of thunder, and something in the air... opened up."
+    narrator "I'd heard a soft strange sound, like something tearing... and something in the air... opened up."
 
     narrator "In that moment, Julie Danvers was gone."
 
@@ -771,7 +775,7 @@ label chapter_3:
 
     pause 2.0
 
-    scene black with Dissolve(1.5)
+    scene new_black with Dissolve(1.5)
 
     pause 1.0
 
@@ -796,7 +800,7 @@ label chapter_3:
 
     narrator "I spent an hour sitting there, in silence, before I dragged myself back to my feet and began the long way back to my car."
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 1.5
 
@@ -812,7 +816,7 @@ label chapter_3:
     
     pause 4.0
 
-    scene black with Dissolve(4.0)
+    scene new_black with Dissolve(4.0)
 
     pause 5.0
     
@@ -846,7 +850,7 @@ label chapter_3:
 
     pause 2.0
 
-    scene black with Dissolve(0.6)
+    scene new_black with Dissolve(0.6)
 
     pause 1.0
 
@@ -877,7 +881,7 @@ label chapter_3:
 
     pause 1.0
 
-    scene black with Dissolve(1.5)
+    scene new_black with Dissolve(1.5)
 
     pause 0.5
 
@@ -911,7 +915,7 @@ label chapter_3:
 
     pause 1.5
 
-    scene black with custom_hpunch
+    scene new_black with custom_hpunch
 
     mark "\"There, that--ack!{w}UGH!\""
 
@@ -920,13 +924,13 @@ label chapter_3:
     mark "\"Guh...! *cough*...!\""
 
     play sound fall
-    scene black with custom_hpunch
+    scene new_black with custom_hpunch
 
     narrator "I stumbled backwards, trying to wave away the dust particles assaulting me, and then..."
 
     pause 1.0
 
-    scene black
+    scene new_black
 
     narrator "I took a fall."
 
@@ -954,7 +958,7 @@ label chapter_3:
 
     narrator "It looked familiar, but I couldn't quite place it."
 
-    scene black with down_fade
+    scene new_black with down_fade
     
     pause 1.0
 
@@ -965,6 +969,8 @@ label chapter_3:
     narrator "Then, I looked inside."
 
     stop music fadeout 3.5
+
+    play sound heartbeat
 
     pause 2.0
 
@@ -983,13 +989,23 @@ label chapter_3:
 
     pause 1.5
 
+
     narrator "I pushed that to one side of the trunk, and dug deeper."
 
     narrator "There was Anne's wedding dress, which looked just as white and pristine as the day she'd worn it."
 
+    play sound heartbeat
+    pause 0.5
+
     narrator "A dress that-"
 
+    play sound heartbeat
+    pause 0.5
+
     narrator "Looked so-"
+
+    play sound heartbeat
+    pause 0.5
 
     narrator "Familiar..."
 
@@ -998,7 +1014,7 @@ label chapter_3:
     
     play music longing_still_goes_on fadein 3.0
 
-    scene black
+    scene new_black
 
     narrator "I remembered something Anne had said on our wedding day:"
 
@@ -1007,6 +1023,8 @@ label chapter_3:
     mark "\"Huh, it's like...\""
 
     narrator "It was a strange material that I'd never seen before, like... sea foam and cotton..."
+
+    play sound heartbeat
 
     pause 2.0
 
@@ -1047,7 +1065,7 @@ label chapter_3:
 
     pause 1.5
 
-    scene black with Dissolve(2.0)
+    scene new_black with Dissolve(2.0)
 
     narrator "Julie had made a frowning face, and quietly added:"
 
@@ -1057,6 +1075,13 @@ label chapter_3:
     pause 3.0
 
     scene bg attic with Dissolve(0.4)
+
+    pause 1.0
+
+    play sound fall
+    scene bg attic with custom_hpunch
+
+    pause 0.4
 
     narrator "I slumped down on top of one of the heavy cardboard boxes."
 
@@ -1074,20 +1099,30 @@ label chapter_3:
     pause 3.0
 
 
-    narrator "The last thing in that trunk was... a marriage certificate, with a name I hadn't thought of in years."
+    narrator "The last thing in that trunk was... a marriage certificate, with frayed corners and worn ink."
 
     pause 3.0
 
     stop music fadeout 3.0
-    scene black
+    scene new_black with Dissolve(2.5)
+
+    pause 1.5
 
     narrator "That name read:"    
 
     pause 3.0
 
+    scene cg wedding with Dissolve(2.5)
+
+    pause 1.5
+
     mark "\"Julieanne... ... Randolph... ...\""
 
     pause 4.0
+
+    scene new_black with Dissolve(3.0)
+
+    pause 3.0
 
     
     play sound piano_stinger
@@ -1097,7 +1132,7 @@ label chapter_3:
 
     play music longing_still_goes_on fadein 2.0
 
-    scene black with Dissolve(4.0)
+    scene new_black with Dissolve(2.0)
 
     pause 3.0
 
@@ -1127,14 +1162,14 @@ label chapter_3:
 
     narrator "The two of us made eye contact, and started laughing at how silly it was..."
     
-    scene black with Dissolve(0.4)
+    scene new_black with Dissolve(0.4)
     
     pause 4.0
 
     mark "\"Say...\""
 
 
-    scene black with custom_hpunch
+    scene new_black with custom_hpunch
 
     anne "\"Y-Yes...!?\""
 
@@ -1168,7 +1203,7 @@ label chapter_3:
 
     pause 2.0
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 1.0
 
@@ -1190,7 +1225,7 @@ label chapter_3:
 
     narrator "She'd kept her promise."
 
-    scene black with Dissolve(2.0)
+    scene new_black with Dissolve(2.0)
 
     narrator "Did I... not bother to look inside that box, because I was afraid of what I'd see?"
 
@@ -1203,7 +1238,7 @@ label chapter_3:
 
     pause 3.0
 
-    scene black with Dissolve(4.0)
+    scene new_black with Dissolve(4.0)
 
     
     stop music fadeout 4.0
@@ -1231,7 +1266,7 @@ label chapter_3:
 
     narrator "There's just one thing... I need to know."
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     pause 2.0
 
@@ -1249,7 +1284,7 @@ label chapter_3:
 
     narrator "Anne would always take this bus to the inner city, where she'd meet up with her friends for dinner."
 
-    scene black with Dissolve(2.0)
+    scene new_black with Dissolve(2.0)
 
     narrator "... It was almost time."
 
@@ -1263,7 +1298,11 @@ label chapter_3:
 
     narrator "Among the people who had departed... I didn't see my wife."
 
-    mark "\"Where...!?\""
+    play sound heartbeat
+
+    mark "\"Where...?\""
+
+    pause 0.8
 
     narrator "No...{w} Don't tell me I... lost her again..."
 
@@ -1305,7 +1344,7 @@ label chapter_3:
 
     mark "\"... Sorry.\""
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     narrator "I ducked under the cover of the bus shelter with Anne, and ran a hand through my hair while I tried to sort out my thoughts."
 
@@ -1325,7 +1364,7 @@ label chapter_3:
 
     anne "\"... !\""
 
-    scene black with custom_hpunch
+    scene new_black with custom_hpunch
 
     pause 1.5
 
@@ -1347,7 +1386,7 @@ label chapter_3:
 
     pause 1.5
 
-    scene black with Dissolve(0.8)
+    scene new_black with Dissolve(0.8)
 
     anne "\"... Would you believe me if I told you it was the me from 20 years ago?{w} That would sound really silly, wouldn't it?\""
 
@@ -1363,7 +1402,7 @@ label chapter_3:
 
     narrator "Anne nodded her head."
 
-    anne "\"The younger me was so pretty.{w} I wonder how disappointing it must be to see me now, and think...\""
+    anne "\"The younger me was so pretty.{w} I wondered how disappointing it must be to look back at me, now, and think...\""
 
     pause 1.0
 
@@ -1402,11 +1441,12 @@ label chapter_3:
 
     pause 2.0
 
-    scene black
+    scene new_black
 
     anne "\"Mr. ... Mark...\""
 
-    scene black with custom_hpunch
+    play sound fall
+    scene new_black with custom_hpunch
 
     mark "\"Oof!\""
 
@@ -1432,9 +1472,9 @@ label chapter_3:
 
     pause 1.0
 
-    narrator "I squeezed Anne's shoulders, and held her close."
+    narrator "I squeezed Anne's shoulders."
 
-    mark "\"What a silly question.{w} You already know how I feel...\""
+    mark "\"Cut it out, already.{w} You already know how I feel...\""
 
     anne "\"... ... ...\""
 
@@ -1451,7 +1491,7 @@ label chapter_3:
 
     anne "\"... Okay.\""
 
-    scene black with down_fade
+    scene new_black with down_fade
 
     pause 2.0
 
@@ -1461,7 +1501,7 @@ label chapter_3:
 
     pause 3.0
 
-    scene black with Dissolve(2.0)
+    scene new_black with Dissolve(2.0)
 
     narrator "The walk was long and clunky, with both of us awkwardly staying under the cover of Anne's umbrella."
 
@@ -1514,71 +1554,35 @@ label chapter_3:
 
     narrator "The clouds finally parted, and I returned home with my dandelion girl..."
 
+    pause 2.0
+
+    scene new_black with Dissolve(3.0)
+
+    pause 3.0
+
 
     $ persistent.gallery_unlocked = True
+    $ persistent.game_completed = True
     $ renpy.save_persistent()
 
 
 label roll_credits:
 
-    scene black
+    scene new_black
 
     show credits_roll at scrolling_credits
 
-    pause 145.0
+    # Wait for the credits to finish scrolling.
+    $ renpy.pause(145.0, hard=True)
 
+    # Fade out the music over 3 seconds.
+    stop music fadeout 3.0
+
+    # Fade the credits to black over 3 seconds.
     hide credits_roll
+    with Dissolve(3.0)
+
+    # Remain on black for 2 seconds.
+    $ renpy.pause(2.0, hard=True)
 
     return
-
-    ## Roll Credits ##
-
-    # The following lines scroll down on a text of black background
-
-    ## Logo: The Dandelion Girl
-
-    # Thus concludes the story of Julie Danvers.
-
-    # Anne and Mark walked home hand-in-hand, remembering all of the years they'd spent together. 
-
-    # Anne spent the rest of the evening telling Mark about her adventures through time, which he listened to with a renewed sense of wonder.
-
-    # Each story reminded Mark of a time he'd spent in the present, with Anne.
-
-    # They discussed the phyisicists and philosophers that Julie had grown to love.
-
-    # Mark Randolph accepted the theory he'd grown so weary of.
-
-    # The photo of their wedding sat on in their living room, for anyone and everyone to see.
-
-    # There were many more stories that Anne would tell, and even more for the two of them to remember.
-
-    # Mark's heart felt lighter, having been reunited with his Dandelion Girl.
-
-
-    ## Original story: Robert F. Young
-
-    ## Adaptation/Scenario: M.E. Hatch
-
-    # MUSIC CREDIT
-
-    # MUSIC CREDIT
-
-    # MUSIC CREDIT
-
-
-    ## Programmed in Ren'Py 8.X.X
-
-    ## Adaptation (c) Happy Harpy Inc.
-
-
-    ## Long bit of black text
-
-
-    ## Centered: 'The day before yesterday I saw rabbit, and yesterday a deer... and today, you.'
-
-    # Fade to black
-
-    ## Display a white screen, with the word 'Fin' in the corner.
-    
-

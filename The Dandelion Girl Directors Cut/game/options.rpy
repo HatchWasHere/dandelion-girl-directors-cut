@@ -62,7 +62,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = None
 
 
 ## Transitions #################################################################
@@ -73,13 +73,13 @@ define config.has_voice = True
 
 ## Entering or exiting the game menu.
 
-define config.enter_transition = dissolve
-define config.exit_transition = dissolve
+define config.enter_transition = Dissolve(0.05)
+define config.exit_transition = Dissolve(0.05)
 
 
 ## Between screens of the game menu.
 
-define config.intra_transition = dissolve
+define config.intra_transition = Dissolve(0.05)
 
 
 ## A transition that is used after a game has been loaded.
